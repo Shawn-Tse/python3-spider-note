@@ -16,6 +16,45 @@
   * 1.2.3 ChromeDriver的安装
   * 1.2.4 GrckoDriver的安装
   * 1.2.5 aiohttp的安装
+* 1.3 解析库的安装
+  * 1.3.1 lxml的安装
+  * 1.3.2 Beautiful Soup的安装
+  * 1.3.3 pyquery的安装
+  * 1.3.4 tesserocr的安装
+* 1.4 数据库的安装
+  * 1.4.1 MySQL的安装
+  * 1.4.2 MongoDB的安装
+  * 1.4.3 Redis的安装
+* 1.5 存储库的安装
+  * 1.5.1 PyMySQL的安装
+  * 1.5.2 PyMongo的安装
+  * 1.5.3 redis-py的安装
+  * 1.5.4 RedisDump的安装
+* 1.6 Web库的安装
+  * 1.6.1 Flask的安装
+  * 1.6.2 Tornado的安装
+* 1.7 App爬取相关库的安装
+  * 1.7.1 Charles的安装
+  * 1.7.2 mitmproxy的安装
+  * 1.7.3 Appium的安装
+* 1.8 爬虫框架的安装
+  * 1.8.1 pyspider的安装
+  * 1.8.2 Scrapy的安装
+  * 1.8.3 Scrapy-Splash的安装
+  * 1.8.4 Scrapy-Splash的安装
+* 1.9 部署相关库的安装
+  * 1.9.1 Docker的安装
+  * 1.9.2 Scrapyd的安装
+  * 1.9.3 Scrapyd-Client的安装
+  * 1.9.4 Scrapyd API的安装
+  * 1.9.5 Scrapyrt的安装
+  * 1.9.6 Gerapy的安装
+
+## 2.爬虫基础
+
+
+
+
 
 
 
