@@ -21,7 +21,7 @@
   * 1.3.2 Beautiful Soup的安装
   * 1.3.3 pyquery的安装
   * 1.3.4 tesserocr的安装
-* 1.4 数据库的安装
+* [1.4 数据库的安装](1./14-shu-ju-ku-de-an-zhuang.md)
   * 1.4.1 MySQL的安装
   * 1.4.2 MongoDB的安装
   * 1.4.3 Redis的安装
@@ -64,7 +64,7 @@
   * 2.2.2 网页的结构
   * 2.2.3 节点树及节点间的关系
   * 2.2.4 选择器
-* 2.3 爬虫的基本原理
+* [2.3 爬虫的基本原理](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li.md)
   * 2.3.1 爬虫概述
   * 2.3.2 能抓怎样的数据
   * 2.3.3 javascript渲染的页面
@@ -89,7 +89,7 @@
 * 3.2 使用requests
   * 3.2.1 基本用法
   * 3.2.2 高级用法
-* 3.3 正则表达式
+* [3.3 正则表达式](3-ji-ben-ku-de-shi-yong/33-zheng-ze-biao-da-shi.md)
 * 3.4 抓取猫眼电影排行
 
 ## 4.解析库的使用
@@ -104,7 +104,7 @@
   * 5.1.1 TXT 文件存储
   * 5.1.2 JSON文件存储
   * 5.1.3 CSV文件存储
-* 5.2 关系型数据库存储
+* [5.2 关系型数据库存储](5shu-ju-cun-chu/52-guan-xi-xing-shu-ju-ku-cun-chu.md)
   * 5.2.1 MySQL的存储
 * 5.3 非关系数据库存储
   * 5.3.1 MongoDB存储
@@ -115,7 +115,7 @@
 * 6.1 什么是Ajax
 * 6.2 Ajax分析方法
 * 6.3 Ajax结果提取
-* 6.4 分析Ajax爬取今日头条街拍美图
+* [6.4 分析Ajax爬取今日头条街拍美图](6ajaxshu-ju-pa-qu/64-fen-xi-ajax-pa-qu-jin-ri-tou-tiao-jie-pai-mei-tu.md)
 
 ## 7.动态渲染页面爬取
 
@@ -127,9 +127,9 @@
 ## 8.验证码的识别
 
 * 8.1 图形验证码的识别
-* 8.2 极验滑动验证码的识别
-* 8.3 点触验证码的识别
-* 8.4微博宫格验证码的识别
+* [8.2 极验滑动验证码的识别](8yan-zheng-ma-de-shi-bie/82-ji-yan-hua-dong-yan-zheng-ma-de-shi-bie.md)
+* [8.3 点触验证码的识别](8yan-zheng-ma-de-shi-bie/83-dian-hong-yan-zheng-ma-de-shi-bie.md)
+* [8.4微博宫格验证码的识别](8yan-zheng-ma-de-shi-bie/84wei-bo-gong-ge-yan-zheng-ma-de-shi-bie.md)
 
 ## 9.代理的使用
 
