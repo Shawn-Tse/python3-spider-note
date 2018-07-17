@@ -126,7 +126,7 @@
 
 ## 8.验证码的识别
 
-* 8.1 图形验证码的识别
+* [8.1 图形验证码的识别](8yan-zheng-ma-de-shi-bie/81-tu-xing-yan-zheng-ma-de-shi-bie.md)
 * [8.2 极验滑动验证码的识别](8yan-zheng-ma-de-shi-bie/82-ji-yan-hua-dong-yan-zheng-ma-de-shi-bie.md)
 * [8.3 点触验证码的识别](8yan-zheng-ma-de-shi-bie/83-dian-hong-yan-zheng-ma-de-shi-bie.md)
 * [8.4微博宫格验证码的识别](8yan-zheng-ma-de-shi-bie/84wei-bo-gong-ge-yan-zheng-ma-de-shi-bie.md)
