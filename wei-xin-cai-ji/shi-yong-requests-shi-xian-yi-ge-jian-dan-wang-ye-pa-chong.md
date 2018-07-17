@@ -114,5 +114,41 @@ print(r.text)
 # '{"cookies": {"a": "c"}}'
 ```
 
+---
 
+### 实战知了用户粉丝信息
+
+```
+import requests
+import json
+
+offset = 0 # 分页
+limit = 20 # 数据数量
+
+url = "https://www.zhihu.com/api/v4/members/fuwocheng/followers"
+
+params = {
+    "offset":offset,
+    "limit":limit,
+}
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+'x-udid': 'AOBk8KHWuw2PTtn0YIJh2Wq4h91XcR8vVTo=' # 注意这个/OAuth
+        }
+
+
+response = requests.get(url,headers=headers,params=params)
+
+print(response.url)
+
+# 转换为json数据
+items = response.json()
+datas = items["data"]
+for data in datas:
+    # print(data)
+    print("name:"+data["name"],"类型:"+data["type"])
+```
+
+![](/assets/知了实战-测试1.png)![](/assets/实战知了用户粉丝-测试2.png)
 
