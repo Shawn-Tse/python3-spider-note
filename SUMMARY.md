@@ -94,7 +94,7 @@
 
 ## 4.解析库的使用
 
-* 4.1 使用xpath
+* [4.1 使用xpath](4jie-xi-ku-de-shi-yong/41-shi-yong-xpath.md)
 * 4.2 使用Beautiful Soup
 * 4.3 使用pyquery
 
