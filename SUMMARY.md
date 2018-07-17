@@ -120,9 +120,9 @@
 ## 7.动态渲染页面爬取
 
 * 7.1 Selenium的使用
-* 7.2 Splash的使用
+* [7.2 Splash的使用](7dong-tai-xuan-ran-ye-mian-pa-qu/72-splashde-shi-yong.md)
 * 7.3 Splash负载均衡配置
-* 7.4 使用selenium爬取淘宝商品
+* [7.4 使用selenium爬取淘宝商品](7dong-tai-xuan-ran-ye-mian-pa-qu/74-shi-yong-selenium-pa-qu-tao-bao-shang-pin.md)
 
 ## 8.验证码的识别
 
@@ -189,4 +189,13 @@
 * 15.3 Scrapyd对接Docker
 * 15.4 Scrapyd批量部署
 * 15.5 Gerapy分布式管理
+
+## 微信采集
+
+* 微信公众号爬虫基本原理
+* 使用fiddler抓包分析公众号请求过程
+* 抓取微信公众号第一篇文章
+* 抓取微信公众号所有历史文章
+* 将爬取的文章存储到MongoDB
+* 获取文章阅读数、点赞数、评论数、赞赏数
 
