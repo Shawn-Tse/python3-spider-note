@@ -42,5 +42,21 @@ pip install requests
 b'{"origin":"221.13.7.74"}\n'
 ```
 
+### POST请求
+
+```
+>>> r = requests.post('http://httpbin.org/post', data = {'key':'value'})
+>>> r
+<Response [200]>
+```
+
+### 自定义请求头
+
+服务器反爬虫机制会判断客户端请求头的User-Agent是否源于真实浏览器，所以，使用requests指定UA伪装成浏览器发起请求
+
+```
+
+```
+
 
 
