@@ -23,5 +23,24 @@ print(content)
 print(code)
 ```
 
+### 安装requests
+
+```
+pip install requests
+```
+
+### GET请求
+
+```
+>>> import requests
+>>> result = requests.get("https://httpbin.org/ip")
+>>> result
+<Response [200]> # 响应对象
+>>> result.status_code # 响应状态码
+200
+>>> result.content # 响应内容
+b'{"origin":"221.13.7.74"}\n'
+```
+
 
 
