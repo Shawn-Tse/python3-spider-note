@@ -7,6 +7,7 @@
 ## 微信采集
 
 * [微信公众号爬虫基本原理](wei-xin-cai-ji/wei-xin-gong-zhong-hao-pa-chong-ji-ben-yuan-li.md)
+* [使用requests实现一个简单网页爬虫](wei-xin-cai-ji/shi-yong-requests-shi-xian-yi-ge-jian-dan-wang-ye-pa-chong.md)
 * [使用fiddler抓包分析公众号请求过程](wei-xin-cai-ji/shi-yong-fiddler-zhua-bao-fen-xi-gong-zhong-hao-qing-qiu-guo-cheng.md)
 * [抓取微信公众号第一篇文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-di-yi-pian-wen-zhang.md)
 * 抓取微信公众号所有历史文章
