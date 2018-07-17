@@ -4,6 +4,15 @@
 
 * [Introduction](README.md)
 
+## 微信采集
+
+* [微信公众号爬虫基本原理](wei-xin-cai-ji/wei-xin-gong-zhong-hao-pa-chong-ji-ben-yuan-li.md)
+* 使用fiddler抓包分析公众号请求过程
+* 抓取微信公众号第一篇文章
+* 抓取微信公众号所有历史文章
+* 将爬取的文章存储到MongoDB
+* 获取文章阅读数、点赞数、评论数、赞赏数
+
 ## 1.开发环境配置
 
 * [1.1 python3的安装](1./1.1-python3.md)
@@ -189,13 +198,4 @@
 * 15.3 Scrapyd对接Docker
 * 15.4 Scrapyd批量部署
 * 15.5 Gerapy分布式管理
-
-## 微信采集
-
-* 微信公众号爬虫基本原理
-* 使用fiddler抓包分析公众号请求过程
-* 抓取微信公众号第一篇文章
-* 抓取微信公众号所有历史文章
-* 将爬取的文章存储到MongoDB
-* 获取文章阅读数、点赞数、评论数、赞赏数
 
