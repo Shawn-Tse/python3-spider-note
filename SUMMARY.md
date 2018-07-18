@@ -11,7 +11,7 @@
 * [使用fiddler抓包分析公众号请求过程](wei-xin-cai-ji/shi-yong-fiddler-zhua-bao-fen-xi-gong-zhong-hao-qing-qiu-guo-cheng.md)
 * [抓取微信公众号第一篇文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-di-yi-pian-wen-zhang.md)
 * 抓取微信公众号所有历史文章
-* 将爬取的文章存储到MongoDB
+* [将爬取的文章存储到MongoDB](wei-xin-cai-ji/jiang-pa-qu-de-wen-zhang-cun-chu-dao-mongodb.md)
 * 获取文章阅读数、点赞数、评论数、赞赏数
 
 ## 1.开发环境配置
