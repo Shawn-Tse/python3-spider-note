@@ -24,5 +24,5 @@ python3
 >>> import aiohttp
 ```
 
-
+如果没有报错，则库就安装好了
 
