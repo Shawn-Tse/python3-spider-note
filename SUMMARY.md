@@ -10,7 +10,7 @@
     * [1.2.1 requests的安装](1./12-qing-qiu-ku-de-an-zhuang/121-requestsde-an-zhuang.md)
     * [1.2.2 selenium的安装](1./12-qing-qiu-ku-de-an-zhuang/122-seleniumde-an-zhuang.md)
     * [1.2.3 ChromeDriver的安装](1./12-qing-qiu-ku-de-an-zhuang/123-chromedriverde-an-zhuang.md)
-    * 1.2.4 GrckoDriver的安装
+    * [1.2.4 GrckoDriver的安装](1./12-qing-qiu-ku-de-an-zhuang/124-grckodriverde-an-zhuang.md)
     * [1.2.5 aiohttp的安装](1./12-qing-qiu-ku-de-an-zhuang/125-aiohttpde-an-zhuang.md)
   * [1.3 解析库的安装](1./1.3.md)
     * 1.3.1 lxml的安装

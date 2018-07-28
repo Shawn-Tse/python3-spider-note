@@ -1,3 +1,5 @@
+selenium对chrome浏览器操作，需要进行以下配置
+
 ### 1.相关链接
 
 * chromedriver地址：[https://chromedriver.storage.googleapis.com/index.html](https://sites.google.com/a/chromium.org/chromedriver/downloads)
