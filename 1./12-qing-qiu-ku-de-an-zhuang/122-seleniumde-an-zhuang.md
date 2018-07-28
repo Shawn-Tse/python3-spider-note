@@ -6,7 +6,7 @@
 ### 2.pip安装
 
 ```
-pip install requests
+pip install selenium
 ```
 
 
