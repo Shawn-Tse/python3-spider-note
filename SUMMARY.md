@@ -17,7 +17,7 @@
     * [1.3.1 lxml的安装](1./1.3/131-lxmlde-an-zhuang.md)
     * [1.3.2 Beautiful Soup的安装](1./1.3/132-beautiful-soupde-an-zhuang.md)
     * [1.3.3 pyquery的安装](1./1.3/133-pyqueryde-an-zhuang.md)
-    * 1.3.4 tesserocr的安装
+    * [1.3.4 tesserocr的安装](1./1.3/134-tesserocrde-an-zhuang.md)
   * [1.4 数据库的安装](1./14-shu-ju-ku-de-an-zhuang.md)
     * 1.4.1 MySQL的安装
     * 1.4.2 MongoDB的安装
