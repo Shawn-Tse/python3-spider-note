@@ -4,15 +4,6 @@
 
 * [介绍](README.md)
 
-* 微信采集
-  * [微信公众号爬虫基本原理](wei-xin-cai-ji/wei-xin-gong-zhong-hao-pa-chong-ji-ben-yuan-li.md)
-  * [使用requests实现一个简单网页爬虫](wei-xin-cai-ji/shi-yong-requests-shi-xian-yi-ge-jian-dan-wang-ye-pa-chong.md)
-  * [使用fiddler抓包分析公众号请求过程](wei-xin-cai-ji/shi-yong-fiddler-zhua-bao-fen-xi-gong-zhong-hao-qing-qiu-guo-cheng.md)
-  * [抓取微信公众号第一篇文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-di-yi-pian-wen-zhang.md)
-  * [抓取微信公众号所有历史文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-suo-you-li-shi-wen-zhang.md)
-  * [将爬取的文章存储到MongoDB](wei-xin-cai-ji/jiang-pa-qu-de-wen-zhang-cun-chu-dao-mongodb.md)
-  * [获取文章阅读数、点赞数、评论数、赞赏数](wei-xin-cai-ji/huo-qu-wen-zhang-yue-du-shu-3001-dian-zan-shu-3001-ping-lun-shu-3001-zan-shang-shu.md)
-
 ## 目录
 
 * [1.开发环境配置](1./1kai-fa-huan-jing-pei-zhi.md)
@@ -144,27 +135,26 @@
   * [8.3 点触验证码的识别](8yan-zheng-ma-de-shi-bie/83-dian-hong-yan-zheng-ma-de-shi-bie.md)
   * [8.4微博宫格验证码的识别](8yan-zheng-ma-de-shi-bie/84wei-bo-gong-ge-yan-zheng-ma-de-shi-bie.md)
 
-## 9.代理的使用
+* 9.代理的使用
+  * 9.1 代理的设置
+  * 9.2 代理池的维护
+  * 9.3 付费代理的使用
+  * 9.4 ADSL拨号代理
+  * 9.5 使用代理爬取微信公总号文章
 
-* 9.1 代理的设置
-* 9.2 代理池的维护
-* 9.3 付费代理的使用
-* 9.4 ADSL拨号代理
-* 9.5 使用代理爬取微信公总号文章
+* 10.模拟登录
 
-## 10.模拟登录
+  * 10.1 模拟登陆并爬去GitHub
 
-* 10.1 模拟登陆并爬去GitHub
-* 10.2 Cookies池的搭建
+  * 10.2 Cookies池的搭建
 
-## 11.App的爬取
-
-* 11.1 Charles的使用
-* 11.2 mitmproxy的使用
-* 11.3 mitmdump“得到”App电子书信息
-* 11.4 Appium的基本使用
-* 11.5 Appnium爬取微信朋友圈
-* 11.6 Appium+mitmdump爬取京东商品
+* 11.App的爬取
+  * 11.1 Charles的使用
+  * 11.2 mitmproxy的使用
+  * 11.3 mitmdump“得到”App电子书信息
+  * 11.4 Appium的基本使用
+  * 11.5 Appnium爬取微信朋友圈
+  * 11.6 Appium+mitmdump爬取京东商品
 
 ## 12.pyspider框架的使用
 
