@@ -2,90 +2,90 @@
 
 * 
 * [前言](https://germey.gitbooks.io/python3webspider/content/)
-* [目录](https://germey.gitbooks.io/python3webspider/content/0-%E7%9B%AE%E5%BD%95.html)
-* [第一章 开发环境配置](https://germey.gitbooks.io/python3webspider/content/1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html)
-* [1.1-Python3的安装](https://germey.gitbooks.io/python3webspider/content/1.1-Python3%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.2-请求库的安装](https://germey.gitbooks.io/python3webspider/content/1.2-%E8%AF%B7%E6%B1%82%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.2.1-Requests的安装](https://germey.gitbooks.io/python3webspider/content/1.2.1-Requests%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.2.2-Selenium的安装](https://germey.gitbooks.io/python3webspider/content/1.2.2-Selenium%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.2.3-ChromeDriver的安装](https://germey.gitbooks.io/python3webspider/content/1.2.3-ChromeDriver%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.2.4-GeckoDriver的安装](https://germey.gitbooks.io/python3webspider/content/1.2.4-GeckoDriver%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.2.5-PhantomJS的安装](https://germey.gitbooks.io/python3webspider/content/1.2.5-PhantomJS%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.2.6-Aiohttp的安装](https://germey.gitbooks.io/python3webspider/content/1.2.6-Aiohttp%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.3-解析库的安装](https://germey.gitbooks.io/python3webspider/content/1.3-%E8%A7%A3%E6%9E%90%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.3.1-LXML的安装](https://germey.gitbooks.io/python3webspider/content/1.3.1-LXML%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.3.2-BeautifulSoup的安装](https://germey.gitbooks.io/python3webspider/content/1.3.2-BeautifulSoup%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.3.3-PyQuery的安装](https://germey.gitbooks.io/python3webspider/content/1.3.3-PyQuery%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.3.4-Tesserocr的安装](https://germey.gitbooks.io/python3webspider/content/1.3.4-Tesserocr%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.4-数据库的安装](https://germey.gitbooks.io/python3webspider/content/1.4-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.4.1-MySQL的安装](https://germey.gitbooks.io/python3webspider/content/1.4.1-MySQL%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.4.2-MongoDB的安装](https://germey.gitbooks.io/python3webspider/content/1.4.2-MongoDB%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.4.3-Redis的安装](https://germey.gitbooks.io/python3webspider/content/1.4.3-Redis%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.5-存储库的安装](https://germey.gitbooks.io/python3webspider/content/1.5-%E5%AD%98%E5%82%A8%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.5.1-PyMySQL的安装](https://germey.gitbooks.io/python3webspider/content/1.5.1-PyMySQL%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.5.2-PyMongo的安装](https://germey.gitbooks.io/python3webspider/content/1.5.2-PyMongo%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.5.3-RedisPy的安装](https://germey.gitbooks.io/python3webspider/content/1.5.3-RedisPy%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.5.4-RedisDump的安装](https://germey.gitbooks.io/python3webspider/content/1.5.4-RedisDump%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.6-Web库的安装](https://germey.gitbooks.io/python3webspider/content/1.6-Web%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.6.1-Flask的安装](https://germey.gitbooks.io/python3webspider/content/1.6.1-Flask%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.6.2-Tornado的安装](https://germey.gitbooks.io/python3webspider/content/1.6.2-Tornado%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.7-APP爬取相关库的安装](https://germey.gitbooks.io/python3webspider/content/1.7-APP%E7%88%AC%E5%8F%96%E7%9B%B8%E5%85%B3%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.7.1-Charles的安装](https://germey.gitbooks.io/python3webspider/content/1.7.1-Charles%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.7.2-MitmProxy的安装](https://germey.gitbooks.io/python3webspider/content/1.7.2-MitmProxy%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.7.3-Appium的安装](https://germey.gitbooks.io/python3webspider/content/1.7.3-Appium%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.8-爬虫框架的安装](https://germey.gitbooks.io/python3webspider/content/1.8-%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.8.1-PySpider的安装](https://germey.gitbooks.io/python3webspider/content/1.8.1-PySpider%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.8.2-Scrapy的安装](https://germey.gitbooks.io/python3webspider/content/1.8.2-Scrapy%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.8.3-ScrapySplash的安装](https://germey.gitbooks.io/python3webspider/content/1.8.3-ScrapySplash%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.8.4-ScrapyRedis的安装](https://germey.gitbooks.io/python3webspider/content/1.8.4-ScrapyRedis%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.9-部署相关库的安装](https://germey.gitbooks.io/python3webspider/content/1.9-%E9%83%A8%E7%BD%B2%E7%9B%B8%E5%85%B3%E5%BA%93%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.9.1-Docker的安装](https://germey.gitbooks.io/python3webspider/content/1.9.1-Docker%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.9.2-Scrapyd的安装](https://germey.gitbooks.io/python3webspider/content/1.9.2-Scrapyd%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.9.3-ScrapydClient的安装](https://germey.gitbooks.io/python3webspider/content/1.9.3-ScrapydClient%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.9.4-ScrapydAPI的安装](https://germey.gitbooks.io/python3webspider/content/1.9.4-ScrapydAPI%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.9.5-Scrapyrt的安装](https://germey.gitbooks.io/python3webspider/content/1.9.5-Scrapyrt%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [1.9.6-Gerapy的安装](https://germey.gitbooks.io/python3webspider/content/1.9.6-Gerapy%E7%9A%84%E5%AE%89%E8%A3%85.html)
-* [第二章 爬虫基础](https://germey.gitbooks.io/python3webspider/content/2-%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80.html)
-* [2.1-HTTP基本原理](https://germey.gitbooks.io/python3webspider/content/2.1-HTTP%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html)
-* [2.2-Web网页基础](https://germey.gitbooks.io/python3webspider/content/2.2-Web%E7%BD%91%E9%A1%B5%E5%9F%BA%E7%A1%80.html)
-* [2.3-爬虫基本原理](https://germey.gitbooks.io/python3webspider/content/2.3-%E7%88%AC%E8%99%AB%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html)
-* [2.4-Session和Cookies](https://germey.gitbooks.io/python3webspider/content/2.4-Session%E5%92%8CCookies.html)
-* [2.5-代理基本原理](https://germey.gitbooks.io/python3webspider/content/2.5-%E4%BB%A3%E7%90%86%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html)
-* [第三章 基本库的使用](https://germey.gitbooks.io/python3webspider/content/3-%E5%9F%BA%E6%9C%AC%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.html)
-* [3.1-使用Urllib](https://germey.gitbooks.io/python3webspider/content/3.1-%E4%BD%BF%E7%94%A8Urllib.html)
-* [3.1.1-发送请求](https://germey.gitbooks.io/python3webspider/content/3.1.1-%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82.html)
-* [3.1.2-处理异常](https://germey.gitbooks.io/python3webspider/content/3.1.2-%E5%A4%84%E7%90%86%E5%BC%82%E5%B8%B8.html)
-* [3.1.3-解析链接](https://germey.gitbooks.io/python3webspider/content/3.1.3-%E8%A7%A3%E6%9E%90%E9%93%BE%E6%8E%A5.html)
-* [3.1.4-分析Robots协议](https://germey.gitbooks.io/python3webspider/content/3.1.4-%E5%88%86%E6%9E%90Robots%E5%8D%8F%E8%AE%AE.html)
-* [3.2-使用Requests](https://germey.gitbooks.io/python3webspider/content/3.2-%E4%BD%BF%E7%94%A8Requests.html)
-* [3.2.1-基本使用](https://germey.gitbooks.io/python3webspider/content/3.2.1-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html)
-* [3.2.3-高级用法](https://germey.gitbooks.io/python3webspider/content/3.2.3-%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95.html)
-* [3.3-正则表达式](https://germey.gitbooks.io/python3webspider/content/3.3-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html)
-* [3.4-Requests与正则表达式爬取猫眼电影排行](https://germey.gitbooks.io/python3webspider/content/3.4-Requests%E4%B8%8E%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%88%AC%E5%8F%96%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1%E6%8E%92%E8%A1%8C.html)
-* [第四章 解析库的使用](https://germey.gitbooks.io/python3webspider/content/4-%E8%A7%A3%E6%9E%90%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8.html)
-* [4.1-XPath的使用](https://germey.gitbooks.io/python3webspider/content/4.1-XPath%E7%9A%84%E4%BD%BF%E7%94%A8.html)
-* [4.2-BeautifulSoup的使用](https://germey.gitbooks.io/python3webspider/content/4.2-BeautifulSoup%E7%9A%84%E4%BD%BF%E7%94%A8.html)
-* [4.3-PyQuery的使用](https://germey.gitbooks.io/python3webspider/content/4.3-PyQuery%E7%9A%84%E4%BD%BF%E7%94%A8.html)
-* [第五章 数据存储](https://germey.gitbooks.io/python3webspider/content/5-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8.html)
-* [5.1-文件存储](https://germey.gitbooks.io/python3webspider/content/5.1-%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8.html)
-* [5.1.1-TXT文本存储](https://germey.gitbooks.io/python3webspider/content/5.1.1-TXT%E6%96%87%E6%9C%AC%E5%AD%98%E5%82%A8.html)
-* [5.1.2-Json文件存储](https://germey.gitbooks.io/python3webspider/content/5.1.2-Json%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8.html)
-* [5.1.3-CSV文件存储](https://germey.gitbooks.io/python3webspider/content/5.1.3-CSV%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8.html)
-* [5.2-关系型数据库存储](https://germey.gitbooks.io/python3webspider/content/5.2-%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%98%E5%82%A8.html)
-* [5.2.1-MySQL存储](https://germey.gitbooks.io/python3webspider/content/5.2.1-MySQL%E5%AD%98%E5%82%A8.html)
-* [5.3-非关系型数据库存储](https://germey.gitbooks.io/python3webspider/content/5.3-%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%98%E5%82%A8.html)
-* [5.3.1-MongoDB存储](https://germey.gitbooks.io/python3webspider/content/5.3.1-MongoDB%E5%AD%98%E5%82%A8.html)
-* [5.3.2-Redis存储](https://germey.gitbooks.io/python3webspider/content/5.3.2-Redis%E5%AD%98%E5%82%A8.html)
-* [第六章 Ajax数据爬取](https://germey.gitbooks.io/python3webspider/content/6-Ajax%E6%95%B0%E6%8D%AE%E7%88%AC%E5%8F%96.html)
-* [6.1-什么是Ajax](https://germey.gitbooks.io/python3webspider/content/6.1-%E4%BB%80%E4%B9%88%E6%98%AFAjax.html)
-* [6.2-Ajax分析方法](https://germey.gitbooks.io/python3webspider/content/6.2-Ajax%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95.html)
-* [6.3-Ajax结果提取](https://germey.gitbooks.io/python3webspider/content/6.3-Ajax%E7%BB%93%E6%9E%9C%E6%8F%90%E5%8F%96.html)
-* [6.4-分析Ajax爬取今日头条街拍美图](https://germey.gitbooks.io/python3webspider/content/6.4-%E5%88%86%E6%9E%90Ajax%E7%88%AC%E5%8F%96%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1%E8%A1%97%E6%8B%8D%E7%BE%8E%E5%9B%BE.html)
-* [第七章 动态渲染页面抓取](https://germey.gitbooks.io/python3webspider/content/7-%E5%8A%A8%E6%80%81%E6%B8%B2%E6%9F%93%E9%A1%B5%E9%9D%A2%E6%8A%93%E5%8F%96.html)
-* [7.1-Selenium的使用](https://germey.gitbooks.io/python3webspider/content/7.1-Selenium%E7%9A%84%E4%BD%BF%E7%94%A8.html)
-* [7.2-Splash的使用](https://germey.gitbooks.io/python3webspider/content/7.2-Splash%E7%9A%84%E4%BD%BF%E7%94%A8.html)
-* [7.3-Splash负载均衡配置](https://germey.gitbooks.io/python3webspider/content/7.3-Splash%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E9%85%8D%E7%BD%AE.html)
-* [7.4-使用Selenium爬取淘宝商品](https://germey.gitbooks.io/python3webspider/content/7.4-%E4%BD%BF%E7%94%A8Selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E5%95%86%E5%93%81.html)
+* [目录](https://germey.gitbooks.io/python3webspider/content/0-目录.html)
+* [第一章 开发环境配置](https://germey.gitbooks.io/python3webspider/content/1-开发环境配置.html)
+* [1.1-Python3的安装](https://germey.gitbooks.io/python3webspider/content/1.1-Python3的安装.html)
+* [1.2-请求库的安装](https://germey.gitbooks.io/python3webspider/content/1.2-请求库的安装.html)
+* [1.2.1-Requests的安装](https://germey.gitbooks.io/python3webspider/content/1.2.1-Requests的安装.html)
+* [1.2.2-Selenium的安装](https://germey.gitbooks.io/python3webspider/content/1.2.2-Selenium的安装.html)
+* [1.2.3-ChromeDriver的安装](https://germey.gitbooks.io/python3webspider/content/1.2.3-ChromeDriver的安装.html)
+* [1.2.4-GeckoDriver的安装](https://germey.gitbooks.io/python3webspider/content/1.2.4-GeckoDriver的安装.html)
+* [1.2.5-PhantomJS的安装](https://germey.gitbooks.io/python3webspider/content/1.2.5-PhantomJS的安装.html)
+* [1.2.6-Aiohttp的安装](https://germey.gitbooks.io/python3webspider/content/1.2.6-Aiohttp的安装.html)
+* [1.3-解析库的安装](https://germey.gitbooks.io/python3webspider/content/1.3-解析库的安装.html)
+* [1.3.1-LXML的安装](https://germey.gitbooks.io/python3webspider/content/1.3.1-LXML的安装.html)
+* [1.3.2-BeautifulSoup的安装](https://germey.gitbooks.io/python3webspider/content/1.3.2-BeautifulSoup的安装.html)
+* [1.3.3-PyQuery的安装](https://germey.gitbooks.io/python3webspider/content/1.3.3-PyQuery的安装.html)
+* [1.3.4-Tesserocr的安装](https://germey.gitbooks.io/python3webspider/content/1.3.4-Tesserocr的安装.html)
+* [1.4-数据库的安装](https://germey.gitbooks.io/python3webspider/content/1.4-数据库的安装.html)
+* [1.4.1-MySQL的安装](https://germey.gitbooks.io/python3webspider/content/1.4.1-MySQL的安装.html)
+* [1.4.2-MongoDB的安装](https://germey.gitbooks.io/python3webspider/content/1.4.2-MongoDB的安装.html)
+* [1.4.3-Redis的安装](https://germey.gitbooks.io/python3webspider/content/1.4.3-Redis的安装.html)
+* [1.5-存储库的安装](https://germey.gitbooks.io/python3webspider/content/1.5-存储库的安装.html)
+* [1.5.1-PyMySQL的安装](https://germey.gitbooks.io/python3webspider/content/1.5.1-PyMySQL的安装.html)
+* [1.5.2-PyMongo的安装](https://germey.gitbooks.io/python3webspider/content/1.5.2-PyMongo的安装.html)
+* [1.5.3-RedisPy的安装](https://germey.gitbooks.io/python3webspider/content/1.5.3-RedisPy的安装.html)
+* [1.5.4-RedisDump的安装](https://germey.gitbooks.io/python3webspider/content/1.5.4-RedisDump的安装.html)
+* [1.6-Web库的安装](https://germey.gitbooks.io/python3webspider/content/1.6-Web库的安装.html)
+* [1.6.1-Flask的安装](https://germey.gitbooks.io/python3webspider/content/1.6.1-Flask的安装.html)
+* [1.6.2-Tornado的安装](https://germey.gitbooks.io/python3webspider/content/1.6.2-Tornado的安装.html)
+* [1.7-APP爬取相关库的安装](https://germey.gitbooks.io/python3webspider/content/1.7-APP爬取相关库的安装.html)
+* [1.7.1-Charles的安装](https://germey.gitbooks.io/python3webspider/content/1.7.1-Charles的安装.html)
+* [1.7.2-MitmProxy的安装](https://germey.gitbooks.io/python3webspider/content/1.7.2-MitmProxy的安装.html)
+* [1.7.3-Appium的安装](https://germey.gitbooks.io/python3webspider/content/1.7.3-Appium的安装.html)
+* [1.8-爬虫框架的安装](https://germey.gitbooks.io/python3webspider/content/1.8-爬虫框架的安装.html)
+* [1.8.1-PySpider的安装](https://germey.gitbooks.io/python3webspider/content/1.8.1-PySpider的安装.html)
+* [1.8.2-Scrapy的安装](https://germey.gitbooks.io/python3webspider/content/1.8.2-Scrapy的安装.html)
+* [1.8.3-ScrapySplash的安装](https://germey.gitbooks.io/python3webspider/content/1.8.3-ScrapySplash的安装.html)
+* [1.8.4-ScrapyRedis的安装](https://germey.gitbooks.io/python3webspider/content/1.8.4-ScrapyRedis的安装.html)
+* [1.9-部署相关库的安装](https://germey.gitbooks.io/python3webspider/content/1.9-部署相关库的安装.html)
+* [1.9.1-Docker的安装](https://germey.gitbooks.io/python3webspider/content/1.9.1-Docker的安装.html)
+* [1.9.2-Scrapyd的安装](https://germey.gitbooks.io/python3webspider/content/1.9.2-Scrapyd的安装.html)
+* [1.9.3-ScrapydClient的安装](https://germey.gitbooks.io/python3webspider/content/1.9.3-ScrapydClient的安装.html)
+* [1.9.4-ScrapydAPI的安装](https://germey.gitbooks.io/python3webspider/content/1.9.4-ScrapydAPI的安装.html)
+* [1.9.5-Scrapyrt的安装](https://germey.gitbooks.io/python3webspider/content/1.9.5-Scrapyrt的安装.html)
+* [1.9.6-Gerapy的安装](https://germey.gitbooks.io/python3webspider/content/1.9.6-Gerapy的安装.html)
+* [第二章 爬虫基础](https://germey.gitbooks.io/python3webspider/content/2-爬虫基础.html)
+* [2.1-HTTP基本原理](https://germey.gitbooks.io/python3webspider/content/2.1-HTTP基本原理.html)
+* [2.2-Web网页基础](https://germey.gitbooks.io/python3webspider/content/2.2-Web网页基础.html)
+* [2.3-爬虫基本原理](https://germey.gitbooks.io/python3webspider/content/2.3-爬虫基本原理.html)
+* [2.4-Session和Cookies](https://germey.gitbooks.io/python3webspider/content/2.4-Session和Cookies.html)
+* [2.5-代理基本原理](https://germey.gitbooks.io/python3webspider/content/2.5-代理基本原理.html)
+* [第三章 基本库的使用](https://germey.gitbooks.io/python3webspider/content/3-基本库的使用.html)
+* [3.1-使用Urllib](https://germey.gitbooks.io/python3webspider/content/3.1-使用Urllib.html)
+* [3.1.1-发送请求](https://germey.gitbooks.io/python3webspider/content/3.1.1-发送请求.html)
+* [3.1.2-处理异常](https://germey.gitbooks.io/python3webspider/content/3.1.2-处理异常.html)
+* [3.1.3-解析链接](https://germey.gitbooks.io/python3webspider/content/3.1.3-解析链接.html)
+* [3.1.4-分析Robots协议](https://germey.gitbooks.io/python3webspider/content/3.1.4-分析Robots协议.html)
+* [3.2-使用Requests](https://germey.gitbooks.io/python3webspider/content/3.2-使用Requests.html)
+* [3.2.1-基本使用](https://germey.gitbooks.io/python3webspider/content/3.2.1-基本使用.html)
+* [3.2.3-高级用法](https://germey.gitbooks.io/python3webspider/content/3.2.3-高级用法.html)
+* [3.3-正则表达式](https://germey.gitbooks.io/python3webspider/content/3.3-正则表达式.html)
+* [3.4-Requests与正则表达式爬取猫眼电影排行](https://germey.gitbooks.io/python3webspider/content/3.4-Requests与正则表达式爬取猫眼电影排行.html)
+* [第四章 解析库的使用](https://germey.gitbooks.io/python3webspider/content/4-解析库的使用.html)
+* [4.1-XPath的使用](https://germey.gitbooks.io/python3webspider/content/4.1-XPath的使用.html)
+* [4.2-BeautifulSoup的使用](https://germey.gitbooks.io/python3webspider/content/4.2-BeautifulSoup的使用.html)
+* [4.3-PyQuery的使用](https://germey.gitbooks.io/python3webspider/content/4.3-PyQuery的使用.html)
+* [第五章 数据存储](https://germey.gitbooks.io/python3webspider/content/5-数据存储.html)
+* [5.1-文件存储](https://germey.gitbooks.io/python3webspider/content/5.1-文件存储.html)
+* [5.1.1-TXT文本存储](https://germey.gitbooks.io/python3webspider/content/5.1.1-TXT文本存储.html)
+* [5.1.2-Json文件存储](https://germey.gitbooks.io/python3webspider/content/5.1.2-Json文件存储.html)
+* [5.1.3-CSV文件存储](https://germey.gitbooks.io/python3webspider/content/5.1.3-CSV文件存储.html)
+* [5.2-关系型数据库存储](https://germey.gitbooks.io/python3webspider/content/5.2-关系型数据库存储.html)
+* [5.2.1-MySQL存储](https://germey.gitbooks.io/python3webspider/content/5.2.1-MySQL存储.html)
+* [5.3-非关系型数据库存储](https://germey.gitbooks.io/python3webspider/content/5.3-非关系型数据库存储.html)
+* [5.3.1-MongoDB存储](https://germey.gitbooks.io/python3webspider/content/5.3.1-MongoDB存储.html)
+* [5.3.2-Redis存储](https://germey.gitbooks.io/python3webspider/content/5.3.2-Redis存储.html)
+* [第六章 Ajax数据爬取](https://germey.gitbooks.io/python3webspider/content/6-Ajax数据爬取.html)
+* [6.1-什么是Ajax](https://germey.gitbooks.io/python3webspider/content/6.1-什么是Ajax.html)
+* [6.2-Ajax分析方法](https://germey.gitbooks.io/python3webspider/content/6.2-Ajax分析方法.html)
+* [6.3-Ajax结果提取](https://germey.gitbooks.io/python3webspider/content/6.3-Ajax结果提取.html)
+* [6.4-分析Ajax爬取今日头条街拍美图](https://germey.gitbooks.io/python3webspider/content/6.4-分析Ajax爬取今日头条街拍美图.html)
+* [第七章 动态渲染页面抓取](https://germey.gitbooks.io/python3webspider/content/7-动态渲染页面抓取.html)
+* [7.1-Selenium的使用](https://germey.gitbooks.io/python3webspider/content/7.1-Selenium的使用.html)
+* [7.2-Splash的使用](https://germey.gitbooks.io/python3webspider/content/7.2-Splash的使用.html)
+* [7.3-Splash负载均衡配置](https://germey.gitbooks.io/python3webspider/content/7.3-Splash负载均衡配置.html)
+* [7.4-使用Selenium爬取淘宝商品](https://germey.gitbooks.io/python3webspider/content/7.4-使用Selenium爬取淘宝商品.html)
 * [第八章 验证码的识别](https://germey.gitbooks.io/python3webspider/content/VIP.html)
 * [8.1-图形验证码的识别](https://germey.gitbooks.io/python3webspider/content/VIP.html)
 * [8.2-极验滑动验证码识别](https://germey.gitbooks.io/python3webspider/content/VIP.html)
@@ -138,16 +138,6 @@
 * [15.5-Gerapy分布式管理](https://germey.gitbooks.io/python3webspider/content/VIP.html)
 * 
 * [本書使用 GitBook 釋出](https://www.gitbook.com/)
-
-
-
-
-
-
-
-
-
-
 
 ## 1.4.2 MongoDB安装 {#142-mongodb安装}
 
@@ -202,7 +192,6 @@ MongoDB 支持多种平台，包括 Windows、Linux、Mac OS、Solaris 等，在
 
 ```
 mongod --dbpath "C:\MongoDB\Server\3.4\data\db"
-
 ```
 
 请记得将此处的路径替换成你的主机 MongoDB 安装路径。
@@ -235,7 +224,6 @@ mongod --dbpath "C:\MongoDB\Server\3.4\data\db"
 
 ```
 mongod --bind_ip 0.0.0.0 --logpath "C:\MongoDB\Server\3.4\logs\mongodb.log" --logappend --dbpath "C:\MongoDB\Server\3.4\data\db" --port 27017 --serviceName "MongoDB" --serviceDisplayName "MongoDB" --install
-
 ```
 
 这里的意思是绑定 IP 为 0.0.0.0，即任意 IP 均可访问，指定日志路径、数据库路径、端口，指定服务名称，注意这里依然需要把路径替换成你的 MongoDB 安装路径，运行此命令后即可安装服务，运行结果如图 1-36 所示：
@@ -272,7 +260,6 @@ mongod --bind_ip 0.0.0.0 --logpath "C:\MongoDB\Server\3.4\logs\mongodb.log" --lo
 
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-
 ```
 
 随后创建 apt-get 源列表，各个系统版本对应的命令如下：
@@ -281,42 +268,36 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A1
 
 ```
 echo "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-
 ```
 
 * Ubuntu 14.04
 
 ```
 echo "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-
 ```
 
 * Ubuntu 16.04
 
 ```
 echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-
 ```
 
 随后更新 apt-get 源：
 
 ```
 sudo apt-get update
-
 ```
 
 之后安装 MongoDB 即可：
 
 ```
 sudo apt-get install -y mongodb-org
-
 ```
 
 安装完成之后运行 MongoDB，命令如下：
 
 ```
 mongod --port 27017 --dbpath /data/db
-
 ```
 
 运行命令之后 MongoDB 就在 27017 端口上运行了，数据文件会保存在 /data/db 路径下。
@@ -327,18 +308,15 @@ mongod --port 27017 --dbpath /data/db
 
 ```
 mongo --port 27017
-
 ```
 
 现在我们就已经进入到 MongoDB 的命令行交互模式下了，在此模式下运行如下命令：
 
 ```
->
- use admin
+>use admin
 switched to db admin
 
->
- db.createUser({user: 'admin', pwd: 'admin123', roles: [{role: 'root', db: 'admin'}]})
+>db.createUser({user: 'admin', pwd: 'admin123', roles: [{role: 'root', db: 'admin'}]})
 Successfully added user: {
         "user" : "admin",
         "roles" : [
@@ -348,7 +326,6 @@ Successfully added user: {
                 }
         ]
 }
-
 ```
 
 这样我们就创建了一个用户名为 admin，密码为 admin123 的用户，赋予最高权限。
@@ -359,7 +336,6 @@ Successfully added user: {
 
 ```
 sudo vi /etc/mongod.conf
-
 ```
 
 修改 net 部分为：
@@ -368,7 +344,6 @@ sudo vi /etc/mongod.conf
 net:
   port: 27017
   bindIp: 0.0.0.0
-
 ```
 
 这样配置后 MongoDB 可被远程访问。
@@ -378,14 +353,12 @@ net:
 ```
 security:
  authorization: enabled
-
 ```
 
 配置完成之后我们需要重新启动 MongoDB 服务，命令如下：
 
 ```
 sudo service mongod restart
-
 ```
 
 这样远程连接和权限认证就配置完成了。
@@ -396,7 +369,6 @@ sudo service mongod restart
 
 ```
 sudo vi /etc/yum.repos.d/mongodb-org.repo
-
 ```
 
 修改为如下内容保存：
@@ -408,21 +380,18 @@ baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
-
 ```
 
 然后执行 yum 命令安装：
 
 ```
 sudo yum install mongodb-org
-
 ```
 
 启动 MongoDB 服务：
 
 ```
 sudo systemctl start mongod
-
 ```
 
 停止和重新加载 MongoDB 服务：
@@ -430,7 +399,6 @@ sudo systemctl start mongod
 ```
 sudo systemctl stop mongod
 sudo systemctl reload mongod
-
 ```
 
 有关远程连接和认证配置可以参考上文，方式是相同的。
@@ -443,7 +411,6 @@ sudo systemctl reload mongod
 
 ```
 brew install mongodb
-
 ```
 
 然后创建一个新文件夹 /data/db，用于存放 MongoDB 数据。
@@ -453,7 +420,6 @@ brew install mongodb
 ```
 brew services start mongodb
 sudo mongod
-
 ```
 
 这样就启动了 MongoDB 服务。
@@ -463,7 +429,6 @@ sudo mongod
 ```
 brew services stop mongodb
 brew services restart mongodb
-
 ```
 
 ### 5. 可视化工具 {#5-可视化工具}
@@ -471,11 +436,4 @@ brew services restart mongodb
 RoboMongo/Robo 3T，官方网站：[https://robomongo.org/](https://robomongo.org/)，下载链接：[https://robomongo.org/download](https://robomongo.org/download)。
 
 Studio 3T，官方网站：[https://studio3t.com](https://studio3t.com/)，下载链接：[https://studio3t.com/download/](https://studio3t.com/download/)。
-
-
-
-
-
-  
-
 
