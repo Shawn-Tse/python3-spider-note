@@ -11,7 +11,7 @@ RedisDump是一个用于Redis数据导入导出的工具，是基于Ruby实现�
 
 官网:[http://www.ruby-lang.org/zh\_cn/documentation/installation](http://www.ruby-lang.org/zh_cn/documentation/installation)
 
-windows-下载地址:https://rubyinstaller.org/downloads/
+windows-下载地址:[https://rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/)
 
-
+![](/assets/1.5.4-1.png)msys2:http://repo.msys2.org/distrib/x86\_64/msys2-x86\_64-20180531.exe
 
