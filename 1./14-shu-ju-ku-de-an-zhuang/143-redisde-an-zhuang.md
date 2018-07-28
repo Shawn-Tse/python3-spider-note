@@ -33,7 +33,6 @@ Redis 在 Windows 下可以直接到 GitHub 的发行版本里面下载，[https
 
 ```
 sudo apt-get -y install redis-server
-
 ```
 
 运行如上命令即可完成 Redis 的安装，然后输入 redis-cli 即可进入 Redis 命令行模式。
@@ -48,7 +47,6 @@ OK
 >
  get 'name'
 "Germey"
-
 ```
 
 这样就证明 Redis 成功安装了，但是现在 Redis 还是无法远程连接的，依然需要修改配置文件，配置文件路径为 /etc/redis/redis.conf。
@@ -57,14 +55,12 @@ OK
 
 ```
 bind 127.0.0.1
-
 ```
 
 另外推荐给 Redis 设置密码，取消注释这一行：
 
 ```
 requirepass foobared
-
 ```
 
 foobared 即当前密码，可以自行修改。
@@ -73,7 +69,6 @@ foobared 即当前密码，可以自行修改。
 
 ```
 sudo /etc/init.d/redis-server restart
-
 ```
 
 现在就可以使用密码远程连接 Redis 了。
@@ -83,7 +78,6 @@ sudo /etc/init.d/redis-server restart
 ```
 sudo /etc/init.d/redis-server stop
 sudo /etc/init.d/redis-server start
-
 ```
 
 #### CentOS、RedHat {#centos、redhat}
@@ -93,21 +87,18 @@ sudo /etc/init.d/redis-server start
 ```
 sudo yum install epel-release
 sudo yum update
-
 ```
 
 然后安装 Redis 数据库：
 
 ```
 sudo yum -y install redis
-
 ```
 
 安装好之后启动 Redis 服务：
 
 ```
 sudo systemctl start redis
-
 ```
 
 同样可以使用 redis-cli 进入 Redis 命令行模式操作。
@@ -118,14 +109,12 @@ sudo systemctl start redis
 
 ```
 bind 127.0.0.1
-
 ```
 
 另外推荐给 Redis 设置密码，取消注释这一行：
 
 ```
 requirepass foobared
-
 ```
 
 foobared 即当前密码，可以自行修改。
@@ -134,7 +123,6 @@ foobared 即当前密码，可以自行修改。
 
 ```
 sudo systemctl restart redis
-
 ```
 
 这样就可以远程连接 Redis 了。
@@ -145,7 +133,6 @@ sudo systemctl restart redis
 
 ```
 brew install redis
-
 ```
 
 启动 Redis 服务：
@@ -153,7 +140,6 @@ brew install redis
 ```
 brew services start redis
 redis-server /usr/local/etc/redis.conf
-
 ```
 
 这样就启动了 Redis 服务。
@@ -167,8 +153,13 @@ Mac 下 Redis 的配置文件路径是 /usr/local/etc/redis.conf，可以通过�
 ```
 brew services stop redis
 brew services restart redis
-
 ```
 
 另外在 Mac 下也可以安装 Redis Desktop Manager 可视化管理工具来管理 Redis。
+
+### 5.额外
+
+[redis学习地址](https://xintiaohuiyi.gitbook.io/flask-note/7redisjian-zhi-dui-shu-ju-ku)
+
+
 
