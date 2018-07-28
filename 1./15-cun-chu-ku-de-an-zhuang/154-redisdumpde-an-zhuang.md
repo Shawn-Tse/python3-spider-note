@@ -13,5 +13,19 @@ RedisDump是一个用于Redis数据导入导出的工具，是基于Ruby实现�
 
 windows-下载地址:[https://rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/)
 
-![](/assets/1.5.4-1.png)msys2:http://repo.msys2.org/distrib/x86\_64/msys2-x86\_64-20180531.exe
+![](/assets/1.5.4-1.png)msys2:[http://repo.msys2.org/distrib/x86\_64/msys2-x86\_64-20180531.exe](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20180531.exe)
+
+### 3.Gem安装
+
+打开Start Command Prompt with Ruby
+
+![](/assets/15.4-4.png)
+
+利用gem命令安装
+
+```
+gem install redis-dump
+```
+
+
 
