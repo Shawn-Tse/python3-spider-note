@@ -1,0 +1,4 @@
+PhantomJS是一个无界面的浏览器.
+
+selenium支持PhantomJS，这样在运行的时候就不会弹出一个浏览器
+
