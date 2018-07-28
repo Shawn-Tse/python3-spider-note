@@ -1,6 +1,6 @@
 # Summary
 
-* [介绍](README.md)
+* [介绍](README.md)\[!\[Travis\]\(https://img.shields.io/badge/CSDN-阿钟-brightgreen.svg\)\]\(http://blog.csdn.net/a\_zhon\)
 * [1.开发环境配置](1./1kai-fa-huan-jing-pei-zhi.md)
   * [1.1 python3的安装](1./1.1-python3.md)
     * [1.1.1 windows下的安装](1./1.1.1-windows.md)
