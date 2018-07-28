@@ -27,5 +27,36 @@ windows-下载地址:[https://rubyinstaller.org/downloads/](https://rubyinstalle
 gem install redis-dump
 ```
 
+### 4.验证安装
+
+安装成功后就可以执行如下两个命令：
+
+```
+redis-dump
+redis-load
+```
+
+使用redis-dump导出数据
+
+导出指令如下：
+
+```
+redis-dump -u :mypassword@localhost:6379 -d database_name >test.json
+```
+
+-u 后边跟redis数据库的信息，如果没有密码可以不写
+
+```
+redis-dump -u localhost:6379 -d database_name  >test.json
+```
+
+如果直接导出本机端口为6379的可以把 -u 的部分给省去
+
+```
+redis-dump >test.json
+```
+
+-d 指定导出哪个数据库的数据，如果不写则导出所有的，一定要注意数据库名字（这里是 database\_name ）前后必须要加空格。
+
 
 
