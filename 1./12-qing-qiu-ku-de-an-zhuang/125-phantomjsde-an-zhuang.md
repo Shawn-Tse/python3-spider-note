@@ -15,5 +15,18 @@ selenium支持PhantomJS，这样在运行的时候就不会弹出一个浏览器
 
 ### 3.验证安装
 
-在命令行下输入PhantomJS命令进行验证有类似结果输出就代表配置环境成功![](/assets/1.2.4-2.png)
+在命令行下输入PhantomJS命令进行验证有类似结果输出就代表配置环境成功
+
+![](/assets/1.2.5-2.png)
+
+然后在程序中测试
+
+```
+from selenium import webdriver
+browser = webdriver.PhantomJS()
+browser.get('https://www.baidu.com')
+print(browser.current_url)
+```
+
+
 

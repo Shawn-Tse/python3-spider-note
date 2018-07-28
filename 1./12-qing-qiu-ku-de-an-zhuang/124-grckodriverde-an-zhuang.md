@@ -52,5 +52,5 @@ from selenium import webdriver
 browser = webdriver.Firefox()
 ```
 
-如果有chrome浏览器自动打开，就代表配置成功
+如果有Firefox浏览器自动打开，就代表配置成功
 
