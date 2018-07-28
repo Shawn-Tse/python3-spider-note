@@ -24,7 +24,7 @@
     * [1.4.3 Redis的安装](1./14-shu-ju-ku-de-an-zhuang/143-redisde-an-zhuang.md)
   * [1.5 存储库的安装](1./15-cun-chu-ku-de-an-zhuang.md)
     * [1.5.1 PyMySQL的安装](1./15-cun-chu-ku-de-an-zhuang/151-pymysqlde-an-zhuang.md)
-    * 1.5.2 PyMongo的安装
+    * [1.5.2 PyMongo的安装](1./15-cun-chu-ku-de-an-zhuang/152-pymongode-an-zhuang.md)
     * 1.5.3 redis-py的安装
     * 1.5.4 RedisDump的安装
   * [1.6 Web库的安装](1./16-webku-de-an-zhuang.md)
