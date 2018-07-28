@@ -181,13 +181,10 @@
   * 13.13 Scrapy爬取新浪微博
 
 * 14.分布式爬虫
-
-  14.1 分布式爬虫原理
-
-  14.2 Scrapy-Redis源码解析
-  14.3 Scrapy分布式实现
-  14.4 Bloom Filter的对接
-
+  * 14.1 分布式爬虫原理
+  * 14.2 Scrapy-Redis源码解析
+  * 14.3 Scrapy分布式实现
+  * 14.4 Bloom Filter的对接
 * 15.分布式爬虫的部署
 
   * 15.1 Scrapyd分布式部署
@@ -195,8 +192,6 @@
   * 15.3 Scrapyd对接Docker
   * 15.4 Scrapyd批量部署
   * 15.5 Gerapy分布式管理
-
-
 
 
 
