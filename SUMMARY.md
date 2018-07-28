@@ -121,12 +121,11 @@
 
     * 5.3.2 Redis存储
 
-## 6.Ajax数据爬取
-
-* 6.1 什么是Ajax
-* 6.2 Ajax分析方法
-* 6.3 Ajax结果提取
-* [6.4 分析Ajax爬取今日头条街拍美图](6ajaxshu-ju-pa-qu/64-fen-xi-ajax-pa-qu-jin-ri-tou-tiao-jie-pai-mei-tu.md)
+* 6.Ajax数据爬取
+  * 6.1 什么是Ajax
+  * 6.2 Ajax分析方法
+  * 6.3 Ajax结果提取
+  * [6.4 分析Ajax爬取今日头条街拍美图](6ajaxshu-ju-pa-qu/64-fen-xi-ajax-pa-qu-jin-ri-tou-tiao-jie-pai-mei-tu.md)
 
 ## 7.动态渲染页面爬取
 
