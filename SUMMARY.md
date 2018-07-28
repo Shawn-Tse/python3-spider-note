@@ -4,8 +4,6 @@
 
 * [介绍](README.md)
 
-* 目录
-
 * [1.开发环境配置](1./1kai-fa-huan-jing-pei-zhi.md)
   * [1.1 python3的安装](1./1.1-python3.md)
     * [1.1.1 windows下的安装](1./1.1.1-windows.md)
