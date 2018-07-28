@@ -190,7 +190,6 @@ print(tesserocr.image_to_text(image))
 
 ```
 Python3WebSpider
-
 ```
 
 另外我们还可以直接调用 file\_to\_text\(\) 方法，也可以达到同样的效果：
@@ -198,7 +197,6 @@ Python3WebSpider
 ```
 import tesserocr
 print(tesserocr.file_to_text("D:\image.png"))
-
 ```
 
 运行结果：
@@ -207,5 +205,5 @@ print(tesserocr.file_to_text("D:\image.png"))
 Python3WebSpider
 ```
 
-
+如果成功输出结果，则证明Tesseract和Tesserocr都已经安装成功
 
