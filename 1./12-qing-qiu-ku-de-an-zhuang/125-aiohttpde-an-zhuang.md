@@ -10,5 +10,11 @@
 pip install requests
 ```
 
+另外官方还推荐安装如下两个库，一个是字符编码检测库 cchardet，另一个是加速 DNS 解析库 aiodns，安装命令如下：
+
+```
+pip3 install cchardet aiodns
+```
+
 
 
