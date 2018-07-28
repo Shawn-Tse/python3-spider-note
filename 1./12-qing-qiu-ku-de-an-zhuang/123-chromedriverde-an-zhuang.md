@@ -50,5 +50,5 @@ from selenium import webdriver
 browser = webdriver.Chrome()
 ```
 
-
+如果有chrome浏览器自动打开，就代表配置成功
 
