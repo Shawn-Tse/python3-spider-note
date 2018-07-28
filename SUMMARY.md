@@ -122,19 +122,19 @@
     * 5.3.2 Redis存储
 
 * 6.Ajax数据爬取
+
   * 6.1 什么是Ajax
   * 6.2 Ajax分析方法
   * 6.3 Ajax结果提取
   * [6.4 分析Ajax爬取今日头条街拍美图](6ajaxshu-ju-pa-qu/64-fen-xi-ajax-pa-qu-jin-ri-tou-tiao-jie-pai-mei-tu.md)
 
-## 7.动态渲染页面爬取
-
+* 7.动态渲染页面爬取
 * 7.1 Selenium的使用
 * [7.2 Splash的使用](7dong-tai-xuan-ran-ye-mian-pa-qu/72-splashde-shi-yong.md)
 * [7.3 Splash负载均衡配置](7dong-tai-xuan-ran-ye-mian-pa-qu/73-splashfu-zai-jun-heng-pei-zhi.md)
 * [7.4 使用selenium爬取淘宝商品](7dong-tai-xuan-ran-ye-mian-pa-qu/74-shi-yong-selenium-pa-qu-tao-bao-shang-pin.md)
 
-## 8.验证码的识别
+8.验证码的识别
 
 * [8.1 图形验证码的识别](8yan-zheng-ma-de-shi-bie/81-tu-xing-yan-zheng-ma-de-shi-bie.md)
 * [8.2 极验滑动验证码的识别](8yan-zheng-ma-de-shi-bie/82-ji-yan-hua-dong-yan-zheng-ma-de-shi-bie.md)
