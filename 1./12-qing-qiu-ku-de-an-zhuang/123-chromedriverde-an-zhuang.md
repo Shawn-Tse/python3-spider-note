@@ -16,7 +16,7 @@ selenium对chrome浏览器操作，需要进行以下配置
 
 ### 4.环境变量配置
 
-下载完成后将ChromeDriver的可执行文件配置到环境变量中
+下载完成后将ChromeDriver可执行文件配置到环境变量中
 
 在windows平台下，直接把可执行文件拖入python的Scripts目录下，这样就配置到环境变量中了
 
