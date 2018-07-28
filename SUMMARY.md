@@ -14,7 +14,7 @@
     * [1.2.5 PhantomJS的安装](1./12-qing-qiu-ku-de-an-zhuang/125-phantomjsde-an-zhuang.md)
     * [1.2.6 aiohttp的安装](1./12-qing-qiu-ku-de-an-zhuang/125-aiohttpde-an-zhuang.md)
   * [1.3 解析库的安装](1./1.3.md)
-    * 1.3.1 lxml的安装
+    * [1.3.1 lxml的安装](1./1.3/131-lxmlde-an-zhuang.md)
     * 1.3.2 Beautiful Soup的安装
     * 1.3.3 pyquery的安装
     * 1.3.4 tesserocr的安装
