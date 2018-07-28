@@ -169,5 +169,20 @@ Python3WebSpider
 * 需要将Tesseract-OCR目录配置到环境变量中
 * 需要将Tesseract-OCR目录下的tessdata目录配置到环境变量中![](/assets/1.3.4-2.png)
 
+tesseract 命令参数讲解:
 
+第一个参数为图片名称，第二个参数 result 为结果保存的目标文件名称，-l 指定使用的语言包，在此使用 eng 英文，然后再用 type命令将结果输出。
+
+然后利用python代码进行测试，需要借助Tesserocr库，测试代码如下:
+
+```
+import tesserocr
+from PIL import Image
+image = Image.open("D:/image.png")
+print(tesserocr.image_to_text(image))
+```
+
+如果报错，错误方式如下:![](/assets/1.3.4-3.png)需要将Tesseract-OCR目录下的tessdata目录拷贝到python36目录下
+
+这时重新运行就会成功![](/assets/1.3.4-4.png)
 
