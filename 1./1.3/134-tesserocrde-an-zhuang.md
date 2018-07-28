@@ -42,7 +42,6 @@ pip install tesserocr-2.2.2-cp36-cp36m-win_amd64.whl
 
 ```
 sudo apt-get install -y tesseract-ocr libtesseract-dev libleptonica-dev
-
 ```
 
 #### CentOS、RedHat {#centos、redhat}
@@ -51,7 +50,6 @@ sudo apt-get install -y tesseract-ocr libtesseract-dev libleptonica-dev
 
 ```
 yum install -y tesseract
-
 ```
 
 不同发行版本运行如上命令即可完成 Tesseract 的安装。
@@ -62,7 +60,6 @@ yum install -y tesseract
 
 ```
 tesseract --list-langs
-
 ```
 
 运行结果示例：
@@ -72,7 +69,6 @@ List of available languages (3):
 eng
 osd
 equ
-
 ```
 
 结果显示其只支持几种语言，如果我们想要安装多国语言还需要安装语言包，官方叫做 tessdata。
@@ -86,7 +82,6 @@ tessdata 的下载链接为：[https://github.com/tesseract-ocr/tessdata](https:
 ```
 git clone https://github.com/tesseract-ocr/tessdata.git
 sudo mv tessdata/* /usr/share/tesseract-ocr/tessdata
-
 ```
 
 #### CentOS、RedHat {#centos、redhat}
@@ -94,7 +89,6 @@ sudo mv tessdata/* /usr/share/tesseract-ocr/tessdata
 ```
 git clone https://github.com/tesseract-ocr/tessdata.git
 sudo mv tessdata/* /usr/share/tesseract/tessdata
-
 ```
 
 这样就可以将下载下来的语言包全部安装了。
@@ -103,7 +97,6 @@ sudo mv tessdata/* /usr/share/tesseract/tessdata
 
 ```
 tesseract --list-langs
-
 ```
 
 结果如下：
@@ -127,7 +120,6 @@ ces
 chi_sim
 chi_tra
 ...
-
 ```
 
 即可发现其列出的语言就多了非常多，比如 chi\_sim 就代表简体中文，这就证明语言包安装成功了。
@@ -136,7 +128,6 @@ chi_tra
 
 ```
 pip3 install tesserocr pillow
-
 ```
 
 ### 4. Mac下的安装 {#5-mac下的安装}
@@ -146,15 +137,32 @@ Mac 下首先使用 Homebrew 安装 Imagemagick 和 Tesseract 库：
 ```
 brew install imagemagick 
 brew install tesseract --all-languages
-
 ```
 
 接下来再安装 Tesserocr 即可：
 
 ```
 pip3 install tesserocr pillow
-
 ```
 
 这样便完成了 Tesserocr 的安装。
+
+### 5.验证安装
+
+分别测试Tesseract 和 Tesserocr
+
+[测试图片](https://raw.githubusercontent.com/Python3WebSpider/TestTess/master/image.png)：![](/assets/1.2.5.-8.png)用 Tesseract 命令行测试，命令如下：
+
+```
+tesseract image.png result -l eng && type result.txt
+```
+
+运行结果:
+
+```
+Tesseract Open Source OCR Engine v3.05.01 with Leptonica
+Python3WebSpider
+```
+
+
 
