@@ -9,5 +9,9 @@
 pip install selenium
 ```
 
+### 3.提示
+
+由于需要用浏览器来配合selenium使用，需要进行一些配置，才可以使用
+
 
 
