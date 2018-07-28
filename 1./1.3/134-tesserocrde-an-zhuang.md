@@ -17,7 +17,7 @@
 pip3 install tesserocr pillow
 ```
 
-如果报错
+如果tesserocr安装报错
 
 需要使用whl安装，并且需要安装Microsoft Visual C++ 14.0.exe
 
