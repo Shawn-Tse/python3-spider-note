@@ -28,5 +28,5 @@ browser.get('https://www.baidu.com')
 print(browser.current_url)
 ```
 
-
+运行后会发现没有浏览器打开，但实际上phantomjs已经运行起来了![](/assets/1.2.5.-3.png)这里访问了百度，如果将当前url打印出来了就代表PhantomJS配置成功了
 
