@@ -79,7 +79,7 @@ ridk install
 
 安装完后，重新安装redis-dump
 
-需要安装证书,可以在这里下载:https://www.digicert.com/digicert-root-certificates.htm
+需要安装证书,可以在这里下载:[https://www.digicert.com/digicert-root-certificates.htm](https://www.digicert.com/digicert-root-certificates.htm)
 
 ### 4.验证安装
 
@@ -110,5 +110,15 @@ redis-dump -u localhost:6379 -d database_name  >test.json
 redis-dump >test.json
 ```
 
--d 指定导出哪个数据库的数据，如果不写则导出所有的，一定要注意数据库名字（这里是 database\_name ）前后必须要加空格。
+-d 指定导出哪个数据库的数据，如果不写则导出所有的，一定要注意数据库名字（这里是 database\_name ）前后必须要加空格。![](/assets/1.5.4-8.png)如果导出数据时，出现以上错误，应该如下解决
+
+    首先打开dump.rb文件进行编辑，这里推荐使用notepad记事本
+    如下:
+    C:\Ruby25-x64\lib\ruby\gems\2.5.0\gems\redis-dump-0.4.0\lib\redis\dump.rb
+
+    然后在文本中的第32行，用#进行注释
+    如下:
+    #        `ps -o rss= -p #{Process.pid}`.to_i # in kb
+
+
 
