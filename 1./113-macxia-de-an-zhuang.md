@@ -36,7 +36,5 @@ Anaconda 同样支持 Mac，Anaconda 的官方下载链接为：[https://www.con
 
 打开终端，在命令行测试 Python3 和 Pip3 是否成功安装
 
-如出现上面的提示，则证明 Python3 和 Pip3 安装成功。
-
-
+和Windows测试一样
 
