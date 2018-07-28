@@ -164,5 +164,10 @@ Tesseract Open Source OCR Engine v3.05.01 with Leptonica
 Python3WebSpider
 ```
 
+需要注意:
+
+* 需要将Tesseract-OCR目录配置到环境变量中
+* 需要将Tesseract-OCR目录下的tessdata目录配置到环境变量中![](/assets/1.3.4-2.png)
+
 
 
