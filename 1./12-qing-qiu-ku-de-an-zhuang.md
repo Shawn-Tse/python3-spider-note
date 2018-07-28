@@ -6,15 +6,8 @@ PyPI:[https://pypi.org/](https://pypi.org/)
 
 驱动下载
 
-```
-官方网站：
-https://sites.google.com/a/chromium.org/chromedriver
-
-官网下载地址:
-https://www.seleniumhq.org/download/
-
-
-```
+* 官方网站：[https://sites.google.com/a/chromium.org/chromedriver](https://sites.google.com/a/chromium.org/chromedriver)
+* 官网下载地址:[https://www.seleniumhq.org/download/](https://www.seleniumhq.org/download/)
 
 ### 2.pip安装
 
