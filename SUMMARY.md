@@ -4,15 +4,14 @@
 
 * [介绍](README.md)
 
-## 微信采集
-
-* [微信公众号爬虫基本原理](wei-xin-cai-ji/wei-xin-gong-zhong-hao-pa-chong-ji-ben-yuan-li.md)
-* [使用requests实现一个简单网页爬虫](wei-xin-cai-ji/shi-yong-requests-shi-xian-yi-ge-jian-dan-wang-ye-pa-chong.md)
-* [使用fiddler抓包分析公众号请求过程](wei-xin-cai-ji/shi-yong-fiddler-zhua-bao-fen-xi-gong-zhong-hao-qing-qiu-guo-cheng.md)
-* [抓取微信公众号第一篇文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-di-yi-pian-wen-zhang.md)
-* [抓取微信公众号所有历史文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-suo-you-li-shi-wen-zhang.md)
-* [将爬取的文章存储到MongoDB](wei-xin-cai-ji/jiang-pa-qu-de-wen-zhang-cun-chu-dao-mongodb.md)
-* [获取文章阅读数、点赞数、评论数、赞赏数](wei-xin-cai-ji/huo-qu-wen-zhang-yue-du-shu-3001-dian-zan-shu-3001-ping-lun-shu-3001-zan-shang-shu.md)
+* 微信采集
+  * [微信公众号爬虫基本原理](wei-xin-cai-ji/wei-xin-gong-zhong-hao-pa-chong-ji-ben-yuan-li.md)
+  * [使用requests实现一个简单网页爬虫](wei-xin-cai-ji/shi-yong-requests-shi-xian-yi-ge-jian-dan-wang-ye-pa-chong.md)
+  * [使用fiddler抓包分析公众号请求过程](wei-xin-cai-ji/shi-yong-fiddler-zhua-bao-fen-xi-gong-zhong-hao-qing-qiu-guo-cheng.md)
+  * [抓取微信公众号第一篇文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-di-yi-pian-wen-zhang.md)
+  * [抓取微信公众号所有历史文章](wei-xin-cai-ji/zhua-qu-wei-xin-gong-zhong-hao-suo-you-li-shi-wen-zhang.md)
+  * [将爬取的文章存储到MongoDB](wei-xin-cai-ji/jiang-pa-qu-de-wen-zhang-cun-chu-dao-mongodb.md)
+  * [获取文章阅读数、点赞数、评论数、赞赏数](wei-xin-cai-ji/huo-qu-wen-zhang-yue-du-shu-3001-dian-zan-shu-3001-ping-lun-shu-3001-zan-shang-shu.md)
 
 ## 目录
 
@@ -139,6 +138,7 @@
   * [7.4 使用selenium爬取淘宝商品](7dong-tai-xuan-ran-ye-mian-pa-qu/74-shi-yong-selenium-pa-qu-tao-bao-shang-pin.md)
 
 * 8.验证码的识别
+
   * [8.1 图形验证码的识别](8yan-zheng-ma-de-shi-bie/81-tu-xing-yan-zheng-ma-de-shi-bie.md)
   * [8.2 极验滑动验证码的识别](8yan-zheng-ma-de-shi-bie/82-ji-yan-hua-dong-yan-zheng-ma-de-shi-bie.md)
   * [8.3 点触验证码的识别](8yan-zheng-ma-de-shi-bie/83-dian-hong-yan-zheng-ma-de-shi-bie.md)
