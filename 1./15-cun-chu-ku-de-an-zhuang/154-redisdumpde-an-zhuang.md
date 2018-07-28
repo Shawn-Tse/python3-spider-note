@@ -19,7 +19,18 @@ windows-下载地址:[https://rubyinstaller.org/downloads/](https://rubyinstalle
 
 打开Start Command Prompt with Ruby
 
-![](/assets/15.4-4.png)
+![](/assets/15.4-4.png)![](/assets/1.5.4-6.png)如果出现上面类似情况，需要更换源
+
+```
+$ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+或者 添加淘宝镜像：命令提示符输入：gem source -a https://ruby.taobao.org/ --remove https://rubygems.org/
+$ gem sources -l
+*** CURRENT SOURCES ***
+
+https://gems.ruby-china.org
+```
+
+
 
 利用gem命令安装
 
@@ -57,6 +68,4 @@ redis-dump >test.json
 ```
 
 -d 指定导出哪个数据库的数据，如果不写则导出所有的，一定要注意数据库名字（这里是 database\_name ）前后必须要加空格。
-
-
 
