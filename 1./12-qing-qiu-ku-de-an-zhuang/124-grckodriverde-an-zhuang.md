@@ -4,7 +4,7 @@ selenium对firefox浏览器操作，需要进行以下配置
 
 * 下载地址：[https://chromedriver.storage.googleapis.com/index.html](https://github.com/mozilla/geckodriver/releases)
 
-### 2.下载ChromeDriver![](/assets/1.2.4-1.png)
+### 2.下载GrckoDriver![](/assets/1.2.4-1.png)
 
 ### 3.环境变量配置
 
