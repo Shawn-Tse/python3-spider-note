@@ -6,14 +6,10 @@ MongoDB 支持多种平台，包括 Windows、Linux、Mac OS、Solaris 等，在
 
 ### 1. 相关链接 {#1-相关链接}
 
-* 官方网站：
-  [https://www.mongodb.com](https://www.mongodb.com/)
-* 官方文档：
-  [https://docs.mongodb.com](https://docs.mongodb.com/)
-* GitHub：
-  [https://github.com/mongodb](https://github.com/mongodb)
-* 中文教程：
-  [http://www.runoob.com/mongodb/mongodb-tutorial.html](http://www.runoob.com/mongodb/mongodb-tutorial.html)
+* 官方网站：[https://www.mongodb.com](https://www.mongodb.com/)
+* 官方文档：[https://docs.mongodb.com](https://docs.mongodb.com/)
+* GitHub：[https://github.com/mongodb](https://github.com/mongodb)
+* 中文教程：[http://www.runoob.com/mongodb/mongodb-tutorial.html](http://www.runoob.com/mongodb/mongodb-tutorial.html)
 
 ### 2. Windows下的安装 {#2-windows下的安装}
 

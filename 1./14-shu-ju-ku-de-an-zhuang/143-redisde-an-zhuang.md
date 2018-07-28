@@ -1,19 +1,12 @@
 ### 1. 相关链接 {#1-相关链接}
 
-* 官方网站：
-  [https://redis.io](https://redis.io/)
-* 官方文档：
-  [https://redis.io/documentation](https://redis.io/documentation)
-* 中文官网：
-  [http://www.redis.cn](http://www.redis.cn/)
-* GitHub：
-  [https://github.com/antirez/redis](https://github.com/antirez/redis)
-* 中文教程：
-  [http://www.runoob.com/redis/redis-tutorial.html](http://www.runoob.com/redis/redis-tutorial.html)
-* Redis Desktop Manager：
-  [https://redisdesktop.com](https://redisdesktop.com/)
-* Redis Desktop Manager GitHub：
-  [https://github.com/uglide/RedisDesktopManager](https://github.com/uglide/RedisDesktopManager)
+* 官方网站：[https://redis.io](https://redis.io/)
+* 官方文档：[https://redis.io/documentation](https://redis.io/documentation)
+* 中文官网：[http://www.redis.cn](http://www.redis.cn/)
+* GitHub：[https://github.com/antirez/redis](https://github.com/antirez/redis)
+* 中文教程：[http://www.runoob.com/redis/redis-tutorial.html](http://www.runoob.com/redis/redis-tutorial.html)
+* Redis Desktop Manager：[https://redisdesktop.com](https://redisdesktop.com/)
+* Redis Desktop Manager GitHub：[https://github.com/uglide/RedisDesktopManager](https://github.com/uglide/RedisDesktopManager)
 
 ### 2. Windows下的安装 {#2-windows下的安装}
 
@@ -160,6 +153,4 @@ brew services restart redis
 ### 5.额外
 
 [redis学习地址](https://xintiaohuiyi.gitbook.io/flask-note/7redisjian-zhi-dui-shu-ju-ku)
-
-
 
