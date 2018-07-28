@@ -24,7 +24,7 @@ windows-下载地址:[https://rubyinstaller.org/downloads/](https://rubyinstalle
 ```
 $ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
 或者 
-添加淘宝镜像：gem source -a https://ruby.taobao.org/ --remove https://rubygems.org/
+添加淘宝镜像：gem source -a http://ruby.taobao.org/ --remove https://rubygems.org/
 
 # 查看源
 $ gem sources -l
@@ -38,6 +38,46 @@ https://gems.ruby-china.org
 ```
 gem install redis-dump
 ```
+
+下面是报错：
+
+```
+Temporarily enhancing PATH for MSYS/MINGW...
+Building native extensions. This could take a while...
+ERROR:  Error installing jekyll:
+        ERROR: Failed to build gem native extension.
+
+    current directory: C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+C:/Ruby25-x64/bin/ruby.exe -r ./siteconf20180308-3672-ueo7ea.rb extconf.rb
+creating Makefile
+
+current directory: C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+'make' 不是内部或外部命令，也不是可运行的程序或批处理文件。
+
+current directory: C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+'make' 不是内部或外部命令，也不是可运行的程序或批处理文件。
+
+make failed, exit code 1
+
+Gem files will remain installed in C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/http_p
+arser.rb-0.6.0 for inspection.
+Results logged to C:/Ruby25-x64/lib/ruby/gems/2.5.0/extensions/x64-mingw32/2.5.0
+/http_parser.rb-0.6.0/gem_make.out
+```
+
+如果出现如上类似错误
+
+原来是没有make指令，需要安装
+
+```
+ridk install
+```
+
+![](/assets/1.5.4-7.png)等待安装完毕，期间网速可能会很慢
+
+安装完后，重新安装redis-dump
 
 ### 4.验证安装
 
