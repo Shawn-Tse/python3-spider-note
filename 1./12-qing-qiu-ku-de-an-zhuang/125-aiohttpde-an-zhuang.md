@@ -16,5 +16,13 @@ pip install requests
 pip3 install cchardet aiodns
 ```
 
+### 3.测试安装
+
+```
+python3
+
+>>> import aiohttp
+```
+
 
 
