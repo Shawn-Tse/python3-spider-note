@@ -252,7 +252,41 @@ brew services stop mongodb
 brew services restart mongodb
 ```
 
-### 5. 可视化工具 {#5-可视化工具}
+### 5.使用docker安装 {#5-可视化工具}
+
+1.查找docker中的mongo
+
+```
+sudo docker search mongo
+```
+
+2.拉取镜像
+
+```
+sudo docker pull mongo:3.6
+```
+
+3.查看是否已经下载下来
+
+```
+sudo docker images
+```
+
+4.运行mongo镜像
+
+```
+sudo docker run -p 27917:27017 -e $PWD/db:/data/db -d mongo:3.6
+```
+
+5.查看容器启动情况
+
+```
+sudo docker ps
+```
+
+
+
+### 6. 可视化工具 {#5-可视化工具}
 
 RoboMongo/Robo 3T，官方网站：[https://robomongo.org/](https://robomongo.org/)，下载链接：[https://robomongo.org/download](https://robomongo.org/download)。
 
