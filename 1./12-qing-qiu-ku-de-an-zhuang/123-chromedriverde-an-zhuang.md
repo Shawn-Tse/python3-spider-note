@@ -24,14 +24,12 @@
 
 ```
 sudo mv chromedriver /usr/bin
-
 ```
 
 当然也可以将 ChromeDriver 配置到 $PATH，首先可以将可执行文件放到某一目录，目录可以任意选择，例如将当前可执行文件放在 /usr/local/chromedriver 目录下，接下来可以修改 ~/.profile 文件，命令如下：
 
 ```
 export PATH="$PATH:/usr/local/chromedriver"
-
 ```
 
 保存然后执行：
@@ -39,6 +37,12 @@ export PATH="$PATH:/usr/local/chromedriver"
 ```
 source ~/.profile
 ```
+
+### 5.验证安装
+
+在命令行下输入chrome driver命令进行验证![](/assets/2.1.3-2.png)
+
+
 
 
 
