@@ -132,5 +132,24 @@ redis-dump >test.json
 cat redis.json | redis-load -u :password@localhost
 ```
 
+#### redis-dump命令
+
+```
+    -u, --uri=S                      Redis URI (e.g. redis://hostname[:port])
+    -d, --database=S                 Redis database (e.g. -d 15)
+    -a, --password=S                 Redis password (e.g. -a 'my@pass/word')
+    -s, --sleep=S                    Sleep for S seconds after dumping (for debugging)
+    -c, --count=S                    Chunk size (default: 10000)
+    -f, --filter=S                   Filter selected keys (passed directly to redis' KEYS command)
+    -b, --base64                     Encode key values as base64 (useful for binary values)
+    -O, --without_optimizations      Disable run time optimizations
+    -V, --version                    Display version
+    -D, --debug
+        --nosafe
+
+```
+
+
+
 
 
