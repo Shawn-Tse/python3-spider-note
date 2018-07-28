@@ -1,9 +1,7 @@
 # Summary
 
 * [介绍](README.md)
-
 * [1.开发环境配置](1./1kai-fa-huan-jing-pei-zhi.md)
-
   * [1.1 python3的安装](1./1.1-python3.md)
     * [1.1.1 windows下的安装](1./1.1.1-windows.md)
     * [1.1.2 Linux下的安装](1./1.1.2-linux.md)
@@ -40,7 +38,6 @@
     * 1.8.2 Scrapy的安装
     * 1.8.3 Scrapy-Splash的安装
     * 1.8.4 Scrapy-Splash的安装
-
 * [2.爬虫基础](1./2pa-chong-ji-chu.md)
   * [2.1 HTTP 基本原理](2pa-chong-ji-chu/21-http-ji-ben-yuan-li.md)
     * [2.1.1 URI和URL](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/211-urihe-url.md)
@@ -93,7 +90,7 @@
   * 5.3 非关系数据库存储
     * 5.3.1 MongoDB存储
     * 5.3.2 Redis存储
-* 6.Ajax数据爬取
+* [6.Ajax数据爬取](6ajaxshu-ju-pa-qu.md)
   * 6.1 什么是Ajax
   * 6.2 Ajax分析方法
   * 6.3 Ajax结果提取
@@ -153,6 +150,4 @@
   * 15.3 Scrapyd对接Docker
   * 15.4 Scrapyd批量部署
   * 15.5 Gerapy分布式管理
-
-
 
