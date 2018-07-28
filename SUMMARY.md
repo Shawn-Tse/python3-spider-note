@@ -159,6 +159,7 @@
   * 11.6 Appium+mitmdump爬取京东商品
 
 * 12.pyspider框架的使用
+
   * 12.1 pyspider框架介绍
   * 12.2 pyspider的基本使用
   * 12.3 pyspider用法详解
@@ -179,12 +180,13 @@
   * 13.12 Scrapy对接Docker
   * 13.13 Scrapy爬取新浪微博
 
-* 14. 分布式爬虫
+* 14.分布式爬虫
 
-  * 14.1 分布式爬虫原理
-  * 14.2 Scrapy-Redis源码解析
-  * 14.3 Scrapy分布式实现
-  * 14.4 Bloom Filter的对接
+  14.1 分布式爬虫原理
+
+  14.2 Scrapy-Redis源码解析
+  14.3 Scrapy分布式实现
+  14.4 Bloom Filter的对接
 
 * 15.分布式爬虫的部署
 
@@ -193,6 +195,8 @@
   * 15.3 Scrapyd对接Docker
   * 15.4 Scrapyd批量部署
   * 15.5 Gerapy分布式管理
+
+
 
 
 
