@@ -1,0 +1,2 @@
+selenium对firefox浏览器操作，需要进行以下配置
+
