@@ -26,6 +26,7 @@ $ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
 或者 
 添加淘宝镜像：gem source -a https://ruby.taobao.org/ --remove https://rubygems.org/
 
+# 查看源
 $ gem sources -l
 *** CURRENT SOURCES ***
 
