@@ -1,6 +1,6 @@
 ### 1.相关链接
 
-* chrome地址：[https://chromedriver.storage.googleapis.com/index.html](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+* chromedriver地址：[https://chromedriver.storage.googleapis.com/index.html](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 ### 2.查看Chrome版本
 
