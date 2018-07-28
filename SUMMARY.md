@@ -2,7 +2,7 @@
 
 ## Spider-Note
 
-* [介绍](README.md)
+* [介绍](README.md)\[!\[Travis\]\(https://img.shields.io/badge/CSDN-阿钟-brightgreen.svg\)\]\(http://blog.csdn.net/a\_zhon\)
 
 ## 微信采集
 
@@ -199,4 +199,6 @@
 * 15.3 Scrapyd对接Docker
 * 15.4 Scrapyd批量部署
 * 15.5 Gerapy分布式管理
+
+
 
