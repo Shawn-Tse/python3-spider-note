@@ -5,7 +5,7 @@
   * [1.1 python3的安装](1./1.1-python3.md)
     * [1.1.1 windows下的安装](1./1.1.1-windows.md)
     * [1.1.2 Linux下的安装](1./1.1.2-linux.md)
-    * 1.1.3 Mac下的安装
+    * [1.1.3 Mac下的安装](1./113-macxia-de-an-zhuang.md)
   * [1.2 请求库的安装](1./12-qing-qiu-ku-de-an-zhuang.md)
     * [1.2.1 requests的安装](1./12-qing-qiu-ku-de-an-zhuang/121-requestsde-an-zhuang.md)
     * [1.2.2 selenium的安装](1./12-qing-qiu-ku-de-an-zhuang/122-seleniumde-an-zhuang.md)
@@ -150,6 +150,4 @@
   * 15.3 Scrapyd对接Docker
   * 15.4 Scrapyd批量部署
   * 15.5 Gerapy分布式管理
-
-
 
