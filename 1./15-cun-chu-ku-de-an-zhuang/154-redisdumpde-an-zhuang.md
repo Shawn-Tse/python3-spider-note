@@ -79,6 +79,8 @@ ridk install
 
 安装完后，重新安装redis-dump
 
+需要安装证书,可以在这里下载:https://www.digicert.com/digicert-root-certificates.htm
+
 ### 4.验证安装
 
 安装成功后就可以执行如下两个命令：
