@@ -2,7 +2,7 @@
 
 ## Spider-Note
 
-* [Introduction](README.md)
+* [介绍](README.md)
 
 ## 微信采集
 

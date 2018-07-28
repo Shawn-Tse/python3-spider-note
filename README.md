@@ -1,3 +1,6 @@
-# My Awesome Book
+# spider 笔记
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+学习笔记
+
+基于python3.6
+
