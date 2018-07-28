@@ -93,7 +93,9 @@
     * [3.3 正则表达式](3-ji-ben-ku-de-shi-yong/33-zheng-ze-biao-da-shi.md)
     * 3.4 抓取猫眼电影排行
 
-4.解析库的使用
+* 4.解析库的使用
+
+
 
 * [4.1 使用xpath](4jie-xi-ku-de-shi-yong/41-shi-yong-xpath.md)
 * 4.2 使用Beautiful Soup
