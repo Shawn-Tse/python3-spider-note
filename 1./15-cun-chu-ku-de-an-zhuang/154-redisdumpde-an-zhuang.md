@@ -90,7 +90,7 @@ redis-dump
 redis-load
 ```
 
-使用redis-dump导出数据
+##### 使用redis-dump导出数据
 
 导出指令如下：
 
@@ -119,6 +119,18 @@ redis-dump >test.json
     然后在文本中的第32行，用#进行注释
     如下:
     #        `ps -o rss= -p #{Process.pid}`.to_i # in kb
+
+##### 使用**redis-load还原数据**
+
+导入指令如下:
+
+```
+< test.json redis-load //导入数据 
+
+
+#导入
+cat redis.json | redis-load -u :password@localhost
+```
 
 
 
