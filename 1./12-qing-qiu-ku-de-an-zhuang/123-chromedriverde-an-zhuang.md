@@ -16,7 +16,29 @@
 
 下载完成后将ChromeDriver的可执行文件配置到环境变量中
 
-Windows:
+在windows平台下，直接把可执行文件拖入python的Scripts目录下，这样就配置到环境变量中了
+
+在 Linux、Mac 下，需要将可执行文件配置到环境变量或将文件移动到属于环境变量的目录里。
+
+例如移动文件到 /usr/bin 目录，首先命令行进入其所在路径，然后将其移动到 /usr/bin：
+
+```
+sudo mv chromedriver /usr/bin
+
+```
+
+当然也可以将 ChromeDriver 配置到 $PATH，首先可以将可执行文件放到某一目录，目录可以任意选择，例如将当前可执行文件放在 /usr/local/chromedriver 目录下，接下来可以修改 ~/.profile 文件，命令如下：
+
+```
+export PATH="$PATH:/usr/local/chromedriver"
+
+```
+
+保存然后执行：
+
+```
+source ~/.profile
+```
 
 
 
