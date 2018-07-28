@@ -184,5 +184,28 @@ print(tesserocr.image_to_text(image))
 
 如果报错，错误方式如下:![](/assets/1.3.4-3.png)需要将Tesseract-OCR目录下的tessdata目录拷贝到python36目录下
 
-这时重新运行就会成功![](/assets/1.3.4-4.png)
+这时重新运行就会成功![](/assets/1.3.4-4.png)在这里首先利用 Image 读取了图片文件，然后调用了 tesserocr 的 image\_to\_text\(\) 方法，再将将其识别结果输出。
+
+运行结果：
+
+```
+Python3WebSpider
+
+```
+
+另外我们还可以直接调用 file\_to\_text\(\) 方法，也可以达到同样的效果：
+
+```
+import tesserocr
+print(tesserocr.file_to_text("D:\image.png"))
+
+```
+
+运行结果：
+
+```
+Python3WebSpider
+```
+
+
 
