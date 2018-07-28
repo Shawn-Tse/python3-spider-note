@@ -12,3 +12,11 @@
 
 ![](/assets/1.2.3-1.png)找到对应版本号后，下载对应的安装包:[https://chromedriver.storage.googleapis.com/index.html](https://chromedriver.storage.googleapis.com/index.html)
 
+### 4.环境变量配置
+
+下载完成后将ChromeDriver的可执行文件配置到环境变量中
+
+Windows:
+
+
+
