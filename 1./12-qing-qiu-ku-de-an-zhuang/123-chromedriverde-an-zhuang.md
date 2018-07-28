@@ -40,9 +40,15 @@ source ~/.profile
 
 ### 5.验证安装
 
-在命令行下输入chrome driver命令进行验证![](/assets/2.1.3-2.png)
+在命令行下输入chrome driver命令进行验证![](/assets/2.1.3-2.png)有类似结果输出就代表配置环境成功
 
+然后在程序中测试
 
+```
+from selenium import webdriver
+
+browser = webdriver.Chrome()
+```
 
 
 
