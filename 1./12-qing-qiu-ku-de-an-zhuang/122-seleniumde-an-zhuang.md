@@ -1,7 +1,7 @@
 ### 1.相关链接
 
-* 官方文档：[http://www.python-requests.org](http://www.python-requests.org/)
-* 中文文档：[http://docs.python-requests.org/zh\_CN/latest](http://docs.python-requests.org/zh_CN/latest)
+* 官方文档：[http://selenium-python.readthedocs.io](http://selenium-python.readthedocs.io/)
+* 中文文档：[http://selenium-python-zh.readthedocs.io](http://selenium-python-zh.readthedocs.io/)
 
 ### 2.pip安装
 
