@@ -42,7 +42,7 @@ source ~/.profile
 
 ### 5.验证安装
 
-在命令行下输入chrome driver命令进行验证有类似结果输出就代表配置环境成功![](/assets/1.2.4-2.png)
+在命令行下输入GeckoDriver命令进行验证有类似结果输出就代表配置环境成功![](/assets/1.2.4-2.png)
 
 然后在程序中测试
 
