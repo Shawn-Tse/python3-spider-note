@@ -18,21 +18,18 @@ selenium对firefox浏览器操作，需要进行以下配置
 
 ```
 sudo mv geckodriver /usr/bin
-
 ```
 
 当然也可以将 GeckoDriver 配置到 $PATH，首先可以将可执行文件放到某一目录，目录可以任意选择，例如将当前可执行文件放在 /usr/local/geckodriver 目录下，接下来可以修改 ~/.profile 文件，命令如下：
 
 ```
 vi ~/.profile
-
 ```
 
 添加如下一句配置：
 
 ```
 export PATH="$PATH:/usr/local/geckodriver"
-
 ```
 
 保存然后执行如下命令即可完成配置：
@@ -43,14 +40,14 @@ source ~/.profile
 
 ### 5.验证安装
 
-在命令行下输入chrome driver命令进行验证![](/assets/2.1.3-2.png)有类似结果输出就代表配置环境成功
+在命令行下输入chrome driver命令进行验证有类似结果输出就代表配置环境成功![](/assets/1.2.4-2.png)
 
 然后在程序中测试
 
 ```
 from selenium import webdriver
 
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 ```
 
 如果有chrome浏览器自动打开，就代表配置成功
