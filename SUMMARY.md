@@ -14,7 +14,7 @@
 * [将爬取的文章存储到MongoDB](wei-xin-cai-ji/jiang-pa-qu-de-wen-zhang-cun-chu-dao-mongodb.md)
 * [获取文章阅读数、点赞数、评论数、赞赏数](wei-xin-cai-ji/huo-qu-wen-zhang-yue-du-shu-3001-dian-zan-shu-3001-ping-lun-shu-3001-zan-shang-shu.md)
 
-## 1.开发环境配置
+## 目录
 
 * [1.开发环境配置](1./1kai-fa-huan-jing-pei-zhi.md)
   * [1.1 python3的安装](1./1.1-python3.md)
@@ -53,35 +53,34 @@
     * 1.8.2 Scrapy的安装
     * 1.8.3 Scrapy-Splash的安装
     * 1.8.4 Scrapy-Splash的安装
-
-## 2.爬虫基础
-
-* 2.1 HTTP 基本原理
-  * 2.1.1 URI和URL
-  * 2.1.2 超文本
-  * 2.1.3 HTTP和HTTPS
-  * 2.1.4 HTTP请求过程
-  * 2.1.5 请求
-  * 2.1.6 响应
-* 2.2 网页基础
-  * 2.2.1网页的组成
-  * 2.2.2 网页的结构
-  * 2.2.3 节点树及节点间的关系
-  * 2.2.4 选择器
-* [2.3 爬虫的基本原理](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li.md)
-  * 2.3.1 爬虫概述
-  * 2.3.2 能抓怎样的数据
-  * 2.3.3 javascript渲染的页面
-* 2.4 会话和Cookies
-  * 2.4.1 静态网页和动态网页
-  * 2.4.2 无状态HTTP
-  * 2.4.3 常见误区
-* 2.5 代理的基本原理
-  * 2.5.1 基本原理
-  * 2.5.2 代理的作用
-  * 2.5.3 爬虫代理
-  * 2.5.4 代理分类
-  * 2.5.5 常见代理设置
+* [2.爬虫基础](1./2pa-chong-ji-chu.md)
+  * [2.1 HTTP 基本原理](2pa-chong-ji-chu/21-http-ji-ben-yuan-li.md)
+    * 2.1.1 URI和URL
+    * 2.1.2 超文本
+    * 2.1.3 HTTP和HTTPS
+    * 2.1.4 HTTP请求过程
+    * 2.1.5 请求
+    * 2.1.6 响应
+  * [2.2 网页基础](2pa-chong-ji-chu/22-wang-ye-ji-chu.md)
+    * 2.2.1网页的组成
+    * 2.2.2 网页的结构
+    * 2.2.3 节点树及节点间的关系
+    * 2.2.4 选择器
+  * [2.3 爬虫的基本原理](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li.md)
+    * 2.3.1 爬虫概述
+    * 2.3.2 能抓怎样的数据
+    * 2.3.3 javascript渲染的页面
+  * [2.4 会话和Cookies](2pa-chong-ji-chu/24-hui-hua-he-cookies.md)
+    * 2.4.1 静态网页和动态网页
+    * 2.4.2 无状态HTTP
+    * 2.4.3 常见误区
+  * [2.5 代理的基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li.md)
+    * 2.5.1 基本原理
+    * 2.5.2 代理的作用
+    * 2.5.3 爬虫代理
+    * 2.5.4 代理分类
+    * 2.5.5 常见代理设置
+* 13. 基本库的使用
 
 ## 3. 基本库的使用
 
