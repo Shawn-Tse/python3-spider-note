@@ -24,7 +24,7 @@ windows-下载地址:[https://rubyinstaller.org/downloads/](https://rubyinstalle
 ```
 $ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
 或者 
-添加淘宝镜像：命令提示符输入：gem source -a https://ruby.taobao.org/ --remove https://rubygems.org/
+添加淘宝镜像：gem source -a https://ruby.taobao.org/ --remove https://rubygems.org/
 
 $ gem sources -l
 *** CURRENT SOURCES ***
