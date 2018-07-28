@@ -10,5 +10,15 @@
 pip install pymongo
 ```
 
+### 3.验证安装
 
+```
+python3
+
+>>> import pymongo
+>>> pymongo.version
+'3.7.0'
+```
+
+如果输出类似上面的内容，就代表pymongo安装成功
 
