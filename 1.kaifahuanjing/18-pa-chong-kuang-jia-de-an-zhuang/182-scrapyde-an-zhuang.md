@@ -34,3 +34,5 @@ pip install pyOpenSSL-18.0.0-py2.py3-none-any.whl
 
 下载 Wheel 文件:[http://www.lfd.uci.edu/~gohlke/pythonlibs/\#twisted](#)
 
+如 Python 3.6 版本，Windows 64 位系统，当前最新版本为 Twisted‑17.5.0‑cp36‑cp36m‑win\_amd64.whl
+
