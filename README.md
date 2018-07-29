@@ -28,7 +28,7 @@ pip install -i https://pypi.doubanio.com/simple/ flask
 
 永久换源的方法如下:
 
-linux下，修改 ~/.pip/pip.conf \(没有就创建一个\)， 修改 index-url至tuna，内容如下：
+linux下，修改 ~/.pip/pip.conf \(没有就创建一个\)， 修改 index-url，内容如下：
 
 ```
 [global]

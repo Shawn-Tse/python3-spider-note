@@ -14,5 +14,11 @@ ScrapydClient具有能够将Scrapy代码布署到远程Scrapyd的功能，减少
 pip install scrapyd-client
 ```
 
+### 4.验证安装
+
+```
+scrapyd-deploy -h
+```
+
 
 
