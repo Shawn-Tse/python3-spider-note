@@ -33,9 +33,12 @@ Windows10 64位安装:推荐使用 [Docker for Windows](https://docs.docker.com/
 
 下载地址:[https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/latest](https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/latest)
 
+#### 复制
+
 * 通过InstallDocker.msi安装的，复制到C:\Program Files\Docker\Docker\resources\bin下。
 
 * 通过DockerToolbox.exe安装的，复制到C:\Program Files\Docker Toolbox下。
+
   * 如果是通过DockerToolbox.exe安装的，还需要修改C:\Program Files\Docker Toolbox\start.sh脚本文件内容为：
 
 ```
