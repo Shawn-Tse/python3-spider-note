@@ -15,6 +15,8 @@ Docker 是一种容器技术，它可以将应用和环境等进行打包，形�
 * 中文教程：[http://www.runoob.com/docker/docker-tutorial.html](http://www.runoob.com/docker/docker-tutorial.html)
 * 推荐书籍：[https://yeasy.gitbooks.io/docker\_practice](https://yeasy.gitbooks.io/docker_practice)
 
+### 2.在windows下安装
+
 
 
 
