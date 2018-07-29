@@ -20,5 +20,25 @@ pip install scrapyd-client
 scrapyd-deploy -h
 ```
 
+在windows下会报错，报找不到变量的错误
 
+需要进行如下配置
+
+首先在E:\Python36\Scripts目录下创建scrapy.bat和scrapyd-deploy.bat两个文件，然后分别向两个文件写入内容:
+
+scrapy.bat
+
+```
+@echo off
+E:\Python36\python E:\Python36\Scripts\scrapy %*
+```
+
+scrapyd-deploy.bat
+
+```
+@echo off
+E:\Python36\python E:\Python36\Scripts\scrapyd-deploy %*
+```
+
+这样就能成功运行了
 
