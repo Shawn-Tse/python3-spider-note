@@ -41,7 +41,7 @@ if __name__ == "__main__":
     tornado.ioloop.IOLoop.current().start()
 ```
 
-运行代码后，可以在本机的5000端口开启web服务，控制台输出如下:
+运行代码后，可以在本机的8888端口开启web服务，控制台输出如下:
 
 ```
 WARNING:tornado.access:404 GET /favicon.ico (127.0.0.1) 1.01ms
