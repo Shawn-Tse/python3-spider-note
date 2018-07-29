@@ -18,3 +18,9 @@ Appium是移动端的自动化测试工具，可以利用它驱动Android等设�
 
 安装 Appium 有两种方式，一种是直接下载安装包 Appium Desktop 来安装，另外一种是通过 Node.js 来安装.
 
+### Appium Desktop
+
+Appium Desktop支持全平台的安装，下载地址:https://github.com/appium/appium-desktop/releases
+
+
+
