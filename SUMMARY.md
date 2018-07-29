@@ -43,7 +43,7 @@
     * [1.9.1 Docker的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/191-dockerde-an-zhuang.md)
     * [1.9.2 Scrapyd的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/192-scrapydde-an-zhuang.md)
     * [1.9.3 ScrapydClient的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/193-scrapydclientde-an-zhuang.md)
-    * 1.9.4 ScrapydAPI的安装
+    * [1.9.4 ScrapydAPI的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/194-scrapydapide-an-zhuang.md)
     * 1.9.5 Scrapyrt的安装
     * 1.9.6-Gerapy的安装
 * [2.爬虫基础](1./2pa-chong-ji-chu.md)
