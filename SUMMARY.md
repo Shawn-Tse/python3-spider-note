@@ -29,7 +29,7 @@
     * [1.5.4 RedisDump的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/154-redisdumpde-an-zhuang.md)
   * [1.6 Web库的安装](1.kaifahuanjing/16-webku-de-an-zhuang.md)
     * [1.6.1 Flask的安装](1.kaifahuanjing/16-webku-de-an-zhuang/161-flaskde-an-zhuang.md)
-    * 1.6.2 Tornado的安装
+    * [1.6.2 Tornado的安装](1.kaifahuanjing/16-webku-de-an-zhuang/162-tornadode-an-zhuang.md)
   * 1.7 App爬取相关库的安装
     * 1.7.1 Charles的安装
     * 1.7.2 mitmproxy的安装
