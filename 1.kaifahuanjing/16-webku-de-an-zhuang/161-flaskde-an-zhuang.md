@@ -36,10 +36,11 @@ def hello_world():
 if __name__ == "__main__":
     # app.run()flask中的一个测试应用服务器
     # 如果设置参数host为0.0.0.0，外部机器也可以访问本机的网站
-    app.run(host='0.0.0.0')
+    # 没有设置，只能本机访问
+    # app.run(host='0.0.0.0')
+    app.run()
     # 改变端口
     # app.run(port=port)
-
 ```
 
 
