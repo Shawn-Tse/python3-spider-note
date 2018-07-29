@@ -11,7 +11,7 @@ ScrapySplash 的安装分为两部分，一个是是 Splash 服务的安装，�
 
 ### 2. 安装Splash {#2-安装splash}
 
-ScrapySplash 会使用 Splash 的 HTTP API 进行页面渲染，所以我们需要安装 Splash 来提供渲染服务，安装是通过 Docker 安装，在这之前请确保已经正确安装好了 Docker。
+ScrapySplash 会使用 Splash 的 HTTP API 进行页面渲染，所以我们需要安装 Splash 来提供渲染服务，安装是通过[ Docker 安装](https://yeasy.gitbooks.io/docker_practice/install/ubuntu.html)，在这之前请确保已经正确安装好了 Docker。
 
 安装命令如下：
 
@@ -37,9 +37,7 @@ QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 2017-07-03 08:53:29.316564 [-] Web UI: enabled, Lua: enabled (sandbox: enabled)
 2017-07-03 08:53:29.317614 [-] Site starting on 8050
 2017-07-03 08:53:29.317801 [-] Starting factory 
-<
-twisted.web.server.Site object at 0x7ffaa4a98cf8
->
+<twisted.web.server.Site object at 0x7ffaa4a98cf8>
 ```
 
 这样就证明 Splash 已经在 8050 端口上运行了。
