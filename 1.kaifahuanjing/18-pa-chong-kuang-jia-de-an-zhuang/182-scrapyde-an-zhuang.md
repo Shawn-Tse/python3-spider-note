@@ -18,6 +18,8 @@ conda install Scrapy
 
 ### 3. Windows下的安装 {#3-windows下的安装}
 
+[所有工具可在这里下载](https://pan.baidu.com/s/1ZUb8WhkajsWkUlfDpRiBYg)
+
 #### 安装lxml
 
 [lxml安装](/1.kaifahuanjing/1.3/131-lxmlde-an-zhuang.md)
