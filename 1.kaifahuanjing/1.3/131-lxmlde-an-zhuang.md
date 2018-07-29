@@ -10,7 +10,7 @@ pip install lxml
 
 Wheel 文件下载地址:[http://www.lfd.uci.edu/~gohlke/pythonlibs/\#lxml](http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml)
 
-找到本地安装 Python 版本和系统对应的 LXML 版本，例如 Windows64 位 Python3.6 就选择 lxml‑3.8.0‑cp36‑cp36m‑win\_amd64.whl，将其下载到本地。
+找到本地安装 Python 版本和系统对应的 LXML 版本，例如 Windows64 位 Python3.6 就选择 lxml‑3.8.0‑cp36‑cp36m‑win\_amd64.whl，将其下载到本地，然后进行安装。
 
 ```
 pip3 install lxml‑3.8.0‑cp36‑cp36m‑win_amd64.whl
