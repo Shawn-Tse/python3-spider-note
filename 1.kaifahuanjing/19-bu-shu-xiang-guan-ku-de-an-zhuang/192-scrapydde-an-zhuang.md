@@ -93,3 +93,52 @@ sudo vim /etc/scrapyd/scrapyd.conf
 
 ![](/assets/1.9.2-1.png)运行 Scrapyd 更佳的方式是使用 Supervisor 守护进程运行，如果感兴趣可以参考：[http://supervisord.org/](http://supervisord.org/)。
 
+### 6. 访问认证 {#5-访问认证}
+
+限制配置完成之后 Scrapyd 和它的接口都是可以公开访问的，如果要想配置访问认证的话可以借助于 Nginx 做反向代理，在这里需要先安装 Nginx 服务器。
+
+在此以 Ubuntu 为例进行说明，安装命令如下：
+
+```
+sudo apt-get install nginx
+
+```
+
+然后修改 Nginx 的配置文件 nginx.conf，增加如下配置：
+
+```
+http {
+    server {
+        listen 6801;
+        location / {
+            proxy_pass    http://127.0.0.1:6800/;
+            auth_basic    "Restricted";
+            auth_basic_user_file    /etc/nginx/conf.d/.htpasswd;
+        }
+    }
+}
+```
+
+在这里使用的用户名密码配置放置在 /etc/nginx/conf.d 目录，我们需要使用 htpasswd 命令创建，例如创建一个用户名为 admin 的文件，命令如下：
+
+```
+htpasswd -c .htpasswd admin
+```
+
+接下就会提示我们输入密码，输入两次之后，就会生成密码文件，查看一下内容：
+
+```
+cat .htpasswd 
+admin:5ZBxQr0rCqwbc
+```
+
+配置完成之后我们重启一下 Nginx 服务，运行如下命令：
+
+```
+sudo nginx -s reload
+```
+
+这样就成功配置了 Scrapyd 的访问认证了。
+
+
+
