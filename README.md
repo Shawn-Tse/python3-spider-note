@@ -2,7 +2,7 @@
 
 [![Coveralls bitbucket branch](	https://img.shields.io/badge/python3爬虫笔记-心跳回忆-green.svg?longCache=true&style=plastic)](https://github.com/CoderAngle/python3-spider-note)
 
-
+爬虫笔记地址:https://xintiaohuiyi.gitbook.io/python3-spider-note/
   
 python使用版本:python3
 
