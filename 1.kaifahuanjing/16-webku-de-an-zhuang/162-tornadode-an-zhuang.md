@@ -41,5 +41,11 @@ if __name__ == "__main__":
     tornado.ioloop.IOLoop.current().start()
 ```
 
+运行代码后，可以在本机的5000端口开启web服务，控制台输出如下:
 
+```
+WARNING:tornado.access:404 GET /favicon.ico (127.0.0.1) 1.01ms
+```
+
+直接访问 [http://127.0.0.1:5000/](http://127.0.0.1:5000/) ，可以看到网页上的内容:
 
