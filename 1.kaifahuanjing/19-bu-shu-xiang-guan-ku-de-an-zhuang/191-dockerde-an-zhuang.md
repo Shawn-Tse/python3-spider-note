@@ -156,5 +156,15 @@ if [ $# -eq 0 ]; then
 docker run hello-world
 ```
 
+### 镜像加速
 
+安装好 Docker 之后，在运行测试命令时，我们会发现它首先会下载一个 Hello World 的镜像，然后将其运行，但是下载速度有时候会非常慢，这是因为它默认还是从国外的 Docker Hub 下载的，所以为了提高镜像的下载速度，我们还可以使用国内镜像来加速下载，所以这就有了 Docker 加速器一说。
+
+推荐的 Docker 加速器有 DaoCloud 和阿里云。
+
+DaoCloud：[https://www.daocloud.io/mirror](https://www.daocloud.io/mirror)
+
+阿里云：[https://cr.console.aliyun.com/\#/accelerator](https://cr.console.aliyun.com/#/accelerator)
+
+不同平台的镜像加速方法配置可以参考 DaoCloud 的官方文档：[http://guide.daocloud.io/dcs/daocloud-9153151.html](http://guide.daocloud.io/dcs/daocloud-9153151.html)。
 
