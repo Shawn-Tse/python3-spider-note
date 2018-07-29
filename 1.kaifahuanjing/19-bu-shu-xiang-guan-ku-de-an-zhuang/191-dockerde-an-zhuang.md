@@ -17,7 +17,5 @@ Docker 是一种容器技术，它可以将应用和环境等进行打包，形�
 
 ### 2.在windows下安装
 
-
-
-
+Windows10 64位安装:推荐使用 [Docker for Windows](https://docs.docker.com/docker-for-windows/install/)
 
