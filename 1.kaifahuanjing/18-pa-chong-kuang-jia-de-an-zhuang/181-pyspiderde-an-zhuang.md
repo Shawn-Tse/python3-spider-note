@@ -18,5 +18,5 @@ PySpider 是支持 JavaScript 渲染的，而这个过程是依赖于 PhantomJS 
 
 Windows 下可能会出现这样的错误提示：Command "python setup.py egg\_info" failed with error code 1 in /tmp/pip-build-vXo1W3/pycurl
 
-
+这是pycurl安装错误，需要安装pucurlku，下载地址:[http://www.lfd.uci.edu/~gohlke/pythonlibs/\#pycurl](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pycurl)
 
