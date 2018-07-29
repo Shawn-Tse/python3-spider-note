@@ -89,8 +89,5 @@ sudo vim /etc/scrapyd/scrapyd.conf
 
 则会输出 Scrapyd 运行输出到 ~/scrapyd.log 文件中。
 
-运行之后便可以在浏览器的 6800 访问 WebUI 了，可以简略看到当前 Scrapyd 的运行 Job、Log 等内容，如图 1-86 所示：
-
-  
-
+运行之后便可以在浏览器的 6800 访问 WebUI 了，可以简略看到当前 Scrapyd 的运行 Job、Log 等内容
 
