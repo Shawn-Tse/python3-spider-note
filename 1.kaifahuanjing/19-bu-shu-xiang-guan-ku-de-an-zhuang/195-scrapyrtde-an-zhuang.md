@@ -25,10 +25,7 @@ scrapyrt
 scrapyrt
 2017-07-12 22:31:03+0800 [-] Log opened.
 2017-07-12 22:31:03+0800 [-] Site starting on 9080
-2017-07-12 22:31:03+0800 [-] Starting factory 
-<
-twisted.web.server.Site object at 0x10294b160
->
+2017-07-12 22:31:03+0800 [-] Starting factory <twisted.web.server.Site object at 0x10294b160>
 ```
 
 更换运行端口使用 -p 参数，如：
