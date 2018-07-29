@@ -34,5 +34,41 @@ Appium Desktop支持全平台的安装，下载地址:[https://github.com/appium
 npm install -g appium
 ```
 
+### 4. Android开发环境配置 {#3-android开发环境配置}
 
+如果我们要使用 Android 设备做 App 抓取的话，还需要下载和配置 Android SDK，在这里推荐直接安装 Android Studio，其下载地址为：[https://developer.android.com/studio/index.html?hl=zh-cn](https://developer.android.com/studio/index.html?hl=zh-cn)，下载之后直接安装即可。
+
+完成之后我们还需要下载 Android SDK，直接打开首选项里面的 Android SDK 设置页面，勾选要安装的 SDK 版本，点击确定即可开始下载和安装勾选的 SDK 版本，如图 1-74 所示：
+
+![](https://germey.gitbooks.io/python3webspider/content/assets/1-74.jpg)
+
+图 1-74 Android SDK 设置页面
+
+另外还需要配置一下环境变量，添加 ANDROID\_HOME 为 Android SDK 所在路径，然后再添加 SDK 文件夹下的 tools 和 platform-tools 文件夹到 PATH 中。
+
+更详细的配置可以参考 Android Studio 的官方文档：[https://developer.android.com/studio/intro/index.html](https://developer.android.com/studio/intro/index.html)。
+
+### 5. iOS开发环境 {#4-ios开发环境}
+
+首先需要声明的是，Appium 是一个做自动化测试的工具，用它来测试我们自己开发的 App 是完全没问题的，它携带的是开发者证书（Development Certificate）。但如果我们想拿 iOS 设备来做数据爬取的话又是另外一回事了，一般我们做数据爬取都是使用现有的APP，在 iOS 上一般都是通过 App Store 下载的，它携带的是分发证书（Distribution Certificate），而携带这种证书的应用都是禁止被测试的，所以只有获取 ipa 安装包再重新签名之后才可以被 Appium 测试，具体的方法不再展开阐述，如感兴趣可以搜索相关资料。
+
+因此在这里推荐直接使用 Android 来进行测试，如果你可以完成上述操作重签名操作，那么可以参考如下内容配置 iOS 开发环境。
+
+Appium 驱动 iOS 设备必须要在 Mac 下进行，Windows 和 Linux 是平台是无法完成的，下面只介绍一下 Mac 平台的相关配置。
+
+Mac 平台需要的配置如下：
+
+* Mac OS X 10.12 及更高版本
+* XCode 8 及更高版本
+
+配置满足要求之后执行如下命令即可配置开发依赖的一些库和工具：
+
+```
+xcode-select --install
+
+```
+
+这样 iOS 部分开发环境就配置完成了，我们就可以用 iOS 模拟器来进行测试和数据抓取了。
+
+如果想要用真机进行测试和数据抓取，还需要额外配置一下其他的环境，可以参考：[https://github.com/appium/appium/blob/master/docs/en/appium-setup/real-devices-ios.md](https://github.com/appium/appium/blob/master/docs/en/appium-setup/real-devices-ios.md)。
 
