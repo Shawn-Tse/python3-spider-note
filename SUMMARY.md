@@ -73,8 +73,8 @@
     * 2.5.3 爬虫代理
     * 2.5.4 代理分类
     * 2.5.5 常见代理设置
-* [3.基本库使用](1./3ji-ben-ku-shi-yong.md)
-  * 3.1 使用urllib
+* [3.基本库使用](3ji-ben-ku-shi-yong.md)
+  * [3.1 使用urllib](3ji-ben-ku-shi-yong/31-shi-yong-urllib.md)
     * 3.1.1 发送请求
     * 3.1.2 处理异常
     * 3.1.3 解析链接
@@ -84,11 +84,11 @@
     * 3.2.2 高级用法
     * [3.3 正则表达式](3-ji-ben-ku-de-shi-yong/33-zheng-ze-biao-da-shi.md)
     * 3.4 抓取猫眼电影排行
-* [4.解析库的使用](1./4jie-xi-ku-de-shi-yong.md)
+* [4.解析库的使用](4jie-xi-ku-de-shi-yong.md)
   * [4.1 使用xpath](4jie-xi-ku-de-shi-yong/41-shi-yong-xpath.md)
   * 4.2 使用Beautiful Soup
   * 4.3 使用pyquery
-* 5.数据存储
+* [5.数据存储](5shu-ju-cun-chu.md)
   * 5.1 文件存储
     * 5.1.1 TXT 文件存储
     * 5.1.2 JSON文件存储
