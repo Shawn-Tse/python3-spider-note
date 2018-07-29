@@ -64,8 +64,10 @@ daemonstatus.json = scrapyd.webservice.DaemonStatus
 
 ```
 sudo mkdir /etc/scrapyd
-sudo vi /etc/scrapyd/scrapyd.conf
+sudo vim /etc/scrapyd/scrapyd.conf
 ```
 
+写入windows下的default\_scrapyd.conf的内容
 
+最后输入:wq退出
 
