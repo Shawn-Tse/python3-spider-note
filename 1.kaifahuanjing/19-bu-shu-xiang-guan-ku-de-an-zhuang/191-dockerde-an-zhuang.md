@@ -69,6 +69,8 @@ docker-machine rm name
 docker-machine create --driver=vmwareworkstation dev
 ```
 
+---
+
 ## 使用Docker Toolbox进行安装
 
 1. 不使用VirtualBox安装Docker Toolbox
