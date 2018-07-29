@@ -257,7 +257,7 @@ $ sudo service docker start
 docker run hello-world
 ```
 
-### 修改 Docker 源为国内源 {#4-修改-Docker-源为国内源}
+### 修改 Docker 源为国内源
 
 执行`docker-machine.exe ssh default`
 
