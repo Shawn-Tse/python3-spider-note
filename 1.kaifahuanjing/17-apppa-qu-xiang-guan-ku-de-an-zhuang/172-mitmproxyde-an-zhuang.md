@@ -43,7 +43,6 @@ sudo mv mitmproxy mitmdump mitmweb /usr/bin
 
 ```
 brew install mitmproxy
-
 ```
 
 执行命令后即可完成 MitmProxy 的安装。
@@ -56,7 +55,6 @@ Docker 下 MitmProxy 的安装命令为：
 
 ```
 docker run --rm -it -p 8080:8080 mitmproxy/mitmproxy mitmdump
-
 ```
 
 这样就在 8080 端口上启动了 MitmProxy 和 MitmDump。
@@ -65,7 +63,6 @@ docker run --rm -it -p 8080:8080 mitmproxy/mitmproxy mitmdump
 
 ```
 docker run --rm -it -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080 mitmproxy/mitmproxy mitmdump
-
 ```
 
 这样可以在 ~/.mitmproxy 目录找到 CA 证书。
@@ -84,12 +81,11 @@ docker run --rm -it -p 8080:8080 -p 127.0.0.1:8081:8081 mitmproxy/mitmproxy mitm
 
 ```
 mitmdump
-
 ```
 
 这样即可启动 MitmDump，接下来我们就可以在用户目录下的 .mitmproxy 目录里面找到 CA 证书，如图 1-61 所示：
 
-![](https://germey.gitbooks.io/python3webspider/content/assets/1-61.jpg)
+![](/assets/1.7.2-3.png)
 
 图 1-61 证书文件
 
@@ -131,7 +127,7 @@ mitmdump
 
 最后如果有安全警告均点击“是”即可，如图 1-65 所示：
 
-![](https://germey.gitbooks.io/python3webspider/content/assets/1-65.jpg)
+![](/assets/1.7.2-4.png)
 
 图 1-65 安装警告
 
