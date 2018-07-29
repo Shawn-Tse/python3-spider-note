@@ -40,7 +40,7 @@ npm install -g appium
 
 如果我们要使用 Android 设备做 App 抓取的话，还需要下载和配置 Android SDK，在这里推荐直接安装 Android Studio，其下载地址为：[https://developer.android.com/studio/index.html?hl=zh-cn](https://developer.android.com/studio/index.html?hl=zh-cn)，下载之后直接安装即可。
 
-当安装完android studio, 第一次启动后，提示出现「Unable to access Android SDK add-on list」，
+当安装完android studio, 第一次启动后，提示出现「Unable to access Android SDK add-on list」。
 
 解决方案：
 
