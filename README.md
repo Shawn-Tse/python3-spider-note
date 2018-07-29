@@ -8,7 +8,7 @@ python使用版本:python3
 
 ### pip换源
 
-第一种:暂时性换源
+#### 第一种:暂时性换源
 
 有时候pip下载速度有点慢，可以换成国内源提升一下速度
 
@@ -18,7 +18,7 @@ pip install -i https://pypi.doubanio.com/simple/ 包名
 pip install -i https://pypi.doubanio.com/simple/ flask
 ```
 
-### 第二种:永久换源
+#### 第二种:永久换源
 
 永久换源的方法如下:
 
