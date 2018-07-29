@@ -52,3 +52,11 @@ pip install Twisted‑18.7.0‑cp36‑cp36m‑win_amd64.whl
 
 注意这里使用的是 Build 221 版本，随着时间推移，版本肯定会继续更新，最新的版本可以查看：[https://sourceforge.net/projects/pywin32/files/pywin32/](https://sourceforge.net/projects/pywin32/files/pywin32/)，查找最新的版本安装即可。
 
+#### 安装Scrapy {#安装scrapy}
+
+```
+pip install scrapy
+```
+
+
+
