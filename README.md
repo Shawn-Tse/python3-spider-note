@@ -93,5 +93,5 @@ Docker安装请参照这里:[https://yeasy.gitbooks.io/docker\_practice/install/
 
 windows安装docker:
 
-https://www.docker.com/docker-windows
+Docker for Windows:[https://www.docker.com/docker-windows](https://www.docker.com/docker-windows)
 
