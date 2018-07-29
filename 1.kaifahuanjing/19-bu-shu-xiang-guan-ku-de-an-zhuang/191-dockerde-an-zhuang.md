@@ -153,17 +153,7 @@ if [ $# -eq 0 ]; then
 ### 验证安装
 
 ```
-docker-machine ls
-```
-
-会出现一个dev的实例
-
-### 激活实例 {#blogTitle11}
-
-执行命令：
-
-```
-docker-machine env dev
+docker run hello-world
 ```
 
 
