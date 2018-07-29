@@ -39,7 +39,7 @@ scrapyrt -p 9081
 
 ### 4. Docker安装 {#3-docker安装}
 
-另外 Scrapyrt 也支持 Docker，如想要在 9080 端口上运行，且本地 Scrapy 项目的路径为 /home/quotesbot，可以使用如下命令运行：
+ Scrapyrt 也支持 Docker，如想要在 9080 端口上运行，且本地 Scrapy 项目的路径为 /home/quotesbot，可以使用如下命令运行：
 
 ```
 docker run -p 9080:9080 -tid -v /home/user/quotesbot:/scrapyrt/project scrapinghub/scrapyrt
