@@ -8,5 +8,11 @@
 curl http://localhost:6800/listprojects.json
 ```
 
+运行结果：
+
+```
+{"status": "ok", "projects": ["myproject", "otherproject"]}
+```
+
 
 
