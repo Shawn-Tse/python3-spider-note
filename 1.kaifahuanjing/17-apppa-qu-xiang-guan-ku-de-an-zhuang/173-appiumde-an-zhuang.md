@@ -45,7 +45,7 @@ npm install -g appium
 解决方案：
 
 ```
-在 Android Studio 安装目录 bin/idea.properties 文件最后追加一句
+在 Android Studio 安装目录 E:\Android\Android Studio\bin/idea.properties 文件最后追加一句
 disable.android.first.run=true
 ```
 
