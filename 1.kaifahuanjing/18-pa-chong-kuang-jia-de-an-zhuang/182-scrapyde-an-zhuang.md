@@ -44,13 +44,9 @@ pip install Twisted‑18.7.0‑cp36‑cp36m‑win_amd64.whl
 
 ### 安装PyWin32 {#安装pywin32}
 
-从官方网站下载对应版本的安装包即可，链接为：[https://sourceforge.net/projects/pywin32/files/pywin32/Build%20221/](https://sourceforge.net/projects/pywin32/files/pywin32/Build%20221/)
+从官方网站下载对应版本的安装包即可，链接为：[https://sourceforge.net/projects/pywin32/files/pywin32/Build%20221/](https://sourceforge.net/projects/pywin32/files/pywin32/Build 221/)
 
 ![](/assets/1.8.2-5.png)如 Python 3.6 版本可以选择下载 pywin32-221.win-amd64-py3.6.exe，下载完毕之后双击安装即可。
 
-注意这里使用的是 Build 221 版本，随着时间推移，版本肯定会继续更新，最新的版本可以查看：
-
-[https://sourceforge.net/projects/pywin32/files/pywin32/](https://sourceforge.net/projects/pywin32/files/pywin32/)
-
-，查找最新的版本安装即可。
+注意这里使用的是 Build 221 版本，随着时间推移，版本肯定会继续更新，最新的版本可以查看：[https://sourceforge.net/projects/pywin32/files/pywin32/](https://sourceforge.net/projects/pywin32/files/pywin32/)，查找最新的版本安装即可。
 
