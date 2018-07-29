@@ -27,14 +27,14 @@
     * [1.5.2 PyMongo的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/152-pymongode-an-zhuang.md)
     * [1.5.3 redis-py的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/153-redis-pyde-an-zhuang.md)
     * [1.5.4 RedisDump的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/154-redisdumpde-an-zhuang.md)
-  * [1.6 Web库的安装](1./16-webku-de-an-zhuang.md)
+  * 1.6 Web库的安装
     * 1.6.1 Flask的安装
     * 1.6.2 Tornado的安装
-  * [1.7 App爬取相关库的安装](1./17-apppa-qu-xiang-guan-ku-de-an-zhuang.md)
+  * 1.7 App爬取相关库的安装
     * 1.7.1 Charles的安装
     * 1.7.2 mitmproxy的安装
     * 1.7.3 Appium的安装
-  * [1.8 爬虫框架的安装](1./18-pa-chong-kuang-jia-de-an-zhuang.md)
+  * 1.8 爬虫框架的安装
     * 1.8.1 pyspider的安装
     * 1.8.2 Scrapy的安装
     * 1.8.3 Scrapy-Splash的安装
@@ -151,4 +151,6 @@
   * 15.3 Scrapyd对接Docker
   * 15.4 Scrapyd批量部署
   * 15.5 Gerapy分布式管理
+
+
 
