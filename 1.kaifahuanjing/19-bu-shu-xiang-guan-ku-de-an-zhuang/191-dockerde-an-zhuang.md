@@ -31,11 +31,5 @@ Windows10 64位安装:推荐使用 [Docker for Windows](https://docs.docker.com/
 
 #### 驱动
 
-下载地址:[https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/tag/v1.1.0](https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/latest)
-
-
-
-
-
-
+下载地址:https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/latest
 
