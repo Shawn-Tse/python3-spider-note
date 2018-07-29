@@ -67,14 +67,12 @@ pip install scrapy
 ```
 sudo yum groupinstall -y development tools
 sudo yum install -y epel-release libxslt-devel libxml2-devel openssl-devel
-
 ```
 
 最后利用 Pip 安装 Scrapy 即可，运行如下命令：
 
 ```
 pip3 install Scrapy
-
 ```
 
 #### Ubuntu、Debian、Deepin {#ubuntu、debian、deepin}
@@ -113,5 +111,5 @@ pip3 install Scrapy
 scrapy
 ```
 
-
+![](/assets/1.8.2.9.png)
 
