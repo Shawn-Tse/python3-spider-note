@@ -1,4 +1,4 @@
-ScrapySplash 是一个 Scrapy 中支持 JavaScript 渲染的工.
+ScrapySplash 是一个 Scrapy 中支持 JavaScript 渲染的工。
 
 ### 1. 相关链接 {#1-相关链接}
 
