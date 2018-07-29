@@ -12,7 +12,7 @@ ScrapyRedis 是 Scrapy 分布式的扩展模块，有了它我们可以方便地
 pip install scrapy-redis
 ```
 
-### 4. 测试安装 {#4-测试安装}
+### 3. 测试安装 {#4-测试安装}
 
 安装完成之后，可以在 Python 命令行下测试。
 
