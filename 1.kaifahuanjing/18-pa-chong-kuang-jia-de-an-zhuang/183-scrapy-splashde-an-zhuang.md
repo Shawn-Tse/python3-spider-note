@@ -19,7 +19,6 @@ ScrapySplash 会使用 Splash 的 HTTP API 进行页面渲染，所以我们需�
 
 ```
 docker run -p 8050:8050 scrapinghub/splash
-
 ```
 
 安装完成之后会有类似的输出结果：
@@ -47,11 +46,7 @@ twisted.web.server.Site object at 0x7ffaa4a98cf8
 
 这样就证明 Splash 已经在 8050 端口上运行了。
 
-这时我们打开：[http://localhost:8050](http://localhost:8050/)即可看到 Splash 的主页，如图 1-81 所示：
-
-![](https://germey.gitbooks.io/python3webspider/content/assets/1-81.png)
-
-图 1-81 运行页面
+这时我们打开：[http://localhost:8050](http://localhost:8050/)即可看到 Splash 的主页
 
 当然 Splash 也可以直接安装在远程服务器上，我们在服务器上运行以守护态运行 Splash 即可，命令如下：
 
@@ -67,7 +62,6 @@ docker run -d -p 8050:8050 scrapinghub/splash
 
 ```
 pip3 install scrapy-splash
-
 ```
 
 命令运行完毕后就会成功安装好此库，后文我们会介绍它的详细用法。
