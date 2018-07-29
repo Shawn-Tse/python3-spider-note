@@ -21,5 +21,5 @@ python3
 >>> import scrapy_redis
 ```
 
-
+如果没有错误报出，则代表库已经安装好了。
 
