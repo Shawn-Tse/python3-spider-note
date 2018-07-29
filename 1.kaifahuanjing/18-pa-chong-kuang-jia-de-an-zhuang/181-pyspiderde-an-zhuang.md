@@ -28,10 +28,11 @@ pip install pycurl‑7.43.0‑cp36‑cp36m‑win_amd64.whl
 
 Linux 下如果遇到 PyCurl 的错误:\_\_main\_\_.ConfigurationError: Could not run curl-config: \[Errno2\] No such file or directory
 
-  
+解决方案：
 
+```
+sudo apt-get install libcurl4-gnutls-dev
+```
 
-
-
-
+运行安装后即可正常安装`pycurl`
 
