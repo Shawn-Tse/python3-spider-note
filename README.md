@@ -30,7 +30,6 @@ linux下，修改 ~/.pip/pip.conf \(没有就创建一个\)， 修改 index-url�
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-  
 windows下，直接在用户目录中创建一个pip目录，如：C:\Users\miku\pip，新建文件pip.ini，内容如下
 
 ```
@@ -38,6 +37,8 @@ windows下，直接在用户目录中创建一个pip目录，如：C:\Users\miku
 
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+![](/assets/000.png)
 
 ---
 
