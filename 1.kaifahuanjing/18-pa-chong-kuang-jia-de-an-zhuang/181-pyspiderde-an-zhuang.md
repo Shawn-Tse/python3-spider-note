@@ -22,3 +22,9 @@ Windows 下可能会出现这样的错误提示：Command "python setup.py egg\_
 
 如Windows 64 位，Python3.6 则下载 pycurl‑7.43.0‑cp36‑cp36m‑win\_amd64.whl
 
+```
+pip install pycurl‑7.43.0‑cp36‑cp36m‑win_amd64.whl
+```
+
+
+
