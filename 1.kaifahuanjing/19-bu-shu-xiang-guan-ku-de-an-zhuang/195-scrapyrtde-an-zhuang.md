@@ -13,7 +13,7 @@ Scrapyrt 为 Scrapy 提供了一个调度的 HTTP 接口，有了它我们不需
 pip install scrapyrt
 ```
 
-测试
+接下来在任意一个 Scrapy 项目中运行如下命令即可启动 HTTP 服务：
 
 ```
 scrapyrt
