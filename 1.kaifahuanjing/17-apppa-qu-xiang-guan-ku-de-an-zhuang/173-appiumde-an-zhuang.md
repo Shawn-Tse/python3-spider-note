@@ -22,6 +22,8 @@ Appium是移动端的自动化测试工具，可以利用它驱动Android等设�
 
 Appium Desktop支持全平台的安装，下载地址:[https://github.com/appium/appium-desktop/releases](https://github.com/appium/appium-desktop/releases)![](/assets/1.7.3-1.png)windows平台可以下载exe如[**appium-desktop-web-setup-1.6.2.exe**](https://github.com/appium/appium-desktop/releases/download/v1.6.2/appium-desktop-web-setup-1.6.2.exe),Mac 平台可以下载 dmg 安装包如 [**Appium-1.6.2.dmg**](https://github.com/appium/appium-desktop/releases/download/v1.6.2/Appium-1.6.2.dmg)，Linux 平台可以选择下载源码
 
+![](/assets/1.7.3-4.png)
+
 ### Node.js
 
 安装Node.js
@@ -65,7 +67,6 @@ Mac 平台需要的配置如下：
 
 ```
 xcode-select --install
-
 ```
 
 这样 iOS 部分开发环境就配置完成了，我们就可以用 iOS 模拟器来进行测试和数据抓取了。
