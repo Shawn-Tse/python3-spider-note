@@ -30,5 +30,12 @@ pip install mitmproxy
 
 ### 5. Linux下的安装 {#4-linux下的安装}
 
+[点击下载](https://github.com/mitmproxy/mitmproxy/releases/)[**mitmproxy-4.0.1-linux.tar.gz**](https://github.com/mitmproxy/mitmproxy/releases/download/v4.0.1/mitmproxy-4.0.1-linux.tar.gz)
+
+```
+tar -zxvf mitmproxy-4.0.1-linux.tar.gz
+sudo mv mitmproxy mitmdump mitmweb /usr/bin
+```
+
 
 
