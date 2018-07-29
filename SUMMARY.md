@@ -46,7 +46,7 @@
     * [1.9.4 ScrapydAPI的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/194-scrapydapide-an-zhuang.md)
     * [1.9.5 Scrapyrt的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/195-scrapyrtde-an-zhuang.md)
     * [1.9.6-Gerapy的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/196-gerapyde-an-zhuang.md)
-* [2.爬虫基础](1./2pa-chong-ji-chu.md)
+* [2.爬虫基础](2pa-chong-ji-chu.md)
   * [2.1 HTTP 基本原理](2pa-chong-ji-chu/21-http-ji-ben-yuan-li.md)
     * [2.1.1 URI和URL](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/211-urihe-url.md)
     * [2.1.2 超文本](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/212-chao-wen-ben.md)
