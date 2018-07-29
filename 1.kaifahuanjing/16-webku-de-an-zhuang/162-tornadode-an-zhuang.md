@@ -49,3 +49,5 @@ WARNING:tornado.access:404 GET /favicon.ico (127.0.0.1) 1.01ms
 
 直接访问 [http://127.0.0.1:8888/](http://127.0.0.1:5000/) ，可以看到网页上的内容:
 
+![](/assets/1.6.2-2.png)
+
