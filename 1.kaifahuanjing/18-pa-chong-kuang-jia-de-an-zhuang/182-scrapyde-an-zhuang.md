@@ -24,5 +24,11 @@ conda install Scrapy
 
 #### 安装pyOpenSSL
 
-wheel文件下载地址:[https://pypi.python.org/pypi/pyOpenSSL\#downloads](https://pypi.python.org/pypi/pyOpenSSL#downloads)
+wheel文件下载地址:[https://pypi.python.org/pypi/pyOpenSSL\#downloads](https://pypi.python.org/pypi/pyOpenSSL#downloads)![](/assets/1.8.2-4.png)下载完成后安装
+
+```
+pip install pyOpenSSL-18.0.0-py2.py3-none-any.whl
+```
+
+
 
