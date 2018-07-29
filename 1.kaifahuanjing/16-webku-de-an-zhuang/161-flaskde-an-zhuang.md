@@ -4,7 +4,13 @@
 * 官方文档：[http://flask.pocoo.org](http://flask.pocoo.org/)
 * 中文文档：[http://docs.jinkan.org/docs/flask](http://docs.jinkan.org/docs/flask)
 * PyPi：[https://pypi.python.org/pypi/Flask](https://pypi.python.org/pypi/Flask)
-* 学习地址:https://xintiaohuiyi.gitbook.io/flask-note/
+* 学习地址:[https://xintiaohuiyi.gitbook.io/flask-note/](https://xintiaohuiyi.gitbook.io/flask-note/)
+
+### 2.安装
+
+```
+pip install flask
+```
 
 
 
