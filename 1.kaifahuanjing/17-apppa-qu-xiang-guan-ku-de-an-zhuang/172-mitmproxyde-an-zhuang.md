@@ -14,5 +14,11 @@ MitmProxy是一个支持HTTP和HTTPS的抓包程序，类似于Fiddler、Charles
 * 下载地址：[https://github.com/mitmproxy/mitmproxy/releases](https://github.com/mitmproxy/mitmproxy/releases)
 * DockerHub：[https://hub.docker.com/r/mitmproxy/mitmproxy](https://hub.docker.com/r/mitmproxy/mitmproxy)
 
+### 3.安装
+
+```
+pip install mitmproxy
+```
+
 
 
