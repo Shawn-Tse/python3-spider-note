@@ -69,6 +69,12 @@ docker-machine rm default
 docker-machine create --driver=vmwareworkstation default
 ```
 
+启用
+
+```
+docker-machine active default
+```
+
 ---
 
 ## 使用Docker Toolbox进行安装
@@ -251,15 +257,15 @@ $ sudo service docker start
 docker run hello-world
 ```
 
-### 镜像加速
+### 修改 Docker 源为国内源 {#4-修改-Docker-源为国内源}
 
-安装好 Docker 之后，在运行测试命令时，我们会发现它首先会下载一个 Hello World 的镜像，然后将其运行，但是下载速度有时候会非常慢，这是因为它默认还是从国外的 Docker Hub 下载的，所以为了提高镜像的下载速度，我们还可以使用国内镜像来加速下载，所以这就有了 Docker 加速器一说。
+执行`docker-machine.exe ssh default`
 
-推荐的 Docker 加速器有 DaoCloud 和阿里云。
+接下来修改配置文件`sudo vi /var/lib/boot2docker/profile`
 
-DaoCloud：[https://www.daocloud.io/mirror](https://www.daocloud.io/mirror)
+在`--label provider=vmwareworkstation`的下一行添加`--registry-mirror https://registry.docker-cn.com`
 
-阿里云：[https://cr.console.aliyun.com/\#/accelerator](https://cr.console.aliyun.com/#/accelerator)
+保存后运行退出 ssh
 
-不同平台的镜像加速方法配置可以参考 DaoCloud 的官方文档：[http://guide.daocloud.io/dcs/daocloud-9153151.html](http://guide.daocloud.io/dcs/daocloud-9153151.html)。
+运行`docker-machine restart`
 
