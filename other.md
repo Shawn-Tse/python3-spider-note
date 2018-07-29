@@ -1,16 +1,11 @@
-```
-echo "# python3-" 
-```
+### …or create a new repository on the command line
 
 ```
->
->
- README.md
+echo "# python3-" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin 
-https://github.com/CoderAngle/python3-.git
+git remote add origin https://github.com/CoderAngle/python3-.git
 git push -u origin master
 ```
 
