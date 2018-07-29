@@ -43,5 +43,16 @@ if __name__ == "__main__":
     # app.run(port=port)
 ```
 
+运行代码后，可以在本机的5000端口开启web服务
+
+```
+* Serving Flask app "test_flask" (lazy loading)
+* Environment: production
+  WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+* Debug mode: off
+* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+```
+
 
 
