@@ -43,7 +43,7 @@ if __name__ == "__main__":
     # app.run(port=port)
 ```
 
-运行代码后，可以在本机的5000端口开启web服务
+运行代码后，可以在本机的5000端口开启web服务，控制台输出如下:
 
 ```
 * Serving Flask app "test_flask" (lazy loading)
@@ -51,8 +51,10 @@ if __name__ == "__main__":
   WARNING: Do not use the development server in a production environment.
    Use a production WSGI server instead.
 * Debug mode: off
-* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
+
+直接访问http://127.0.0.1:5000/,可以看到网页上的内容:
 
 
 
