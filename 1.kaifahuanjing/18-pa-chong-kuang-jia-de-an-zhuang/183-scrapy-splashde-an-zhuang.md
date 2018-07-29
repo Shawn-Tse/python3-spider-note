@@ -6,11 +6,10 @@ ScrapySplash 是一个 Scrapy 中支持 JavaScript 渲染的工。
 * PyPi：[https://pypi.python.org/pypi/scrapy-splash](https://pypi.python.org/pypi/scrapy-splash)
 * 使用说明：[https://github.com/scrapy-plugins/scrapy-splash\#configuration](https://github.com/scrapy-plugins/scrapy-splash#configuration)
 * Splash 官方文档：[http://splash.readthedocs.io](http://splash.readthedocs.io/)
-* docker:[https://yeasy.gitbooks.io/docker\_practice/install/ubuntu.html](https://yeasy.gitbooks.io/docker_practice/install/ubuntu.html)
 
 ### 2. 安装Splash {#2-安装splash}
 
-ScrapySplash 会使用 Splash 的 HTTP API 进行页面渲染，所以我们需要安装 Splash 来提供渲染服务，安装是通过[ Docker 安装](https://yeasy.gitbooks.io/docker_practice/install/ubuntu.html)，在这之前请确保已经正确安装好了 Docker。
+ScrapySplash 会使用 Splash 的 HTTP API 进行页面渲染，所以我们需要安装 Splash 来提供渲染服务，安装是通过[ Docker 安装](/1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/191-dockerde-an-zhuang.md)，在这之前请确保已经正确安装好了 Docker。
 
 安装命令如下：
 
