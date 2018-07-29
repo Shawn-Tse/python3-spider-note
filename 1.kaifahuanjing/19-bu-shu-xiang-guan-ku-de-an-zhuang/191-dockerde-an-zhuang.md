@@ -131,6 +131,8 @@ fi
 
 `docker-machine ls`
 
+![](/assets/1.9.1-3.png)
+
 检查是否有machine实例，如果有，请考虑是否卸载它
 
 ```
@@ -144,4 +146,10 @@ docker-machine stop name
 ```
 
 删除NAME为name的machine实例
+
+```
+docker-machine rm name
+```
+
+
 
