@@ -8,6 +8,12 @@ python使用版本:python3
 
 ### pip换源
 
+```
+pip源:
+豆瓣：http://pypi.douban.com/simple/
+清华：https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 #### 第一种:暂时性换源
 
 有时候pip下载速度有点慢，可以换成国内源提升一下速度
