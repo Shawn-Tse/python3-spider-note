@@ -71,7 +71,5 @@ sudo vim /etc/scrapyd/scrapyd.conf
 
 最后输入:wq退出
 
-
-
-配置文件的内容可以参见[官方文档](https://scrapyd.readthedocs.io/en/stable/config.html#example-configuration-file)：在这里的配置文件有所修改，其中之一是 max\_proc\_per\_cpu 官方默认为 4，即一台主机每个 CPU 最多运行 4 个Scrapy Job，另外一个是 bind\_address，默认为本地 127.0.0.1，在此修改为 0.0.0.0，以使外网可以访问。
+配置文件的内容可以参见[官方文档](https://scrapyd.readthedocs.io/en/stable/config.html#example-configuration-file)：在这里的配置文件有所修改，其中之一是 max\_proc\_per\_cpu 官方默认为 4，即一台主机每个 CPU 最多运行 4 个Scrapy Job，另外一个是 bind\_address，默认为本地 127.0.0.1，在此修改为 0.0.0.0，外网可以访问。
 
