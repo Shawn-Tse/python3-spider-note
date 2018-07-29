@@ -11,7 +11,7 @@ C:\Users\miku>curl http://localhost:6800/listprojects.json
 
 返回结果是 Json 字符串，通过解析这个字符串我们便可以得到当前主机所有项目。
 
-curl下载地址:https://curl.haxx.se/download.html
+curl下载地址:[https://curl.haxx.se/download.html](https://curl.haxx.se/download.html)
 
 ### 2. 相关链接 {#1-相关链接}
 
@@ -30,13 +30,15 @@ pip install python-scrapyd-api
 安装完成之后便可以使用 Python 来获取主机状态了，所以如上的操作便可以用 Python 代码实现：
 
 ```
-
+from scrapyd_api import ScrapydAPI
+scrapyd = ScrapydAPI("http://127.0.0.1:6800")
+print(scrapyd.list_projects())
 ```
 
 运行结果：
 
 ```
-
+[]
 ```
 
 这样我们便可以用 Python 直接来获取各个主机上 Scrapy 任务的运行状态了。
