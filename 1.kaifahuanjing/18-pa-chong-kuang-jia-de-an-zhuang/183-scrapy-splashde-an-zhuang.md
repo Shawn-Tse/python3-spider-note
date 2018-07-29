@@ -46,7 +46,7 @@ twisted.web.server.Site object at 0x7ffaa4a98cf8
 
 这样就证明 Splash 已经在 8050 端口上运行了。
 
-这时我们打开：[http://localhost:8050](http://localhost:8050/)即可看到 Splash 的主页
+这时我们打开：[http://localhost:8050](http://localhost:8050/)即可看到 Splash 的主页![](/assets/1.8.3-1.png)
 
 当然 Splash 也可以直接安装在远程服务器上，我们在服务器上运行以守护态运行 Splash 即可，命令如下：
 
