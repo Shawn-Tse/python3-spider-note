@@ -11,7 +11,7 @@ C:\Users\miku>curl http://localhost:6800/listprojects.json
 
 返回结果是 Json 字符串，通过解析这个字符串我们便可以得到当前主机所有项目。
 
-但是用这种方式来获取任务状态还是有点繁琐，所以 ScrapydAPI 就为它做了一层封装，下面我们来看下它的安装方式。
+curl下载地址:https://curl.haxx.se/download.html
 
 ### 2. 相关链接 {#1-相关链接}
 
