@@ -12,7 +12,6 @@
 
 ```
 conda install Scrapy
-
 ```
 
 运行之后便可以完成 Scrapy 的安装。
@@ -21,7 +20,9 @@ conda install Scrapy
 
 #### 安装lxml
 
+[lxml安装](/1.kaifahuanjing/1.3/131-lxmlde-an-zhuang.md)
 
+#### 安装pyOpenSSL
 
-
+wheel文件下载地址:[https://pypi.python.org/pypi/pyOpenSSL\#downloads](https://pypi.python.org/pypi/pyOpenSSL#downloads)
 
