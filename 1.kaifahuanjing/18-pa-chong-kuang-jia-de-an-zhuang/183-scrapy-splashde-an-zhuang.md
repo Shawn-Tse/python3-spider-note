@@ -64,5 +64,5 @@ docker run -d -p 8050:8050 scrapinghub/splash
 pip3 install scrapy-splash
 ```
 
-命令运行完毕后就会成功安装好此库，后文我们会介绍它的详细用法。
+
 
