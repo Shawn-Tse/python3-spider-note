@@ -78,5 +78,5 @@ pip install -U setuptools
 
 这时 PySpider 的 Web 服务就会在本地 5000 端口运行，直接在浏览器打开：
 
-[http://localhost:5000/](http://localhost:5000/)即可进入 PySpider 的 WebUI 管理页面
+[http://localhost:5000/](http://localhost:5000/)即可进入 PySpider 的 WebUI 管理页面![](/assets/1.8.1-2.png)出现类似上面页面，就代表安装成功了
 
