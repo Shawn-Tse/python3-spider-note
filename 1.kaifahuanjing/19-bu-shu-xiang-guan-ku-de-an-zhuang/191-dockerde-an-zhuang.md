@@ -21,3 +21,21 @@ Windows10 64位安装:推荐使用 [Docker for Windows](https://docs.docker.com/
 
 非Windows10 64位系统安装:[https://docs.docker.com/toolbox/toolbox\_install\_windows/](https://docs.docker.com/toolbox/toolbox_install_windows/)
 
+这里以VMware Workstation为例:
+
+#### 环境:
+
+* Hyper-V：已卸载
+* VMware：已安装
+* Virtual Box：无安装
+
+#### 驱动
+
+下载地址:[https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/tag/v1.1.0](https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/latest)
+
+
+
+
+
+
+
