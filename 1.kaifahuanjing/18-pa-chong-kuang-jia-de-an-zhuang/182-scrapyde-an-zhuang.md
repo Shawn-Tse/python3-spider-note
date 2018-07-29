@@ -30,5 +30,7 @@ wheel文件下载地址:[https://pypi.python.org/pypi/pyOpenSSL\#downloads](http
 pip install pyOpenSSL-18.0.0-py2.py3-none-any.whl
 ```
 
+#### 安装Twisted {#安装twisted}
 
+下载 Wheel 文件:[http://www.lfd.uci.edu/~gohlke/pythonlibs/\#twisted](#)
 
