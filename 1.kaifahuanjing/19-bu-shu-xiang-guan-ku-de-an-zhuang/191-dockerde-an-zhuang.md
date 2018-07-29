@@ -158,7 +158,13 @@ docker-machine ls
 
 会出现一个dev的实例
 
+### 激活实例 {#blogTitle11}
 
+执行命令：
+
+```
+docker-machine env dev
+```
 
 
 
