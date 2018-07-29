@@ -151,5 +151,11 @@ docker-machine stop name
 docker-machine rm name
 ```
 
+创建一个名称为dev的machine实例
+
+```
+docker-machine create --driver=vmwareworkstation dev
+```
+
 
 
