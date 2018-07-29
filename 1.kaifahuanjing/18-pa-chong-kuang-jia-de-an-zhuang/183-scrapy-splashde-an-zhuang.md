@@ -1,5 +1,3 @@
-## 1.8.3 ScrapySplash的安装 {#183-scrapysplash的安装}
-
 ScrapySplash 是一个 Scrapy 中支持 JavaScript 渲染的工具，本节来介绍一下它的安装方式。
 
 ScrapySplash 的安装分为两部分，一个是是 Splash 服务的安装，安装方式是通过 Docker，安装之后会启动一个 Splash 服务，我们可以通过它的接口来实现 JavaScript 页面的加载。另外一个是 ScrapySplash 的 Python 库的安装，安装之后即可在 Scrapy 中使用 Splash 服务。
