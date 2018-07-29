@@ -123,7 +123,6 @@ six 包版本过低，six包是一个提供兼容 Python2 和 Python3 的库，�
 
 ```
 sudo pip3 install -U six
-
 ```
 
 #### c/\_cffi\_backend.c:15:17: fatal error: ffi.h: No such file or directory {#ccffibackendc1517-fatal-error-ffih-no-such-file-or-directory}
@@ -136,14 +135,12 @@ Ubuntu、Debian：
 
 ```
 sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
-
 ```
 
 CentOS、RedHat:
 
 ```
 sudo yum install gcc libffi-devel python-devel openssl-devel
-
 ```
 
 #### Command "python setup.py egg\_info" failed with error code 1 in /tmp/pip-build/cryptography/ {#command-python-setuppy-egginfo-failed-with-error-code-1-in-tmppip-buildcryptography}
@@ -152,7 +149,6 @@ sudo yum install gcc libffi-devel python-devel openssl-devel
 
 ```
 pip3 install cryptography
-
 ```
 
 #### ImportError: No module named 'packaging' {#importerror-no-module-named-packaging}
@@ -165,7 +161,6 @@ pip3 install cryptography
 
 ```
 pip3 install cffi
-
 ```
 
 #### ImportError: No module named 'pyparsing' {#importerror-no-module-named-pyparsing}
