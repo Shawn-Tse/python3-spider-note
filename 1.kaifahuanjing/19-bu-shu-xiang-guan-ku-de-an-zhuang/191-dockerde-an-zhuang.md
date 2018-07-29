@@ -51,22 +51,22 @@ Windows10 64位安装:推荐使用 [Docker for Windows](https://docs.docker.com/
 docker-machine stop dev && docker-machine rm dev
 ```
 
-停止NAME为name的machine实例
+停止NAME为default的machine实例
 
 ```
-docker-machine stop name
+docker-machine stop default
 ```
 
-删除NAME为name的machine实例
+删除NAME为default的machine实例
 
 ```
-docker-machine rm name
+docker-machine rm default
 ```
 
-创建一个名称为dev的machine实例
+创建一个名称为default的machine实例
 
 ```
-docker-machine create --driver=vmwareworkstation dev
+docker-machine create --driver=vmwareworkstation default
 ```
 
 ---
