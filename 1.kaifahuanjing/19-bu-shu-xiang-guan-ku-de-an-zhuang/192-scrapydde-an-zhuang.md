@@ -8,5 +8,11 @@ Scrapyd是一个用于布署和运行的Scrapy的工具，可以利用它将写�
 * PyPi：[https://pypi.python.org/pypi/scrapyd](https://pypi.python.org/pypi/scrapyd)0
 * 官方文档：[https://scrapyd.readthedocs.io](https://scrapyd.readthedocs.io/)
 
+### 3.安装
+
+```
+pip install scrapyd
+```
+
 
 
