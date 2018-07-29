@@ -12,5 +12,5 @@
 
 ### 3.准备工作
 
-PySpider 是支持 JavaScript 渲染的，而这个过程是依赖于 PhantomJS 的，所以还需要安装 PhantomJS，所以在安装之前请安装好 PhantomJS
+PySpider 是支持 JavaScript 渲染的，而这个过程是依赖于 PhantomJS 的，所以还需要安装 PhantomJS，所以在安装之前请[安装](/1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang/125-phantomjsde-an-zhuang.md)好 PhantomJS
 
