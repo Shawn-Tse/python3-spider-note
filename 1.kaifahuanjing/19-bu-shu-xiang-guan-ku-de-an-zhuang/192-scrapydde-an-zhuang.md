@@ -52,7 +52,19 @@ delproject.json   = scrapyd.webservice.DeleteProject
 delversion.json   = scrapyd.webservice.DeleteVersion
 listjobs.json     = scrapyd.webservice.ListJobs
 daemonstatus.json = scrapyd.webservice.DaemonStatus
+```
 
+### Linux
+
+安装完毕之后需要新建一个配置文件 /etc/scrapyd/scrapyd.conf，Scrapyd 在运行的时候会读取此配置文件。
+
+因为在 Scrapyd 1.2 版本之后不会自动创建该文件，需要我们自行添加。
+
+执行命令新建文件：
+
+```
+sudo mkdir /etc/scrapyd
+sudo vi /etc/scrapyd/scrapyd.conf
 ```
 
 
