@@ -12,5 +12,35 @@
 pip install flask
 ```
 
+### 3.验证安装
+
+```
+from flask import Flask
+
+# 创建一个Flask对象，传递__name__参数进去
+# __name__参数的作用
+# 1.可以规定规模和静态文件的查找路径
+# 2以后一些flask插件，比如flask-migrate等，那么flask可以通过这个参数找到具体的错误
+app = Flask(__name__)
+
+# @app.route是一个装饰器
+# @app.route('/')就是讲url中的/映射hello_world这个视图函数上面，那么flask可以通过这个参数找到
+# hello_world这个函数，然后这个函数的返回值返回给浏览器
+
+@app.route('/')
+def hello_world():
+    return 'hello world'
+
+# 如果这个文件作为一个主文件运行，那么就执行app.run()方法
+# 也就是启动这个网站
+if __name__ == "__main__":
+    # app.run()flask中的一个测试应用服务器
+    # 如果设置参数host为0.0.0.0，外部机器也可以访问本机的网站
+    app.run(host='0.0.0.0')
+    # 改变端口
+    # app.run(port=port)
+
+```
+
 
 
