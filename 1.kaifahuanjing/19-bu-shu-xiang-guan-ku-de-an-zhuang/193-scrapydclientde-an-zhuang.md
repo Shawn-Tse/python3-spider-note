@@ -42,3 +42,9 @@ E:\Python36\python E:\Python36\Scripts\scrapyd-deploy %*
 
 这样就能成功运行了
 
+![](/assets/1.9.3-4.png)
+
+
+
+
+
