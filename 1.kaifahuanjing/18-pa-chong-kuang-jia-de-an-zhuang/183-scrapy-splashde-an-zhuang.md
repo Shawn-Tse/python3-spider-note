@@ -8,7 +8,7 @@ ScrapySplash 的安装分为两部分，一个是是 Splash 服务的安装，�
 * PyPi：[https://pypi.python.org/pypi/scrapy-splash](https://pypi.python.org/pypi/scrapy-splash)
 * 使用说明：[https://github.com/scrapy-plugins/scrapy-splash\#configuration](https://github.com/scrapy-plugins/scrapy-splash#configuration)
 * Splash 官方文档：[http://splash.readthedocs.io](http://splash.readthedocs.io/)
-* docker:https://yeasy.gitbooks.io/docker\_practice/install/ubuntu.html
+* docker:[https://yeasy.gitbooks.io/docker\_practice/install/ubuntu.html](https://yeasy.gitbooks.io/docker_practice/install/ubuntu.html)
 
 ### 2. 安装Splash {#2-安装splash}
 

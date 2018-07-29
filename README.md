@@ -89,5 +89,9 @@ ThisCrackLicenseId-{
 
 [下载地址](https://pan.baidu.com/s/1si1u-15AhTkWq2bRdkascQ ) 密码：v97f
 
-Docker安装请参照这里:https://yeasy.gitbooks.io/docker\_practice/install/ubuntu.html
+Docker安装请参照这里:[https://yeasy.gitbooks.io/docker\_practice/install/ubuntu.html](https://yeasy.gitbooks.io/docker_practice/install/ubuntu.html)
+
+windows安装docker:
+
+https://www.docker.com/docker-windows
 
