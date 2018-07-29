@@ -113,5 +113,68 @@ scrapy
 
 ![](/assets/1.8.2.9.png)
 
-出现如上结果，就代表scrapy安装成功了
+出现如上结果，就代表scrapy安装成功了。
+
+### 7. 常见错误 {#7-常见错误}
+
+#### pkg\_resources.VersionConflict: \(six 1.5.2 \(/usr/lib/python3/dist-packages\), Requirement.parse\('six&gt;=1.6.0'\)\) {#pkgresourcesversionconflict-six-152-usrlibpython3dist-packages-requirementparsesix160}
+
+six 包版本过低，six包是一个提供兼容 Python2 和 Python3 的库，升级 six 包即可：
+
+```
+sudo pip3 install -U six
+
+```
+
+#### c/\_cffi\_backend.c:15:17: fatal error: ffi.h: No such file or directory {#ccffibackendc1517-fatal-error-ffih-no-such-file-or-directory}
+
+这是在 Linux 下常出现的错误，缺少 Libffi 这个库。什么是 libffi？“FFI” 的全名是 Foreign Function Interface，通常指的是允许以一种语言编写的代码调用另一种语言的代码。而 Libffi 库只提供了最底层的、与架构相关的、完整的”FFI”。
+
+安装相应的库即可。
+
+Ubuntu、Debian：
+
+```
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+
+```
+
+CentOS、RedHat:
+
+```
+sudo yum install gcc libffi-devel python-devel openssl-devel
+
+```
+
+#### Command "python setup.py egg\_info" failed with error code 1 in /tmp/pip-build/cryptography/ {#command-python-setuppy-egginfo-failed-with-error-code-1-in-tmppip-buildcryptography}
+
+这是缺少加密的相关组件，利用Pip 安装即可。
+
+```
+pip3 install cryptography
+
+```
+
+#### ImportError: No module named 'packaging' {#importerror-no-module-named-packaging}
+
+缺少 packaging 这个包，它提供了 Python 包的核心功能，利用 Pip 安装即可。
+
+#### ImportError: No module named '\_cffi\_backend' {#importerror-no-module-named-cffibackend}
+
+缺少 cffi 包，使用 Pip 安装即可：
+
+```
+pip3 install cffi
+
+```
+
+#### ImportError: No module named 'pyparsing' {#importerror-no-module-named-pyparsing}
+
+缺少 pyparsing 包，使用 Pip 安装即可：
+
+```
+pip3 install pyparsing appdirs
+```
+
+
 
