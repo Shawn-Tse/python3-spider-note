@@ -33,7 +33,7 @@
   * [1.7 App爬取相关库的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang.md)
     * [1.7.1 Charles的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang/171-charlesde-an-zhuang.md)
     * [1.7.2 mitmproxy的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang/172-mitmproxyde-an-zhuang.md)
-    * 1.7.3 Appium的安装
+    * [1.7.3 Appium的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang/173-appiumde-an-zhuang.md)
   * 1.8 爬虫框架的安装
     * 1.8.1 pyspider的安装
     * 1.8.2 Scrapy的安装
