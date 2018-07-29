@@ -38,7 +38,7 @@
     * [1.8.1 pyspider的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/181-pyspiderde-an-zhuang.md)
     * [1.8.2 Scrapy的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/182-scrapyde-an-zhuang.md)
     * [1.8.3 Scrapy-Splash的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/183-scrapy-splashde-an-zhuang.md)
-    * 1.8.4 Scrapy-Splash的安装
+    * [1.8.4 ScrapyRedis的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/184-scrapy-splashde-an-zhuang.md)
 * [2.爬虫基础](1./2pa-chong-ji-chu.md)
   * [2.1 HTTP 基本原理](2pa-chong-ji-chu/21-http-ji-ben-yuan-li.md)
     * [2.1.1 URI和URL](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/211-urihe-url.md)
