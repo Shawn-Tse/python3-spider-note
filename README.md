@@ -51,3 +51,5 @@ ThisCrackLicenseId-{
 
 [下载地址](https://pan.baidu.com/s/1si1u-15AhTkWq2bRdkascQ ) 密码：v97f
 
+学习地址:https://germey.gitbooks.io/python3webspider/content
+
