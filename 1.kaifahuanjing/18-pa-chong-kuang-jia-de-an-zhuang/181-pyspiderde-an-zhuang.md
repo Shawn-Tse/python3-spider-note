@@ -68,5 +68,11 @@ C:\Users\miku>pyspider all
 pkg_resources.DistributionNotFound: wsgidav
 ```
 
+解决方案:
 
+```
+pip install -U setuptools
+```
+
+再尝试命令 pyspider all，成功运行
 
