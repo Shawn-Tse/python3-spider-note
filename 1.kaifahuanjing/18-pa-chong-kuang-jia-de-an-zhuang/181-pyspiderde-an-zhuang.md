@@ -36,3 +36,37 @@ sudo apt-get install libcurl4-gnutls-dev
 
 运行安装后即可正常安装`pycurl`
 
+### 5. 验证安装 {#5-验证安装}
+
+启动pyspider
+
+```
+pyspider all
+```
+
+控制平台如下输出:
+
+```
+C:\Users\miku>pyspider all
+e:\python36\lib\site-packages\pyspider\libs\utils.py:196: FutureWarning: timeout is not supported on your platform.
+  warnings.warn("timeout is not supported on your platform.", FutureWarning)
+phantomjs fetcher running on port 25555
+[I 180729 16:04:42 result_worker:49] result_worker starting...
+[I 180729 16:04:43 processor:211] processor starting...
+[I 180729 16:04:43 scheduler:647] scheduler starting...
+[I 180729 16:04:43 scheduler:586] in 5m: new:0,success:0,retry:0,failed:0
+[I 180729 16:04:43 scheduler:782] scheduler.xmlrpc listening on 127.0.0.1:23333
+[I 180729 16:04:43 tornado_fetcher:638] fetcher starting...
+[I 180729 16:04:44 app:76] webui running on 0.0.0.0:5000
+```
+
+如果报错，出现以下错误
+
+```
+C:\Users\miku>pyspider all
+....
+pkg_resources.DistributionNotFound: wsgidav
+```
+
+
+
