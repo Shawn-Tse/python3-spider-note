@@ -36,5 +36,11 @@ pip install pyOpenSSL-18.0.0-py2.py3-none-any.whl
 
 如 Python 3.6 版本，Windows 64 位系统，当前最新版本为 [Twisted‑18.7.0‑cp36‑cp36m‑win\_amd64.whl](javascript:;)
 
+下载完后安装
+
+```
+pip install Twisted‑18.7.0‑cp36‑cp36m‑win_amd64.whl
+```
+
 
 
