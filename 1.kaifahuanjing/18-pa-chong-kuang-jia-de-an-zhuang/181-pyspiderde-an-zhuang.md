@@ -26,5 +26,12 @@ Windows 下可能会出现这样的错误提示：Command "python setup.py egg\_
 pip install pycurl‑7.43.0‑cp36‑cp36m‑win_amd64.whl
 ```
 
+Linux 下如果遇到 PyCurl 的错误:\_\_main\_\_.ConfigurationError: Could not run curl-config: \[Errno2\] No such file or directory
+
+  
+
+
+
+
 
 
