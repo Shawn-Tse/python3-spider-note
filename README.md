@@ -1,5 +1,9 @@
-# python 爬虫笔记
+# python3 爬虫笔记
 
+[![Coveralls bitbucket branch](	https://img.shields.io/badge/python3爬虫笔记-心跳回忆-green.svg?longCache=true&style=plastic)](https://github.com/CoderAngle/python3-spider-note)
+
+
+  
 python使用版本:python3
 
 \(python3网络爬虫开发实战笔记\)
