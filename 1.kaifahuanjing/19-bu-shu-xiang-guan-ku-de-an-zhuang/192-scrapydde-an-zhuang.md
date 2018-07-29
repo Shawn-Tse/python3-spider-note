@@ -91,3 +91,5 @@ sudo vim /etc/scrapyd/scrapyd.conf
 
 运行之后便可以在浏览器的 6800 访问 WebUI 了，可以简略看到当前 Scrapyd 的运行 Job、Log 等内容
 
+![](/assets/1.9.2-1.png)运行 Scrapyd 更佳的方式是使用 Supervisor 守护进程运行，如果感兴趣可以参考：[http://supervisord.org/](http://supervisord.org/)。
+
