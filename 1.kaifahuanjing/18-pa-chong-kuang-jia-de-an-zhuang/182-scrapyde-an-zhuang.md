@@ -58,5 +58,60 @@ pip install Twisted‑18.7.0‑cp36‑cp36m‑win_amd64.whl
 pip install scrapy
 ```
 
+### 4. Linux下的安装 {#4-linux下的安装}
+
+#### CentOS、RedHat {#centos、redhat}
+
+首先确保一些依赖库已经安装，运行如下命令：
+
+```
+sudo yum groupinstall -y development tools
+sudo yum install -y epel-release libxslt-devel libxml2-devel openssl-devel
+
+```
+
+最后利用 Pip 安装 Scrapy 即可，运行如下命令：
+
+```
+pip3 install Scrapy
+
+```
+
+#### Ubuntu、Debian、Deepin {#ubuntu、debian、deepin}
+
+首先确保一些依赖库已经安装，运行如下命令：
+
+```
+sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev
+```
+
+然后利用 Pip 安装 Scrapy 即可，运行如下命令：
+
+```
+pip3 install Scrapy
+```
+
+### 5. Mac下的安装 {#5-mac下的安装}
+
+在 Mac 上构建 Scrapy 的依赖库需要 C 编译器以及开发头文件，它一般由 Xcode 提供，运行如下命令安装即可：
+
+```
+xcode-select --install
+```
+
+随后利用 Pip 安装 Scrapy 即可，运行如下命令：
+
+```
+pip3 install Scrapy
+```
+
+### 6. 验证安装 {#6-验证安装}
+
+安装之后，在命令行下输入 scrapy
+
+```
+scrapy
+```
+
 
 
