@@ -2,7 +2,6 @@
 
 * [介绍](README.md)
 * [1.开发环境配置](1.kaifahuanjing/1kai-fa-huan-jing-pei-zhi.md)
-
   * [1.1 python3的安装](1.kaifahuanjing/1.1-python3.md)
     * [1.1.1 windows下的安装](1.kaifahuanjing/1.1.1-windows.md)
     * [1.1.2 Linux下的安装](1.kaifahuanjing/1.1.2-linux.md)
@@ -40,20 +39,13 @@
     * [1.8.2 Scrapy的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/182-scrapyde-an-zhuang.md)
     * [1.8.3 Scrapy-Splash的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/183-scrapy-splashde-an-zhuang.md)
     * [1.8.4 ScrapyRedis的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/184-scrapy-splashde-an-zhuang.md)
-  * 1.9 布署相关库的安装
-
+  * [1.9 布署相关库的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang.md)
     * 1.9.1 Docker的安装
-
     * 1.9.2 Scrapyd的安装
-
     * 1.9.3 ScrapydClient的安装
-
     * 1.9.4 ScrapydAPI的安装
-
     * 1.9.5 Scrapyrt的安装
-
     * 1.9.6-Gerapy的安装
-
 * [2.爬虫基础](1./2pa-chong-ji-chu.md)
   * [2.1 HTTP 基本原理](2pa-chong-ji-chu/21-http-ji-ben-yuan-li.md)
     * [2.1.1 URI和URL](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/211-urihe-url.md)
@@ -166,6 +158,4 @@
   * 15.3 Scrapyd对接Docker
   * 15.4 Scrapyd批量部署
   * 15.5 Gerapy分布式管理
-
-
 
