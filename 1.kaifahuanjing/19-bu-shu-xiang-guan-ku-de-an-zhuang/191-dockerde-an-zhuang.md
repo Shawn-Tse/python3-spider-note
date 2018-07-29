@@ -150,6 +150,27 @@ if [ $# -eq 0 ]; then
 
 然后与上面同样的操作
 
+### Linux下的安装 {#3-linux下的安装}
+
+```
+curl -sSL https://get.docker.com/ | sh
+```
+
+阿里云安装脚本：
+
+```
+curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
+
+```
+
+DaoCloud 安装脚本：
+
+```
+curl -sSL https://get.daocloud.io/docker | sh
+```
+
+任选其一
+
 ### 验证安装
 
 ```
