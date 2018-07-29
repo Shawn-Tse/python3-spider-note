@@ -40,7 +40,7 @@
     * [1.8.3 Scrapy-Splash的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/183-scrapy-splashde-an-zhuang.md)
     * [1.8.4 ScrapyRedis的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/184-scrapy-splashde-an-zhuang.md)
   * [1.9 布署相关库的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang.md)
-    * 1.9.1 Docker的安装
+    * [1.9.1 Docker的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/191-dockerde-an-zhuang.md)
     * 1.9.2 Scrapyd的安装
     * 1.9.3 ScrapydClient的安装
     * 1.9.4 ScrapydAPI的安装
