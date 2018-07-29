@@ -14,5 +14,32 @@ Tornado是一个支持异步的web框架，通过使用非阻塞I/O流，可以�
 pip install tornado
 ```
 
+### 4.验证安装
+
+```
+import tornado.ioloop
+import tornado.web
+
+# 类继承自tornado.web.RequestHandler
+class MainHandler(tornado.web.RequestHandler):
+    # get请求
+    def get(self):
+        self.write("Hello, world")
+
+def make_app():
+    return tornado.web.Application([
+        # 映射类视图
+        (r"/", MainHandler),
+    ])
+
+if __name__ == "__main__":
+    # 主程序接口
+    app = make_app()
+    # 监听端口8888
+    app.listen(8888)
+    # 启动
+    tornado.ioloop.IOLoop.current().start()
+```
+
 
 
