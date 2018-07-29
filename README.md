@@ -89,3 +89,22 @@ ThisCrackLicenseId-{
 
 [下载地址](https://pan.baidu.com/s/1si1u-15AhTkWq2bRdkascQ ) 密码：v97f
 
+### Linux中切换python版本
+
+首先先来看一下我们的默认Python版本
+
+```
+$ python --version
+Python 2.7.6
+```
+
+然后我们修改一下别名
+
+```
+$ alias python='/usr/bin/python3'
+$ python --version
+Python 3.4.3  # 版本已经改变
+```
+
+
+
