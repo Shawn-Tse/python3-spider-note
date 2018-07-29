@@ -73,3 +73,24 @@ sudo vim /etc/scrapyd/scrapyd.conf
 
 配置文件的内容可以参见[官方文档](https://scrapyd.readthedocs.io/en/stable/config.html#example-configuration-file)：在这里的配置文件有所修改，其中之一是 max\_proc\_per\_cpu 官方默认为 4，即一台主机每个 CPU 最多运行 4 个Scrapy Job，另外一个是 bind\_address，默认为本地 127.0.0.1，在此修改为 0.0.0.0，外网可以访问。
 
+### 5. 后台运行 {#4-后台运行}
+
+由于 Scrapyd 是一个纯 Python 项目，在这里可以直接调用 scrapyd 来运行，为了使程序一直在后台运行，Linux 和 Mac 可以使用如下命令：
+
+```
+(scrapyd > /dev/null &)
+```
+
+这样 Scrapyd 就会在后台持续运行了，控制台输出直接忽略，当然如果想记录输出日志可以修改输出目标，如：
+
+```
+(scrapyd > ~/scrapyd.log &)
+```
+
+则会输出 Scrapyd 运行输出到 ~/scrapyd.log 文件中。
+
+运行之后便可以在浏览器的 6800 访问 WebUI 了，可以简略看到当前 Scrapyd 的运行 Job、Log 等内容，如图 1-86 所示：
+
+  
+
+
