@@ -127,5 +127,22 @@ else
 fi
 ```
 
-[![](http://common.cnblogs.com/images/copycode.gif "复制代码")](javascript:void%280%29;)
+#### 打开**git-bash**，输入以下命令：
+
+`docker-machine ls`
+
+检查是否有machine实例，如果有，请考虑是否卸载它![](/assets/1.9.1-1.png)
+
+```
+docker-machine stop dev && docker-machine rm dev
+```
+
+停止NAME为name的machine实例
+
+```
+
+docker-machine stop name
+```
+
+删除NAME为name的machine实例
 
