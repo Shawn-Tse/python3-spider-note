@@ -154,7 +154,25 @@ print(r.text)
 
 ### 4. SSL证书验证 {#4-ssl证书验证}
 
-测试网址:https://www.12306.cn
+测试网址:[https://www.12306.cn](https://www.12306.cn)
 
 Requests 提供了证书验证的功能，当发送 HTTP 请求的时候，它会检查 SSL 证书，我们可以使用 verify 这个参数来控制是否检查此证书，其实如果不加的话默认是 True，会自动验证。
+
+测试:
+
+```
+import requests
+
+response = requests.get("https://www.12306.cn")
+print(response.status_code)
+```
+
+运行结果:
+
+```
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.12306.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(CertificateError("hostname 'www.12306.cn' doesn't match either of 'webssl.chinanetcenter.com', 'i.l.inmobicdn.net', '*.fn-mart.com', 'www.1zhe.com', '*.pinganfang.com', '*.anhouse.com', 'dl.jphbpk.gxpan.cn', 'dl.givingtales.gxpan.cn', 'dl.toyblast.gxpan.cn', 'dl.sds.gxpan.cn', 'download.ctrip.com', 'mh.tiancity.com', 'app.4399.cn', 'i.4399.cn', 'm.4399.cn', 'a.4399.cn', 'cdn.hxjyios.iwan4399.com', 'ios.hxjy.iwan4399.com', 'gjzx.gjzq.com.cn', 'f.3000test.com', 'tj.img4399.com', '*.zhe800.com', '*.qiyipic.com', '*.vxinyou.com', '*.gdjh.vxinyou.com', '*.3000.com', 'pay.game2.cn', 'static1.j.cn', 'static2.j.cn', 'static3.j.cn', 'static4.j.cn', 'video1.j.cn', 'video2.j.cn', 'video3.j.cn', 'online.j.cn', 'playback.live.j.cn', 'audio1.guang.j.cn', 'audio2.guang.j.cn', 'audio3.guang.j.cn', 'img1.guang.j.cn', 'img2.guang.j.cn', 'img3.guang.j.cn', 'img4.guang.j.cn', 'img5.guang.j.cn', 'img6.guang.j.cn', '*.4399youpai.com', 'w.tancdn.com', '*.3000api.com', 'static11.j.cn', '*.kuyinyun.com', '*.kuyin123.com', '*.diyring.cc', '3000test.com', '*.3000test.com', 'www.3387.com', 'bbs.4399.cn', '*.cankaoxiaoxi.com', '*.service.kugou.com', 'test.macauslot.com', 'testm.macauslot.com', 'testtran.macauslot.com', 'xiuxiu.huodong.meitu.com', '*.meitu.com', '*.meitudata.com', '*.wheetalk.com', '*.shanliaoapp.com', 'xiuxiu.web.meitu.com', 'api.account.meitu.com', 'open.web.meitu.com', 'id.api.meitu.com', 'api.makeup.meitu.com', 'im.live.meipai.com', '*.meipai.com', 'm.macauslot.com', 'www.macauslot.com', 'web.macauslot.com', 'translation.macauslot.com', 'img1.homekoocdn.com', 'cdn.homekoocdn.com', 'cdn1.homekoocdn.com', 'cdn2.homekoocdn.com', 'cdn3.homekoocdn.com', 'cdn4.homekoocdn.com', 'img.homekoocdn.com', 'img2.homekoocdn.com', 'img3.homekoocdn.com', 'img4.homekoocdn.com', '*.macauslot.com', '*.samsungapps.com', 'auto.tancdn.com', '*.winbo.top', 'static.bst.meitu.com', 'api.xiuxiu.meitu.com', 'api.photo.meituyun.com', 'h5.selfiecity.meitu.com', 'api.selfiecity.meitu.com', 'h5.beautymaster.meiyan.com', 'api.beautymaster.meiyan.com', 'www.yawenb.com', 'm.yawenb.com', 'www.biqugg.com', 'www.dawenxue.net', 'cpg.meitubase.com', 'www.qushuba.com', 'www.ranwena.com', 'www.u8xsw.com', '*.4399sy.com', 'ms.awqsaged.cn', 'fanxing2.kugou.com', 'fanxing.kugou.com', 'sso.56.com', 'upload.qf.56.com', 'sso.qianfan.tv', 'cdn.danmu.56.com', 'www-ppd.hermes.cn', 'www-uat.hermes.cn', 'www-ts2.hermes.cn', 'www-tst.hermes.cn', '*.syyx.com', 'img.wgeqr.cn', 'img.wgewa.cn', 'img.09mk.cn', 'img.85nh.cn', '*.zhuoquapp.com', 'img.dtmpekda8.cn', 'img.etmpekda6.cn', '*.5054399.com', '*.aiwan4399.com', 'user.beevideo.bestv.com.cn', '*.3839.com', '*.actdelivery.net', '*.4399.cn'",),))
+
+```
+
+
 
