@@ -64,7 +64,7 @@
     * [2.3.2 能抓怎样的数据](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/232-neng-zhua-zen-yang-de-shu-ju.md)
     * [2.3.3 javascript渲染的页面](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/233-javascriptxuan-ran-de-ye-mian.md)
   * [2.4 会话和Cookies](2pa-chong-ji-chu/24-hui-hua-he-cookies.md)
-    * 2.4.1 静态网页和动态网页
+    * [2.4.1 静态网页和动态网页](2pa-chong-ji-chu/24-hui-hua-he-cookies/241-jing-tai-wang-ye-he-dong-tai-wang-ye.md)
     * 2.4.2 无状态HTTP
     * 2.4.3 常见误区
   * [2.5 代理的基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li.md)
