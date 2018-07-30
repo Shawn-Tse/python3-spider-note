@@ -270,8 +270,7 @@ Opener 可以使用 open\(\) 方法，返回的类型和 urlopen\(\) 如出一�
 
 有些网站在打开时它就弹出了一个框，直接提示输入用户名和密码，认证成功之后才能查看页面：
 
-![](/assets/3.1.1-3.png)  
-
+![](/assets/3.1.1-3.png)
 
 请求这样的页面需要借助于 HTTPBasicAuthHandler 就可以完成
 
@@ -308,4 +307,33 @@ except URLError as e:
 接下来利用 build\_opener\(\) 方法来利用这个 Handler 构建一个 Opener，那么这个 Opener 在发送请求的时候就相当于已经认证成功了。
 
 接下来利用 Opener 的 open\(\) 方法打开链接，就可以完成认证了，在这里获取到的结果就是认证后的页面源码内容。
+
+#### 代理 {#代理}
+
+添加代理
+
+```
+from urllib.error import URLError
+from urllib.request import ProxyHandler,build_opener
+
+# 建立代理池
+proxy_handler = ProxyHandler({
+    'http': 'http://127.0.0.1:5000',
+    'https': 'https://127.0.0.1:5000'
+})
+
+opener = build_opener(proxy_handler)
+
+try:
+    response = opener.open('https://www.baidu.com')
+    print(response.read().decode('utf-8'))
+except URLError as e:
+    print(e.reason)
+```
+
+在本地搭建一个代理，运行在9743端口上
+
+使用了 ProxyHandler，ProxyHandler 的参数是一个字典\(协议类型:代理ip\)，，可以添加多个代理。
+
+然后利用 build\_opener\(\) 方法利用这个 Handler 构造一个 Opener，然后发送请求即可。
 
