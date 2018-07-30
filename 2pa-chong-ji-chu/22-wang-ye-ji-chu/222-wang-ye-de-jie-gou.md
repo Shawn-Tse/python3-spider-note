@@ -1,11 +1,11 @@
-网页一般由三部分组成:HTML标签、CSS样式、JavaScript语句
+网页的一般结构，都是 html 标签内嵌套 head 和 body 标签，head 内定义网页的配置和引用，body 内定义网页的正文。
 
 ```
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>This is a Demo</title>
+        <title>This is a test</title>
     </head>
     <body>
         <div id="header">
