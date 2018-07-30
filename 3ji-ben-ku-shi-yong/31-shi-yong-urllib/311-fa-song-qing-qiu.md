@@ -266,3 +266,46 @@ urllib.request 模块里的 BaseHandler类，是所有其他 Handler 的父类�
 
 Opener 可以使用 open\(\) 方法，返回的类型和 urlopen\(\) 如出一辙。那么它和 Handler 有什么关系？简而言之，就是利用 Handler 来构建 Opener。
 
+#### 认证 {#认证}
+
+有些网站在打开时它就弹出了一个框，直接提示输入用户名和密码，认证成功之后才能查看页面：
+
+![](/assets/3.1.1-3.png)  
+
+
+请求这样的页面需要借助于 HTTPBasicAuthHandler 就可以完成
+
+实例:
+
+```
+from urllib.request import HTTPPasswordMgrWithDefaultRealm,HTTPBasicAuthHandler,build_opener
+from urllib.error import  URLError
+
+username = 'username'
+password = 'password'
+url = 'http://localhost:5000/'
+
+# 实例化HTTPPasswordMgrWithDefaultRealm 对象
+p = HTTPPasswordMgrWithDefaultRealm()
+# 利用HTTPPasswordMgrWithDefaultRealm 对象添加相关信息，这样就建立了认证的Handler
+p.add_password(None,url,username,password)
+auth_handler = HTTPBasicAuthHandler(p)
+# 构建一个opener，在发送请求时就认证成功了
+opener = build_opener(auth_handler)
+
+try:
+    # 打开网址
+    result = opener.open(url)
+    # 源码
+    html = result.read().decode('utf-8')
+    print(html)
+except URLError as e:
+    print(e.reason)
+```
+
+首先实例化了一个 HTTPBasicAuthHandler 对象，参数是 HTTPPasswordMgrWithDefaultRealm 对象，它利用 add\_password\(\) 添加进去用户名和密码，这样我们就建立了一个处理认证的 Handler。
+
+接下来利用 build\_opener\(\) 方法来利用这个 Handler 构建一个 Opener，那么这个 Opener 在发送请求的时候就相当于已经认证成功了。
+
+接下来利用 Opener 的 open\(\) 方法打开链接，就可以完成认证了，在这里获取到的结果就是认证后的页面源码内容。
+
