@@ -34,9 +34,9 @@ print(type(response))
 import urllib.request
 
 response = urllib.request.urlopen("http://www.baidu.com")
-print(response.status)
-print(response.getheaders())
-print(response.getheader('Server'))
+print(response.status) # 状态码
+print(response.getheaders()) # 响应头信息
+print(response.getheader('Server')) # headers中server的值
 ```
 
 输出结果为:
