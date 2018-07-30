@@ -178,7 +178,59 @@ class urllib.request.Request(url, data=None, headers={}, origin_req_host=None, u
 Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11
 ```
 
-*  origin\_req\_host 参数指的是请求方的 host 名称或者 IP 地址。
-*  unverifiable 参数指的是这个请求是否是无法验证的，默认是False。意思就是说用户没有足够权限来选择接收这个请求的结果。例如我们请求一个 HTML 文档中的图片，但是我们没有自动抓取图像的权限，这时 unverifiable 的值就是 True。
+* origin\_req\_host 参数指的是请求方的 host 名称或者 IP 地址。
+* unverifiable 参数指的是这个请求是否是无法验证的，默认是False。意思就是说用户没有足够权限来选择接收这个请求的结果。例如我们请求一个 HTML 文档中的图片，但是我们没有自动抓取图像的权限，这时 unverifiable 的值就是 True。
 * method 参数是一个字符串，它用来指示请求使用的方法，比如GET，POST，PUT等等。
+
+实例:
+
+```
+from urllib import request,parse
+
+url = 'http://httpbin.org/post'
+# 伪造请求头
+headers = {
+    'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)',
+    'Host': 'httpbin.org'
+}
+# 构造参数
+dict = {
+    'name':"angle",
+}
+# 转换为字节流
+data = bytes(parse.urlencode(dict),encoding='utf-8')
+req = request.Request(url=url,data=data,headers=headers,method='POST')
+response = request.urlopen(req)
+print(response.read().decode('utf-8'))
+```
+
+运行结果:
+
+```
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "name": "angle"
+  }, 
+  "headers": {
+    "Accept-Encoding": "identity", 
+    "Connection": "close", 
+    "Content-Length": "10", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)"
+  }, 
+  "json": null, 
+  "origin": "220.197.208.229", 
+  "url": "http://httpbin.org/post"
+}
+
+```
+
+通过四个参数构造了一个 Request，url 即请求 URL，在headers 中指定了 User-Agent 和 Host，传递的参数 data 用了 urlencode\(\) 和 bytes\(\) 方法来转成字节流，并指定了请求方式为 POST。
+
+  
+
 
