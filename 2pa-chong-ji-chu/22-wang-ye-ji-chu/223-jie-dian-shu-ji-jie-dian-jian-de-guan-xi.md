@@ -35,3 +35,5 @@ HTML DOM 将 HTML 文档视作树结构。这种结构被称为_节点树_：
 
 ![](http://www.w3school.com.cn/i/dom_navigate.gif "DOM 节点关系")
 
+本段参考:http://www.w3school.com.cn/htmldom/dom\_nodes.asp
+
