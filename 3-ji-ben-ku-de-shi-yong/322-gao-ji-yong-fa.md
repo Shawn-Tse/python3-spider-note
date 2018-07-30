@@ -357,7 +357,61 @@ auth = OAuth1('YOUR_APP_KEY', 'YOUR_APP_SECRET',
 requests.get(url,auth=auth)
 ```
 
-requests\_oauthlib官方文档:https://requests-oauthlib.readthedocs.org/
+requests\_oauthlib官方文档:[https://requests-oauthlib.readthedocs.org/](https://requests-oauthlib.readthedocs.org/)
+
+### 8. Prepared Request {#8-prepared-request}
+
+实例:
+
+```
+from requests import Request,Session
+
+url = 'http://httpbin.org/post'
+data = {
+    'name':'angle',
+}
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36'
+}
+s = Session()
+req = Request('POST',url,data=data,headers=headers)
+prepped = s.prepare_request(req)
+r = s.send(prepped)
+print(r.text)
+```
+
+引入 Request，然后用 url、data、headers 参数构造了一个 Request 对象，需要再调用 Session 的 prepare\_request\(\) 方法将其转换为一个 Prepared Request 对象，然后调用 send\(\) 方法发送即可
+
+运行结果:
+
+```
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "name": "angle"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Connection": "close", 
+    "Content-Length": "10", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36"
+  }, 
+  "json": null, 
+  "origin": "220.197.208.229", 
+  "url": "http://httpbin.org/post"
+}
+```
+
+有了 Request 这个对象，就可以将一个个请求当做一个独立的对象来看待，这样在进行队列调度的时候会非常方便
+
+### 9.相关链接
+
+官方文档:[http://docs.python-requests.org/](http://docs.python-requests.org/)
 
 
 
