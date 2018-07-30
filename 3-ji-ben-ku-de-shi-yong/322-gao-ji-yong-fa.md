@@ -108,3 +108,21 @@ print(r.text)
 
 利用它，我们可以方便地维护一个会话，而且不用担心 Cookies 的问题，它会帮我们自动处理好
 
+实例:
+
+```
+import requests
+
+requests.get("http://httpbin.org/cookies/set/number/123456789")
+r = requests.get("http://httpbin.org/cookies")
+print(r.cookies)
+```
+
+运行结果:
+
+```
+<RequestsCookieJar[]>
+```
+
+不能能成功获取到设置的 Cookies
+
