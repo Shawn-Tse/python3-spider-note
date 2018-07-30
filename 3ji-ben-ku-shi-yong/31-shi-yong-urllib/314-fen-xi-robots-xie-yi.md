@@ -46,5 +46,29 @@ Allow 一般和 Disallow 一起使用，一般不会单独使用，用来排除�
 | ia\_archiver | Alexa | www.alexa.cn |
 | Scooter | altavista | www.altavista.com |
 
+### 4. robotparser {#3-robotparser}
+
+了解了什么是 Robots 协议之后，我们就可以使用 robotparser 模块来解析 robots.txt 了。
+
+robotparser 模块提供了一个类，叫做 RobotFileParser。它可以根据某网站的 robots.txt 文件来判断一个爬取爬虫是否有权限来爬取这个网页。
+
+语法声明:
+
+```
+urllib.robotparser.RobotFileParser(url='')
+
+```
+
+使用这个类的时候非常简单，只需要在构造方法里传入 robots.txt的链接即可。当然也可以声明时不传入，默认为空，再使用 set\_url\(\) 方法设置一下也可以。
+
+有常用的几个方法分别介绍一下：
+
+* set\_url\(\)，用来设置 robots.txt 文件的链接。如果已经在创建 RobotFileParser 对象时传入了链接，那就不需要再使用这个方法设置了。
+* read\(\)，读取 robots.txt 文件并进行分析，注意这个函数是执行一个读取和分析操作，如果不调用这个方法，接下来的判断都会为 False，所以一定记得调用这个方法，这个方法不会返回任何内容，但是执行了读取操作。
+* parse\(\)，用来解析 robots.txt 文件，传入的参数是 robots.txt 某些行的内容，它会按照 robots.txt 的语法规则来分析这些内容。
+* can\_fetch\(\)，方法传入两个参数，第一个是 User-agent，第二个是要抓取的 URL，返回的内容是该搜索引擎是否可以抓取这个 URL，返回结果是 True 或 False。
+* mtime\(\)，返回的是上次抓取和分析 robots.txt 的时间，这个对于长时间分析和抓取的搜索爬虫是很有必要的，你可能需要定期检查来抓取最新的 robots.txt。
+* modified\(\)，同样的对于长时间分析和抓取的搜索爬虫很有帮助，将当前时间设置为上次抓取和分析 robots.txt 的时间。
+
 
 
