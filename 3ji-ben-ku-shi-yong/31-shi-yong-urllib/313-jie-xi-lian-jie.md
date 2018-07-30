@@ -106,5 +106,25 @@ print(result)
 ParseResult(scheme='https', netloc='www.google.com.hk', path='/webhp#content', params='', query='', fragment='')
 ```
 
+返回结果 ParseResult 实际上是一个元组，我们可以用索引顺序来获取，也可以用属性名称获取
+
+实例:
+
+```
+from urllib.parse import urlparse
+
+result = urlparse('http://www.baidu.com/index.html#comment', allow_fragments=False)
+print(result.scheme, result[0], result.netloc, result[1], sep='\n')
+```
+
+运行结果:
+
+```
+http
+http
+www.baidu.com
+www.baidu.com
+```
+
 
 
