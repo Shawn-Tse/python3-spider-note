@@ -4,3 +4,5 @@
 
 而且恰恰是由于关闭浏览器不会导致 Session 被删除，这就需要服务器为 Seesion 设置一个失效时间，当距离客户端上一次使用 Session 的时间超过这个失效时间时，服务器就可以认为客户端已经停止了活动，才会把 Session 删除以节省存储空间。
 
+参考:https://germey.gitbooks.io/python3webspider/content/2.4-Session%E5%92%8CCookies.html
+
