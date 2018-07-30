@@ -113,8 +113,10 @@ print(response.text)
   "origin": "220.197.208.229", 
   "url": "http://httpbin.org/get?name=angle&like=dongmnae"
 }
-
 ```
 
+通过返回信息我们可以判断，请求的链接自动被构造成了：http://httpbin.org/get?name=angle&like=dongman
+
+  
 
 
