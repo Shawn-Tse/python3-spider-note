@@ -95,8 +95,6 @@ else:
 
 这样我们就可以做到先捕获 HTTPError，获取它的错误状态码、原因、Headers 等详细信息。如果非 HTTPError，再捕获 URLError 异常，输出错误原因。最后用 else 来处理正常的逻辑，这是一个较好的异常处理写法。
 
-
-
 有时候 reason 属性返回的不一定是字符串，也可能是一个对象
 
 实例：
@@ -111,6 +109,7 @@ try:
     # 设置超时时间来强制抛出 timeout 异常
 except urllib.error.URLError as e:
     print(type(e.reason))
+    # instance() 方法来判断类型
     if isinstance(e.reason, socket.timeout):
         print('TIME OUT')
 ```
