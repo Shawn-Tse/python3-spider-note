@@ -22,8 +22,6 @@ GET 和 POST 请求方法有如下区别：
 * GET 方式请求中参数是包含在 URL 里面的，数据可以在 URL 中看到，而 POST 请求的 URL 不会包含这些数据，数据都是通过表单的形式传输，会包含在 Request Body 中。
 * GET 方式请求提交的数据最多只有 1024 字节，而 POST 方式没有限制。
 
-
-
 请求方式以及描述
 
 | 方法 |
@@ -41,5 +39,5 @@ GET 和 POST 请求方法有如下区别：
 | OPTIONS | 允许客户端查看服务器的性能。 |
 | TRACE | 回显服务器收到的请求，主要用于测试或诊断。 |
 
-
+本表参考：[http://www.runoob.com/http/http-methods.html](http://www.runoob.com/http/http-methods.html)
 
