@@ -2,6 +2,8 @@
 
 官方文档:[https://docs.python.org/3/library/urllib.request.html](https://docs.python.org/3/library/urllib.request.html)
 
+测试网站:[http://httpbin.org/post](http://httpbin.org/post)
+
 ### 2. urlopen\(\) {#1-urlopen}
 
 urllib.request 模块提供了最基本的构造 HTTP 请求的方法，利用它可以模拟浏览器的一个请求发起过程，同时它还带有处理authenticaton（授权验证），redirections（重定向\)，cookies（浏览器Cookies）以及其它内容。
