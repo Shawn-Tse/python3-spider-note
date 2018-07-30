@@ -263,5 +263,15 @@ if result:
     print(result.group(1),result.group(2))
 ```
 
+### 5. findall\(\) {#5-findall}
+
+search\(\) 方法的用法，它可以返回匹配正则表达式的第一个内容
+
+如果想要获取匹配正则表达式的所有内容的就需要借助于 findall\(\) 方法
+
+findall\(\) 方法会搜索整个字符串然后返回匹配正则表达式的所有内容
+
+
+
 
 
