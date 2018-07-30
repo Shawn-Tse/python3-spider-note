@@ -122,5 +122,34 @@ Hello 123 4567 World_This is a Regex Demo
 (0, 41)
 ```
 
+#### 贪婪与非贪婪 {#贪婪与非贪婪}
+
+贪婪匹配下，.\* 会匹配尽可能多的字符
+
+非贪婪匹配的写法是 .\*?，尽可能匹配少的字符
+
+```
+import re
+
+# 贪婪
+content = 'Hello 123456789 World'
+result = re.match('^Hello.*(\d+).*World$', content)
+print(result)
+print(result.group(1))
+
+# 非贪婪
+result = re.match('^Hello.*?(\d+).*World$', content)
+print(result)
+print(result.group(1))
+```
+
+```
+运行结果:
+<_sre.SRE_Match object; span=(0, 21), match='Hello 123456789 World'>
+9
+<_sre.SRE_Match object; span=(0, 21), match='Hello 123456789 World'>
+123456789
+```
+
 
 
