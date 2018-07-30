@@ -91,7 +91,7 @@ print(result)
 ParseResult(scheme='http', netloc='www.google.com.hk', path='/search', params='user', query='q=python#content', fragment='')
 ```
 
-如果 URL 中不包含 parameters 和 query 
+当 URL 中不包含 params 和 query 时， fragment 便会被解析为 path 的一部分
 
 实例:
 
@@ -104,8 +104,7 @@ print(result)
 
 ```
 ParseResult(scheme='https', netloc='www.google.com.hk', path='/webhp#content', params='', query='', fragment='')
-
 ```
 
-当 URL 中不包含 params 和 query 时， fragment 便会被解析为 path 的一部分
+
 
