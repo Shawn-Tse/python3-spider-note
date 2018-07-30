@@ -39,5 +39,63 @@ Python 的 re 库提供了整个正则表达式的实现
 
 语法:match\(pattern, string, flags=0\)
 
+match\(\) 方法会尝试从字符串的起始位置匹配正则表达式，如果匹配，就返回匹配成功的结果，如果不匹配，那就返回 None
+
+实例:
+
+```
+import re
+
+content = 'Hello 123 4567 World_This is a Regex Demo'
+print(len(content))
+# \s:空格
+# \w:字母及数字、下划线
+result = re.match('^Hello\s\d\d\d\s\d{4}\s\w{10}',content)
+print(result)
+print(result.group())
+print(result.span())
+```
+
+运行结果:
+
+```
+41
+<_sre.SRE_Match object; span=(0, 25), match='Hello 123 4567 World_This'>
+Hello 123 4567 World_This
+(0, 25)
+```
+
+* group\(\)方法:输出匹配到的内容
+* span\(\)方法:输出匹配到的范围
+
+#### 匹配目标 {#匹配目标}
+
+match\(\) 方法可以得到匹配到的字符串内容，如何从字符串中提取一部分内容
+
+在这里可以使用 \(\) 括号来将我们想提取的子字符串括起来，\(\) 实际上就是标记了一个子表达式的开始和结束位置，被标记的每个子表达式会依次对应每一个分组，我们可以调用 group\(\) 方法传入分组的索引即可获取提取的结果
+
+实例:
+
+```
+import re
+
+content = 'Hello 1234567 World_This is a Regex Demo'
+result = re.match('^Hello\s(\d+)\sWorld', content)
+print(result)
+print(result.group())
+print(result.group(1))
+print(result.span())
+```
+
+运行结果:
+
+```
+<_sre.SRE_Match object; span=(0, 19), match='Hello 1234567 World'>
+Hello 1234567 World
+1234567
+(0, 19)
+
+```
+
 
 
