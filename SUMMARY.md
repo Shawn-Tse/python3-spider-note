@@ -76,7 +76,7 @@
 * [3.基本库使用](3ji-ben-ku-shi-yong.md)
   * [3.1 使用urllib](3ji-ben-ku-shi-yong/31-shi-yong-urllib.md)
     * [3.1.1 发送请求](3ji-ben-ku-shi-yong/31-shi-yong-urllib/311-fa-song-qing-qiu.md)
-    * 3.1.2 处理异常
+    * [3.1.2 处理异常](3ji-ben-ku-shi-yong/31-shi-yong-urllib/312-chu-li-yi-chang.md)
     * 3.1.3 解析链接
     * 3.1.4 分析Robots协议
   * 3.2 使用requests
