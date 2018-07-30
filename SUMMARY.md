@@ -66,7 +66,7 @@
   * [2.4 会话和Cookies](2pa-chong-ji-chu/24-hui-hua-he-cookies.md)
     * [2.4.1 静态网页和动态网页](2pa-chong-ji-chu/24-hui-hua-he-cookies/241-jing-tai-wang-ye-he-dong-tai-wang-ye.md)
     * [2.4.2 无状态HTTP](2pa-chong-ji-chu/24-hui-hua-he-cookies/242-wu-zhuang-tai-http.md)
-    * 2.4.3 常见误区
+    * [2.4.3 常见误区](2pa-chong-ji-chu/24-hui-hua-he-cookies/243-chang-jian-wu-qu.md)
   * [2.5 代理的基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li.md)
     * 2.5.1 基本原理
     * 2.5.2 代理的作用
