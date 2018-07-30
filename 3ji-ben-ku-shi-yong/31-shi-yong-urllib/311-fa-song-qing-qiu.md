@@ -63,7 +63,31 @@ import urllib.request
 
 data = bytes(urllib.parse.urlencode({"name":"angle"}),encoding="utf-8")
 response = urllib.request.urlopen("http://httpbin.org/post",data=data)
-print(response.read())
+print(response.read().decode('utf-8'))
+```
+
+运行结果如下:
+
+```
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "name": "angle"
+  }, 
+  "headers": {
+    "Accept-Encoding": "identity", 
+    "Connection": "close", 
+    "Content-Length": "10", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Python-urllib/3.6"
+  }, 
+  "json": null, 
+  "origin": "220.197.208.229", 
+  "url": "http://httpbin.org/post"
+}
 ```
 
 ### timeout参数
