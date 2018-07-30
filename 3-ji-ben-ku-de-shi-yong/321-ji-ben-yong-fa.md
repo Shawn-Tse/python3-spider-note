@@ -230,5 +230,44 @@ r = requests.get("https://www.zhihu.com/explore", headers=headers)
 print(r.text)
 ```
 
+### 4. POST请求 {#4-post请求}
+
+实例:
+
+```
+import requests
+
+data = {'name': 'germey', 'age': '22'}
+r = requests.post("http://httpbin.org/post", data=data)
+print(r.text)
+```
+
+运行结果:
+
+```
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "age": "22", 
+    "name": "germey"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Connection": "close", 
+    "Content-Length": "18", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.18.4"
+  }, 
+  "json": null, 
+  "origin": "220.197.208.229", 
+  "url": "http://httpbin.org/post"
+}
+
+```
+
 
 
