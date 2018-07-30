@@ -8,3 +8,24 @@ Robots 协议也被称作爬虫协议、机器人协议，它的全名叫做网�
 
 当搜索爬虫访问一个站点时，它首先会检查下这个站点根目录下是否存在 robots.txt 文件，如果存在，搜索爬虫会根据其中定义的爬取范围来爬取。如果没有找到这个文件，那么搜索爬虫便会访问所有可直接访问的页面。
 
+例如:
+
+```
+https://blog.csdn.net/robots.txt
+```
+
+robots.txt内容:
+
+```
+User-agent: *
+Disallow: /css/
+Disallow: /images/
+Disallow: /content/
+Disallow: /ui/
+Disallow: /js/
+
+Sitemap: https://blog.csdn.net/s/sitemap/pcsitemapindex.xml
+```
+
+
+
