@@ -98,3 +98,29 @@ Hello 1234567 World
 
 group\(\) 会输出完整的匹配结果，group\(1\) 会输出第一个被 \(\) 包围的匹配结果，假如正则表达式后面还有 \(\) 包括的内容，那么我们可以依次用 group\(2\)、group\(3\) 等来依次获取
 
+#### 通用匹配 {#通用匹配}
+
+.\(星\)：匹配任意字符
+
+实例:
+
+```
+import re
+
+content = 'Hello 123 4567 World_This is a Regex Demo'
+result = re.match('^Hello.*Demo$', content)
+print(result)
+print(result.group())
+print(result.span())
+```
+
+运行结果：
+
+```
+<_sre.SRE_Match object; span=(0, 41), match='Hello 123 4567 World_This is a Regex Demo'>
+Hello 123 4567 World_This is a Regex Demo
+(0, 41)
+```
+
+
+
