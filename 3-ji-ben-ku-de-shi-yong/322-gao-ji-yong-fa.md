@@ -100,3 +100,11 @@ print(r.text)
 
 首先新建了一个 RequestCookieJar 对象，然后将复制下来的 Cookies 利用 split\(\) 方法分割，利用 set\(\) 方法设置好每一个 Cookie 的 key 和 value，然后通过调用 Requests 的 get\(\) 方法并传递给 cookies 参数即可，当然由于知乎本身的限制， headers 参数也不能少，只不过不需要在原来的 headers 参数里面设置 Cookie 字段了
 
+### 3. 会话维持 {#3-会话维持}
+
+测试网址:[http://httpbin.org/cookies/set/number/123456789](http://httpbin.org/cookies/set/number/123456789)
+
+解决这个问题的主要方法就是维持同一个会话，也就是相当于打开一个新的浏览器选项卡而不是新开一个浏览器。但是我又不想每次设置 Cookies，那该怎么办？这时候就有了新的利器 Session对象。
+
+利用它，我们可以方便地维护一个会话，而且不用担心 Cookies 的问题，它会帮我们自动处理好
+
