@@ -78,7 +78,7 @@
     * [3.1.1 发送请求](3ji-ben-ku-shi-yong/31-shi-yong-urllib/311-fa-song-qing-qiu.md)
     * [3.1.2 处理异常](3ji-ben-ku-shi-yong/31-shi-yong-urllib/312-chu-li-yi-chang.md)
     * [3.1.3 解析链接](3ji-ben-ku-shi-yong/31-shi-yong-urllib/313-jie-xi-lian-jie.md)
-    * 3.1.4 分析Robots协议
+    * [3.1.4 分析Robots协议](3ji-ben-ku-shi-yong/31-shi-yong-urllib/314-fen-xi-robots-xie-yi.md)
   * 3.2 使用requests
     * 3.2.1 基本用法
     * 3.2.2 高级用法
