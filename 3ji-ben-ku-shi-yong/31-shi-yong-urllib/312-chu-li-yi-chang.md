@@ -29,3 +29,13 @@ Not Found
 
 可以利用try/except抛出URLError异常从而避免程序异常终止，并同时得到有效的处理
 
+### 3.HTTPError
+
+专门用来处理 HTTP 请求错误，比如认证请求失败等等
+
+有三个属性:
+
+* code，返回 HTTP Status Code，即状态码，比如 404 网页不存在，500 服务器内部错误等等。
+* reason，同父类一样，返回错误的原因。
+* headers，返回 Request Headers。
+* 
