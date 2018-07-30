@@ -241,3 +241,28 @@ req.add_header('User-Agent','Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)')
 
 注意add\_header\(\):add\_header\(key,value\)
 
+### 3. 高级用法 {#3-高级用法}
+
+ 利用Handler 处理Cookies 处理，代理设置等操作
+
+urllib.request 模块里的 BaseHandler类，是所有其他 Handler 的父类，提供了最基本的 Handler 的方法，例如 default\_open\(\)、protocol\_request\(\) 方法等。
+
+接下来就有各种 Handler 子类继承这个 BaseHandler 类，举例几个如下：
+
+* HTTPDefaultErrorHandler 用于处理 HTTP 响应错误，错误都会抛出 HTTPError 类型的异常。
+* HTTPRedirectHandler 用于处理重定向。
+* HTTPCookieProcessor 用于处理 Cookies。
+* ProxyHandler 用于设置代理，默认代理为空。
+* HTTPPasswordMgr 用于管理密码，它维护了用户名密码的表。
+* HTTPBasicAuthHandler 用于管理认证，如果一个链接打开时需要认证，那么可以用它来解决认证问题。
+* 另外还有其他的 Handler 类，在这不一一列举了，详情可以参考官方文档：
+  [https://docs.python.org/3/library/urllib.request.html\#urllib.request.BaseHandler](https://docs.python.org/3/library/urllib.request.html#urllib.request.BaseHandler)
+
+另外一个比较重要的类就是 OpenerDirector，我们可以称之为 Opener，我们之前用过 urlopen\(\) 这个方法，实际上它就是 Urllib为我们提供的一个 Opener。
+
+那么为什么要引入 Opener ？因为需要实现更高级的功能，之前使用的 Request、urlopen\(\) 相当于类库封装好了极其常用的请求方法，利用它们两个就可以完成基本的请求，但是现在不一样了，需要实现更高级的功能，所以需要深入一层进行配置，使用更底层的实例来完成我们的操作。
+
+所以，在这里就用到了比调用 urlopen\(\) 的对象的更普遍的对象，也就是 Opener。
+
+Opener 可以使用 open\(\) 方法，返回的类型和 urlopen\(\) 如出一辙。那么它和 Handler 有什么关系？简而言之，就是利用 Handler 来构建 Opener。
+
