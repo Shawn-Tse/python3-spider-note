@@ -261,5 +261,31 @@ proxies = {
 requests.get('https://www.taobao.com', proxies=proxies)
 ```
 
+除了基本的 HTTP 代理，Requests 还支持 SOCKS 协议的代理。
+
+需要安装 Socks 这个库，命令如下：
+
+```
+pip3 install "requests[socks]"
+```
+
+然后就可以使用 SOCKS 协议代理了
+
+```
+socks5://user:password@host:port
+```
+
+实例:
+
+```
+import requests
+
+proxies = {
+    'http': 'socks5://user:password@host:port',
+    'https': 'socks5://user:password@host:port'
+}
+requests.get('https://www.taobao.com', proxies=proxies)
+```
+
 
 
