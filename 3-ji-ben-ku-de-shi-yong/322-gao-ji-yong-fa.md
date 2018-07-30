@@ -177,3 +177,40 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='www.12306.cn', port=443)
 
 如何避免这个错误,只需把 verify 这个参数设置为 False 即可。
 
+```
+import requests
+
+response = requests.get("https://www.12306.cn",verify=False)
+print(response.status_code)
+```
+
+运行结果:
+
+```
+E:\Python36\lib\site-packages\urllib3\connectionpool.py:858: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+200
+```
+
+不过发现报了一个警告，它提示建议让我们给它指定证书。
+
+可以通过设置忽略警告的方式来屏蔽这个警告：
+
+```
+import requests
+import urllib3
+
+urllib3.disable_warnings()
+response = requests.get("https://www.12306.cn",verify=False)
+print(response.status_code)
+```
+
+运行结果:
+
+```
+200
+
+```
+
+
+
