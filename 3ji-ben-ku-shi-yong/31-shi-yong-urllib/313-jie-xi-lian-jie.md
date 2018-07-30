@@ -149,5 +149,20 @@ http://www.google.com/index.html;name?q=6#comment
 
 与urlparse\(\) 方法非常相似，只不过它不会单独解析 parameters 这一部分，只返回五个结果
 
+实例:
+
+```
+from urllib.parse import  urlsplit
+result = urlsplit("https://www.google.com.hk/webhp#content")
+print(result)
+```
+
+运行结果:
+
+```
+SplitResult(scheme='https', netloc='www.google.com.hk', path='/webhp', query='', fragment='content')
+
+```
+
 
 
