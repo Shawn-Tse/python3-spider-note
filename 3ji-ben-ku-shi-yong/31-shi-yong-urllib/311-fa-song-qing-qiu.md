@@ -368,5 +368,42 @@ BD_HOME=0
 delPer=0
 ```
 
+将cookies存储为文本格式
+
+实例:
+
+```
+import urllib.request,http.cookiejar
+
+filename = "cookies.txt"
+# 如果存储为文本格式，需要用到MozillaCookieJar
+cookies = http.cookiejar.MozillaCookieJar(filename)
+# 构建一个handler
+handler = urllib.request.HTTPCookieProcessor(cookies)
+# 构建一个opener
+opener = urllib.request.build_opener(handler)
+response = opener.open("http://www.baidu.com")
+cookies.save(ignore_discard=True,ignore_expires=True)
+```
+
+CookieJar需要换成 MozillaCookieJar，生成文件时需要用到它，它是 CookieJar 的子类，可以用来处理 Cookies 和文件相关的事件，读取和保存 Cookies，它可以将 Cookies 保存成 Mozilla 型浏览器的 Cookies 的格式。
+
+运行之后会有一个cookies.txt文件生成，内容如下:
+
+```
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.baidu.com	TRUE	/	FALSE	3680417901	BAIDUID	2DD475CE73FF8C93B7B1F0798D7A5426:FG=1
+.baidu.com	TRUE	/	FALSE	3680417901	BIDUPSID	2DD475CE73FF8C93B7B1F0798D7A5426
+.baidu.com	TRUE	/	FALSE		H_PS_PSSID	1420_21101_26350_26923_26809
+.baidu.com	TRUE	/	FALSE	3680417901	PSTM	1532934257
+www.baidu.com	FALSE	/	FALSE		BDSVRTM	0
+www.baidu.com	FALSE	/	FALSE		BD_HOME	0
+www.baidu.com	FALSE	/	FALSE	2479014200	delPer	0
+
+```
+
 
 
