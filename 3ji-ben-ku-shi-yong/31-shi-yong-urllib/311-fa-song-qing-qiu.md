@@ -118,6 +118,28 @@ During handling of the above exception, another exception occurred:
 urllib.error.URLError: <urlopen error timed out>
 ```
 
+设置超时时间为0.1秒，程序超过0.1秒没有响应，就会抛出URLError异常，属于urllib.error模块，错误的原因是超时
+
+可以利用try/except语句来跳过长时间未响应的页面
+
+```
+import urllib.request
+import urllib.error
+import socket
+
+try:
+    response = urllib.request.urlopen("http://httpbin.org/get",timeout=0.1)
+except urllib.error.URLError as e:
+    if isinstance(e.reason,socket.timeout):
+        print("TIME OUT")
+```
+
+运行结果:
+
+```
+TIME OUT
+```
+
 ### 其他参数
 
 
