@@ -287,5 +287,16 @@ proxies = {
 requests.get('https://www.taobao.com', proxies=proxies)
 ```
 
+### 6. 超时设置 {#6-超时设置}
+
+设置超时时间需要用到 timeout 参数。这个时间的计算是发出 Request 到服务器返回 Response 的时间
+
+```
+import requests
+
+r = requests.get('https://www.taobao.com', timeout=1)
+print(r.status_code)
+```
+
 
 
