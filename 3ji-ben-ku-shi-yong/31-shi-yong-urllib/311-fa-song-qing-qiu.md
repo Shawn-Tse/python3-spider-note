@@ -226,11 +226,18 @@ print(response.read().decode('utf-8'))
   "origin": "220.197.208.229", 
   "url": "http://httpbin.org/post"
 }
-
 ```
 
 通过四个参数构造了一个 Request，url 即请求 URL，在headers 中指定了 User-Agent 和 Host，传递的参数 data 用了 urlencode\(\) 和 bytes\(\) 方法来转成字节流，并指定了请求方式为 POST。
 
-  
+另外一种添加headers的方法：
 
+利用add\_header\(\)方法来添加headers
+
+```
+req = request.Request(url=url,data=data,method='POST')
+req.add_header('User-Agent','Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)')
+```
+
+注意add_header\(\):add_he
 
