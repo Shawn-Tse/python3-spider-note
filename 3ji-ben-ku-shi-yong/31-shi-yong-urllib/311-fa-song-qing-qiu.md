@@ -239,5 +239,5 @@ req = request.Request(url=url,data=data,method='POST')
 req.add_header('User-Agent','Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)')
 ```
 
-注意add_header\(\):add_he
+注意add\_header\(\):add\_header\(key,value\)
 
