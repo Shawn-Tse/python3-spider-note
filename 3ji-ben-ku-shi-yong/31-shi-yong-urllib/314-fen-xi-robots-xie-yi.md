@@ -27,5 +27,24 @@ Disallow: /js/
 Sitemap: https://blog.csdn.net/s/sitemap/pcsitemapindex.xml
 ```
 
+User-agent 描述了搜索爬虫的名称，在这里将值设置为 \*，则代表该协议对任何的爬取爬虫有效
+
+Disallow 指定了不允许抓取的目录，比如上述例子中设置为/则代表不允许抓取所有页面。
+
+Allow 一般和 Disallow 一起使用，一般不会单独使用，用来排除某些限制，现在我们设置为 /public/ ，起到的作用是所有页面不允许抓取，但是 public 目录是可以抓取的
+
+### 3. 爬虫名称 {#2-爬虫名称}
+
+大家可能会疑惑，爬虫名是哪儿来的？为什么就叫这个名？其实它是有固定名字的了，比如百度的就叫做 BaiduSpider，下面的表格列出了一些常见的搜索爬虫的名称及对应的网站：
+
+| 爬虫名称 | 名称 | 网站 |
+| :--- | :--- | :--- |
+| BaiduSpider | 百度 | www.baidu.com |
+| Googlebot | 谷歌 | www.google.com |
+| 360Spider | 360搜索 | www.so.com |
+| YodaoBot | 有道 | www.youdao.com |
+| ia\_archiver | Alexa | www.alexa.cn |
+| Scooter | altavista | www.altavista.com |
+
 
 
