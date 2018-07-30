@@ -198,5 +198,38 @@ print(urlunsplit(data))
 http://www.google.com/index.html?q=6#comment
 ```
 
+### 6. urljoin\(\) {#5-urljoin}
+
+生成链接还有另一个方法，利用 urljoin\(\) 方法我们可以提供一个 base\_url（基础链接），新的链接作为第二个参数，方法会分析 base\_url 的 scheme、netloc、path， 如果这三项在新的链接里面不存在，那么就予以补充，如果新的链接存在，那么就使用新的链接的部分。base\_url 中的 parameters、query、fragments 是不起作用的。
+
+实例:
+
+```
+from urllib.parse import urljoin
+
+print(urljoin('http://www.baidu.com', 'FAQ.html'))
+# 会覆盖前面的url
+print(urljoin('http://www.baidu.com', 'https://cuiqingcai.com/FAQ.html'))
+print(urljoin('http://www.baidu.com/about.html', 'https://cuiqingcai.com/FAQ.html'))
+print(urljoin('http://www.baidu.com/about.html', 'https://cuiqingcai.com/FAQ.html?question=2'))
+print(urljoin('http://www.baidu.com?wd=abc', 'https://cuiqingcai.com/index.php'))
+print(urljoin('http://www.baidu.com', '?category=2#comment'))
+print(urljoin('www.baidu.com', '?category=2#comment'))
+print(urljoin('www.baidu.com#comment', '?category=2'))
+```
+
+运行结果:
+
+```
+http://www.baidu.com/FAQ.html
+https://cuiqingcai.com/FAQ.html
+https://cuiqingcai.com/FAQ.html
+https://cuiqingcai.com/FAQ.html?question=2
+https://cuiqingcai.com/index.php
+http://www.baidu.com?category=2#comment
+www.baidu.com?category=2#comment
+www.baidu.com?category=2
+```
+
 
 
