@@ -38,4 +38,44 @@ Not Found
 * code，返回 HTTP Status Code，即状态码，比如 404 网页不存在，500 服务器内部错误等等。
 * reason，同父类一样，返回错误的原因。
 * headers，返回 Request Headers。
-* 
+
+实例:
+
+```
+from urllib import request,error
+
+try:
+    response = request.urlopen('http://www.runoob.com/python1.html')
+except error.HTTPError as e:
+    print(e.reason,e.code,e.headers,sep='\n')
+```
+
+运行结果:
+
+```
+Not Found
+404
+Server: Tengine
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+Date: Mon, 30 Jul 2018 07:25:54 GMT
+Vary: Accept-Encoding
+X-Powered-By: HHVM/3.11.1
+Vary: Accept-Encoding
+Cache-Control: no-cache, must-revalidate, max-age=0
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Link: <http://www.runoob.com/wp-json/>; rel="https://api.w.org/"
+Via: cache24.l2et15-2[90,404-1280,M], cache14.l2et15-2[91,0], cache5.cn246[120,404-1280,M], cache1.cn246[122,0]
+X-Swift-Error: orig response 4XX error
+X-Cache: MISS TCP_MISS dirn:-2:-2 mlen:-1
+X-Swift-SaveTime: Mon, 30 Jul 2018 07:25:54 GMT
+X-Swift-CacheTime: 0
+X-Swift-Error: orig response 4XX error
+Timing-Allow-Origin: *
+EagleId: 71cf1e1515329355547806295e
+```
+
+
+
