@@ -232,6 +232,8 @@ print(r.text)
 
 ### 4. POST请求 {#4-post请求}
 
+测试网址:[http://httpbin.org/post](http://httpbin.org/post)
+
 实例:
 
 ```
@@ -266,7 +268,6 @@ print(r.text)
   "origin": "220.197.208.229", 
   "url": "http://httpbin.org/post"
 }
-
 ```
 
 
