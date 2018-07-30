@@ -115,14 +115,40 @@ import requests
 
 requests.get("http://httpbin.org/cookies/set/number/123456789")
 r = requests.get("http://httpbin.org/cookies")
-print(r.cookies)
+print(r.text)
 ```
 
 运行结果:
 
 ```
-<RequestsCookieJar[]>
+{
+  "cookies": {
+  }
+}
 ```
 
-不能能成功获取到设置的 Cookies
+不能成功获取到设置的 Cookies
+
+使用session测试
+
+```
+import requests
+
+s  = requests.Session()
+s.get("http://httpbin.org/cookies/set/number/123456789")
+r = s.get("http://httpbin.org/cookies")
+print(r.text)
+```
+
+运行结果:
+
+```
+{
+  "cookies": {
+    "number": "123456789"
+  }
+}
+```
+
+
 
