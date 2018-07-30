@@ -76,5 +76,45 @@ print(response.text)
 }
 ```
 
+在GET请求中构造参数
+
+实例:
+
+```
+import requests
+
+# 一般情况下不这样书写，都是伪造一个字典
+# response =  requests.get('http://httpbin.org/get?name=angle&like=dongman')
+
+params = {
+    'name':'angle',
+    'like':'dongmnae',
+}
+response = requests.get("http://httpbin.org/get", params=params)
+
+print(response.text)
+```
+
+运行结果:
+
+```
+{
+  "args": {
+    "like": "dongmnae", 
+    "name": "angle"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Connection": "close", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.18.4"
+  }, 
+  "origin": "220.197.208.229", 
+  "url": "http://httpbin.org/get?name=angle&like=dongmnae"
+}
+
+```
+
 
 
