@@ -209,7 +209,26 @@ print(response.status_code)
 
 ```
 200
+```
 
+或者通过捕获警告到日志的方式忽略警告：
+
+```
+import requests
+import logging
+
+logging.captureWarnings(True)
+response = requests.get("https://www.12306.cn",verify=False)
+print(response.status_code)
+```
+
+可以指定一个本地证书用作客户端证书，可以是单个文件（包含密钥和证书）或一个包含两个文件路径的元组
+
+```
+import requests
+
+response = requests.get('https://www.12306.cn',verify="E:/SRCA.crt")
+print(response.status_code)
 ```
 
 
