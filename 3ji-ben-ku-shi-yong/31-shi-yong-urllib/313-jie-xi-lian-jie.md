@@ -145,5 +145,9 @@ print(urlunparse(data))
 http://www.google.com/index.html;name?q=6#comment
 ```
 
+### 4. urlsplit\(\) {#3-urlsplit}
+
+与urlparse\(\) 方法非常相似，只不过它不会单独解析 parameters 这一部分，只返回五个结果
+
 
 
