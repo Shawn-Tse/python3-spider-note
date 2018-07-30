@@ -126,5 +126,24 @@ www.baidu.com
 www.baidu.com
 ```
 
+### 3. urlunparse\(\) {#2-urlunparse}
+
+* 与urlparse\(\)相反
+* 接受的参数是一个可迭代对象，但是它的长度必须是 6，否则会抛出参数数量不足或者过多的问题
+
+实例:
+
+```
+from urllib.parse import urlunparse
+data = ['http', 'www.google.com', 'index.html', 'name', 'q=6', 'comment']
+print(urlunparse(data))
+```
+
+运行结果:
+
+```
+http://www.google.com/index.html;name?q=6#comment
+```
+
 
 
