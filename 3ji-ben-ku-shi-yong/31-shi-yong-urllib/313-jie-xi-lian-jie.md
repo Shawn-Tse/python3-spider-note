@@ -259,3 +259,21 @@ https://www.baidu.com/s?wd=python
 
 parse\_qs\(\) 方法可以将请求参数转为字典
 
+实例:
+
+```
+from urllib.parse import parse_qs
+
+query = '''f=json&mock=&uin=777&key=777&pass_ticket=nFLy3qzW6g8xVh%25252FRdSuoEMZn%25252BYrRjEh0fsybociYtgE%25253D&wxtoken=777&devicetype=android-26&clientversion=26060739&appmsg_token=966_3pMS7R2ZHEtCjbLZ3O0EDgaTpZ9B-N7GrMG3lOqeNFz9EH9p3dcgPHSiCjE~&x5=1&f=json'''
+print(parse_qs(query))
+```
+
+运行结果:
+
+```
+{'f': ['json', 'json'], 'uin': ['777'], 'key': ['777'], 'pass_ticket': ['nFLy3qzW6g8xVh%252FRdSuoEMZn%252BYrRjEh0fsybociYtgE%253D'], 'wxtoken': ['777'], 'devicetype': ['android-26'], 'clientversion': ['26060739'], 'appmsg_token': ['966_3pMS7R2ZHEtCjbLZ3O0EDgaTpZ9B-N7GrMG3lOqeNFz9EH9p3dcgPHSiCjE~'], 'x5': ['1']}
+
+```
+
+
+
