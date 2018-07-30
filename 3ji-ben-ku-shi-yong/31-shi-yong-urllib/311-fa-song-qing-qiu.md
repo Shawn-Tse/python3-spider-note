@@ -1,6 +1,8 @@
 ### 1.相关链接
 
-官方文档:[https://docs.python.org/3/library/urllib.request.html](https://docs.python.org/3/library/urllib.request.html)
+* 官方文档
+  * [https://docs.python.org/3/library/urllib.request.html](https://docs.python.org/3/library/urllib.request.html)
+  * [https://docs.python.org/3/library/urllib.request.html\#basehandler-objects](https://docs.python.org/3/library/urllib.request.html#basehandler-objects)
 
 测试网站:[http://httpbin.org/post](http://httpbin.org/post)
 
