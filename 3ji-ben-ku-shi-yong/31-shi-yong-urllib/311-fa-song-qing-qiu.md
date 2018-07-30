@@ -395,14 +395,66 @@ CookieJar需要换成 MozillaCookieJar，生成文件时需要用到它，它是
 # http://curl.haxx.se/rfc/cookie_spec.html
 # This is a generated file!  Do not edit.
 
-.baidu.com	TRUE	/	FALSE	3680417901	BAIDUID	2DD475CE73FF8C93B7B1F0798D7A5426:FG=1
-.baidu.com	TRUE	/	FALSE	3680417901	BIDUPSID	2DD475CE73FF8C93B7B1F0798D7A5426
-.baidu.com	TRUE	/	FALSE		H_PS_PSSID	1420_21101_26350_26923_26809
-.baidu.com	TRUE	/	FALSE	3680417901	PSTM	1532934257
-www.baidu.com	FALSE	/	FALSE		BDSVRTM	0
-www.baidu.com	FALSE	/	FALSE		BD_HOME	0
-www.baidu.com	FALSE	/	FALSE	2479014200	delPer	0
+.baidu.com    TRUE    /    FALSE    3680417901    BAIDUID    2DD475CE73FF8C93B7B1F0798D7A5426:FG=1
+.baidu.com    TRUE    /    FALSE    3680417901    BIDUPSID    2DD475CE73FF8C93B7B1F0798D7A5426
+.baidu.com    TRUE    /    FALSE        H_PS_PSSID    1420_21101_26350_26923_26809
+.baidu.com    TRUE    /    FALSE    3680417901    PSTM    1532934257
+www.baidu.com    FALSE    /    FALSE        BDSVRTM    0
+www.baidu.com    FALSE    /    FALSE        BD_HOME    0
+www.baidu.com    FALSE    /    FALSE    2479014200    delPer    0
+```
 
+另外还有一个 LWPCookieJar，同样可以读取和保存 Cookies，但是保存的格式和 MozillaCookieJar 的不一样，它会保存成与 libwww-perl\(LWP\) 的 Cookies 文件格式。
+
+要保存成 LWP 格式的 Cookies 文件，可以在声明时就改为：
+
+```
+cookie = http.cookiejar.LWPCookieJar(filename)
+```
+
+运行结果如下:
+
+```
+#LWP-Cookies-2.0
+Set-Cookie3: BAIDUID="16458736324AC0E3ECA4EECD48D8DC8C:FG=1"; path="/"; domain=".baidu.com"; path_spec; domain_dot; expires="2086-08-17 10:20:34Z"; version=0
+Set-Cookie3: BIDUPSID=16458736324AC0E3ECA4EECD48D8DC8C; path="/"; domain=".baidu.com"; path_spec; domain_dot; expires="2086-08-17 10:20:34Z"; version=0
+Set-Cookie3: H_PS_PSSID=1432_26458_21099_20930; path="/"; domain=".baidu.com"; path_spec; domain_dot; discard; version=0
+Set-Cookie3: PSTM=1532934390; path="/"; domain=".baidu.com"; path_spec; domain_dot; expires="2086-08-17 10:20:34Z"; version=0
+Set-Cookie3: BDSVRTM=0; path="/"; domain="www.baidu.com"; path_spec; discard; version=0
+Set-Cookie3: BD_HOME=0; path="/"; domain="www.baidu.com"; path_spec; discard; version=0
+Set-Cookie3: delPer=0; path="/"; domain="www.baidu.com"; expires="2048-07-22 07:05:45Z"; version=0
+
+```
+
+
+
+从cookies.txt读取存储的cookies
+
+以LWPCookieJar为例:
+
+```
+import urllib.request,http.cookiejar
+
+cookies = http.cookiejar.LWPCookieJar()
+cookies.load(filename='cookies.txt',ignore_expires=True,ignore_discard=True)
+handler = urllib.request.HTTPCookieProcessor(cookies)
+opener = urllib.request.build_opener(handler)
+response = opener.open('http://www.baidu.com')
+# print(response.read().decode('utf-8'))
+for cookie in cookies:
+    print(cookie)
+```
+
+运行结果如下:
+
+```
+<Cookie BAIDUID=16458736324AC0E3ECA4EECD48D8DC8C:FG=1 for .baidu.com/>
+<Cookie BIDUPSID=16458736324AC0E3ECA4EECD48D8DC8C for .baidu.com/>
+<Cookie H_PS_PSSID=1432_26458_21099_20930 for .baidu.com/>
+<Cookie PSTM=1532934390 for .baidu.com/>
+<Cookie BDSVRTM=0 for www.baidu.com/>
+<Cookie BD_HOME=0 for www.baidu.com/>
+<Cookie delPer=0 for www.baidu.com/>
 ```
 
 
