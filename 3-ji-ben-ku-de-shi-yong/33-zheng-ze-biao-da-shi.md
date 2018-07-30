@@ -35,3 +35,9 @@
 
 Python 的 re 库提供了整个正则表达式的实现
 
+### 3. match\(\) {#3-match}
+
+语法:match\(pattern, string, flags=0\)
+
+
+
