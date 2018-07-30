@@ -61,7 +61,7 @@
     * [2.2.4 选择器](2pa-chong-ji-chu/22-wang-ye-ji-chu/224-xuan-ze-qi.md)
   * [2.3 爬虫的基本原理](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li.md)
     * [2.3.1 爬虫概述](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/231-pa-chong-gai-shu.md)
-    * 2.3.2 能抓怎样的数据
+    * [2.3.2 能抓怎样的数据](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/232-neng-zhua-zen-yang-de-shu-ju.md)
     * 2.3.3 javascript渲染的页面
   * [2.4 会话和Cookies](2pa-chong-ji-chu/24-hui-hua-he-cookies.md)
     * 2.4.1 静态网页和动态网页
