@@ -164,6 +164,22 @@ print(type(response.json()))
 实例:
 
 ```
+import requests,re
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+}
+
+response = requests.get('https://www.zhihu.com/explore',headers=headers)
+pattern = re.compile('explore-feed.*?question_link.*?>(.*?)</a>',re.S)
+titles = re.findall(pattern,response.text)
+print(titles)
+```
+
+运行结果:
+
+```
+['\n哪本书是你只要有机会就会强烈推荐的？为什么？\n', '\n莫德里奇具体强在哪？\n', '\n对于性侵事件中的受害者们来说，被性侵之后站出来发声和维权的成本有多高？\n', '\n你见过有哪些与月亮相关的神奇设计？\n', '\n如何看待这次英雄联盟更新了最新的符文之地地图以及《瑞兹：力量的召唤》CG动画？\n', '\nisland为什么b站不独播？\n', '\n有没有一刻你觉得地球很脆弱有想要保护她的冲动，你是怎么做的？\n', '\n喜欢的明星人设崩塌是怎样的体验？\n', '\n北方人饭量普遍大于南方么?\n', '\n牛顿力学是如何过渡到热力学的？\n']
 
 ```
 
