@@ -64,7 +64,7 @@ Request Headers 是 Request 等重要组成部分，在写爬虫的时候大部�
 
 即请求体，一般承载的内容是 POST 请求中的 Form Data，即表单数据，而对于 GET 请求 Request Body 则为空。
 
-下面列出了 Content-Type 和 POST 提交数据方式的关系：+
+下面列出了 Content-Type 和 POST 提交数据方式的关系：
 
 | Content-Type | 提交数据方式 |
 | :--- | :--- |
