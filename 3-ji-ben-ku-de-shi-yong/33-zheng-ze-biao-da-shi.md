@@ -186,7 +186,7 @@ print(result.group(1))
 
 #### 转义匹配 {#转义匹配}
 
-. 可以用 \. 来匹配
+. 可以用 . 来匹配
 
 实例:
 
@@ -196,6 +196,71 @@ import re
 content = '(百度)www.baidu.com'
 result = re.match('\(百度\)www\.baidu\.com', content)
 print(result)
+```
+
+### 4. search\(\) {#4-search}
+
+match\(\) 方法是从字符串的开头开始匹配，一旦开头不匹配，那么整个匹配就失败了
+
+实例:
+
+```
+import re
+
+content = 'Extra stings Hello 1234567 World_This is a Regex Demo Extra stings'
+result = re.match('Hello.*?(\d+).*?Demo', content)
+print(result)
+```
+
+运行结果:
+
+```
+None
+```
+
+这时应该使用search\(\)，它在匹配时会扫描整个字符串，然后返回第一个成功匹配的结果
+
+实例:
+
+HTML文本
+
+```
+html = '''<div id="songs-list">
+    <h2 class="title">经典老歌</h2>
+    <p class="introduction">
+        经典老歌列表
+    </p>
+    <ul id="list" class="list-group">
+        <li data-view="2">一路上有你</li>
+        <li data-view="7">
+            <a href="/2.mp3" singer="任贤齐">沧海一声笑</a>
+        </li>
+        <li data-view="4" class="active">
+            <a href="/3.mp3" singer="齐秦">往事随风</a>
+        </li>
+        <li data-view="6"><a href="/4.mp3" singer="beyond">光辉岁月</a></li>
+        <li data-view="5"><a href="/5.mp3" singer="陈慧琳">记事本</a></li>
+        <li data-view="5">
+            <a href="/6.mp3" singer="邓丽君"><i class="fa fa-user"></i>但愿人长久</a>
+        </li>
+    </ul>
+</div>'''
+```
+
+尝试需要提取歌手名以及歌名，写出正则表达式:
+
+```
+<li.*?a.*?singer="(.*?)">(.*?)</a>
+```
+
+代码如下:
+
+```
+pattern = '<li.*?a.*?singer="(.*?)">(.*?)</a>'
+# re.S:能让.匹配转行
+result = re.search(pattern,html,re.S)
+if result:
+    print(result.group(1),result.group(2))
 ```
 
 
