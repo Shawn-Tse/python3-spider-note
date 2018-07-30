@@ -20,7 +20,6 @@ print(type(result),result,sep='\n')
 ```
 <class 'urllib.parse.ParseResult'>
 ParseResult(scheme='https', netloc='www.google.com.hk', path='/search', params='user', query='q=python', fragment='content')
-
 ```
 
 返回结果是一个 ParseResult 类型的对象，它包含了六个部分，分别是 scheme、netloc、path、params、query、fragment
@@ -31,12 +30,18 @@ ParseResult(scheme='https', netloc='www.google.com.hk', path='/search', params='
 https://www.google.com.hk/search;user?q=python#content
 ```
 
-urlparse\(\) 方法将其拆分成了六部分，大体观察可以发现，解析时有特定的分隔符，比如 :// 前面的就是 scheme，代表协议，第一个 / 前面便是 netloc，即域名，分号 ; 前面是 params，代表参数。
+urlparse\(\) 方法将其拆分成了六部分，解析时有特定的分隔符，比如 :// 前面的就是 scheme，代表协议，第一个 / 前面便是 netloc，即域名，分号 ; 前面是 params，代表参数。
 
 所以可以得出一个标准的链接格式如下：
 
 ```
 scheme://netloc/path;parameters?query#fragment
+```
+
+urlparse\(\)API 用法：
+
+```
+urllib.parse.urlparse(urlstring, scheme='', allow_fragments=True)
 ```
 
 
