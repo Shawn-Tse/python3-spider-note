@@ -59,7 +59,6 @@ print(result)
 
 ```
 ParseResult(scheme='https', netloc='', path='www.google.com.hk/search', params='user', query='q=python', fragment='content')
-
 ```
 
 scheme 参数只有在 URL 中不包含 scheme 信息时才会生效，如果 URL 中有 scheme 信息，那就返回解析出的 scheme
@@ -75,10 +74,23 @@ print(result)
 
 ```
 ParseResult(scheme='http', netloc='www.google.com.hk', path='/search', params='user', query='q=python', fragment='content')
-
 ```
 
 * allow\_fragments，即是否忽略 fragment，如果它被设置为 False，fragment 部分就会被忽略，它会被解析为 path、parameters 或者 query 的一部分，fragment 部分为空。
+
+实例:
+
+```
+result = urlparse("http://www.google.com.hk/search;user?q=python#content",allow_fragments=False)
+print(result)
+```
+
+运行结果:
+
+```
+ParseResult(scheme='http', netloc='www.google.com.hk', path='/search', params='user', query='q=python#content', fragment='')
+
+```
 
 
 
