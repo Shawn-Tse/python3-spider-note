@@ -27,5 +27,5 @@ except error.URLError as e:
 Not Found
 ```
 
-可以利用try/except抛出URLError异常从而避免程序异常终止
+可以利用try/except抛出URLError异常从而避免程序异常终止，并同时得到有效的处理
 
