@@ -170,5 +170,15 @@ class urllib.request.Request(url, data=None, headers={}, origin_req_host=None, u
 
 * url 参数是请求 URL，这个是必传参数，其他的都是可选参数。
 * data 参数如果要传必须传 bytes（字节流）类型的，如果是一个字典，可以先用 urllib.parse 模块里的 urlencode\(\) 编码。
-* headers 参数是一个字典，这个就是 Request Headers 了，你可以在构造 Request 时通过 headers 参数直接构造，也可以通过调用 Request 实例的 add\_header\(\) 方法来添加。
+* headers 参数是一个字典，这个就是 Request Headers ，可以在构造 Request 时通过 headers 参数直接构造，也可以通过调用 Request 实例的 add\_header\(\) 方法来添加。
+
+添加 Request Headers 最常用的用法就是通过修改 User-Agent 来伪装浏览器，默认的 User-Agent 是 Python-urllib，我们可以通过修改它来伪装浏览器，比如要伪装火狐浏览器，你可以把它设置为：
+
+```
+Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11
+```
+
+*  origin\_req\_host 参数指的是请求方的 host 名称或者 IP 地址。
+*  unverifiable 参数指的是这个请求是否是无法验证的，默认是False。意思就是说用户没有足够权限来选择接收这个请求的结果。例如我们请求一个 HTML 文档中的图片，但是我们没有自动抓取图像的权限，这时 unverifiable 的值就是 True。
+* method 参数是一个字符串，它用来指示请求使用的方法，比如GET，POST，PUT等等。
 
