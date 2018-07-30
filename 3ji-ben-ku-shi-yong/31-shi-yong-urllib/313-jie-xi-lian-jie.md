@@ -179,5 +179,24 @@ print(result.scheme,result[0])
 https https
 ```
 
+### 5. urlunsplit\(\) {#4-urlunsplit}
+
+* 与urlsplit\(\)相反
+* 与 urlunparse\(\) 类似，也是将链接的各个部分组合成完整链接的方法，传入的也是一个可迭代对象
+
+实例:
+
+```
+from urllib.parse import urlunsplit
+data = ['http', 'www.google.com', 'index.html', 'q=6', 'comment']
+print(urlunsplit(data))
+```
+
+运行结果:
+
+```
+http://www.google.com/index.html?q=6#comment
+```
+
 
 
