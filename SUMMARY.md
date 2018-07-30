@@ -80,7 +80,7 @@
     * [3.1.3 解析链接](3ji-ben-ku-shi-yong/31-shi-yong-urllib/313-jie-xi-lian-jie.md)
     * [3.1.4 分析Robots协议](3ji-ben-ku-shi-yong/31-shi-yong-urllib/314-fen-xi-robots-xie-yi.md)
   * [3.2 使用requests](3ji-ben-ku-shi-yong/32-shi-yong-requests.md)
-    * 3.2.1 基本用法
+    * [3.2.1 基本用法](3-ji-ben-ku-de-shi-yong/321-ji-ben-yong-fa.md)
     * 3.2.2 高级用法
     * [3.3 正则表达式](3-ji-ben-ku-de-shi-yong/33-zheng-ze-biao-da-shi.md)
     * 3.4 抓取猫眼电影排行
