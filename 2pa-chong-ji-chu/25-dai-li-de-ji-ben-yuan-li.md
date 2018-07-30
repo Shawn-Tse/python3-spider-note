@@ -4,5 +4,5 @@
 
 那么在这里一种有效的方式就是使用代理，使用它可以成功伪装 IP，避免本机 IP 被封禁的情况。
 
-参考:https://germey.gitbooks.io/python3webspider/content/2.5-%E4%BB%A3%E7%90%86%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.html
+来源:[https://germey.gitbooks.io/python3webspider/content/2.5-代理基本原理.html](https://germey.gitbooks.io/python3webspider/content/2.5-代理基本原理.html)
 
