@@ -2,6 +2,8 @@
 
 官方文档:[https://docs.python.org/3/library/urllib.request.html](https://docs.python.org/3/library/urllib.request.html)
 
+### 2.参数解析
+
 使用urllib的request模块可以方便地实现Request的发送并得到Response
 
 urlopen\(\)函数的API:
