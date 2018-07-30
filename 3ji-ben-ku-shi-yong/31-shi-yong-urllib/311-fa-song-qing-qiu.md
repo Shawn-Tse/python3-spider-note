@@ -142,5 +142,9 @@ TIME OUT
 
 ### 其他参数
 
+还有 context 参数，它必须是 ssl.SSLContext 类型，用来指定 SSL 设置。
 
+cafile 和 capath 两个参数是指定 CA 证书和它的路径，这个在请求 HTTPS 链接时会有用。
+
+cadefault 参数现在已经弃用了，默认为 False。
 
