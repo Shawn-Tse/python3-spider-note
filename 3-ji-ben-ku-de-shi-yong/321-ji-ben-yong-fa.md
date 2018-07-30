@@ -287,5 +287,11 @@ print(type(r.url), r.url)
 print(type(r.history), r.history)
 ```
 
+* status\_code 属性--状态码
+*  headers 属性--Response Headers
+* cookies 属性-- Cookies
+* url 属性-- URL
+* history 属性--请求历史。
+
 
 
