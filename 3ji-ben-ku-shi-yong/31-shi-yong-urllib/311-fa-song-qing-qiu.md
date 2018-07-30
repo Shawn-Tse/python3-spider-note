@@ -337,3 +337,36 @@ except URLError as e:
 
 然后利用 build\_opener\(\) 方法利用这个 Handler 构造一个 Opener，然后发送请求即可。
 
+### Cookies
+
+获取相关网站的cookies
+
+```
+import http.cookiejar,urllib.request
+
+# 声明一个CookieJar对象
+cookie = http.cookiejar.CookieJar()
+# 构建一个handler
+handler = urllib.request.HTTPCookieProcessor(cookie)
+# 构建一个opener
+opener = urllib.request.build_opener(handler)
+# 打开网站
+response = opener.open('http://www.baidu.com')
+for item in cookie:
+    print(item.name+"="+item.value)
+```
+
+运行结果如下:
+
+```
+BAIDUID=6579690C07419CE00E162042A638AEAE:FG=1
+BIDUPSID=6579690C07419CE00E162042A638AEAE
+H_PS_PSSID=26524_1436_26909_21078_26925_20928
+PSTM=1532934005
+BDSVRTM=0
+BD_HOME=0
+delPer=0
+```
+
+
+
