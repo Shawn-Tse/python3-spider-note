@@ -75,7 +75,7 @@
     * [2.5.5 常见代理设置](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/255-chang-jian-dai-li-she-zhi.md)
 * [3.基本库使用](3ji-ben-ku-shi-yong.md)
   * [3.1 使用urllib](3ji-ben-ku-shi-yong/31-shi-yong-urllib.md)
-    * 3.1.1 发送请求
+    * [3.1.1 发送请求](3ji-ben-ku-shi-yong/31-shi-yong-urllib/311-fa-song-qing-qiu.md)
     * 3.1.2 处理异常
     * 3.1.3 解析链接
     * 3.1.4 分析Robots协议
