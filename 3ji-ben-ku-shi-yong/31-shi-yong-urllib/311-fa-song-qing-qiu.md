@@ -148,3 +148,27 @@ cafile 和 capath 两个参数是指定 CA 证书和它的路径，这个在请�
 
 cadefault 参数现在已经弃用了，默认为 False。
 
+### 2.Request
+
+例子:
+
+```
+import urllib.request
+
+request = urllib.request.Request("https://python.org")
+response = urllib.request.urlopen(request)
+print(response.read().decode('utf-8'))
+```
+
+urlopen\(\) 方法的参数不再是一个 URL，而是一个 Request 类型的对象，通过构造这个这个数据结构，一方面我们可以将请求独立成一个对象，另一方面可配置参数更加丰富和灵活
+
+Request函数API:
+
+```
+class urllib.request.Request(url, data=None, headers={}, origin_req_host=None, unverifiable=False, method=None)
+```
+
+* url 参数是请求 URL，这个是必传参数，其他的都是可选参数。
+* data 参数如果要传必须传 bytes（字节流）类型的，如果是一个字典，可以先用 urllib.parse 模块里的 urlencode\(\) 编码。
+* headers 参数是一个字典，这个就是 Request Headers 了，你可以在构造 Request 时通过 headers 参数直接构造，也可以通过调用 Request 实例的 add\_header\(\) 方法来添加。
+
