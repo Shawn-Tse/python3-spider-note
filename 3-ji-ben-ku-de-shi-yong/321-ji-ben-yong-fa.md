@@ -115,8 +115,47 @@ print(response.text)
 }
 ```
 
-通过返回信息我们可以判断，请求的链接自动被构造成了：http://httpbin.org/get?name=angle&like=dongman
+通过返回信息我们可以判断，请求的链接自动被构造成了：[http://httpbin.org/get?name=angle&like=dongman](http://httpbin.org/get?name=angle&like=dongman)
 
-  
+另外，网页的返回类型实际上是 str 类型，但是它很特殊，是 Json 的格式，所以如果我们想直接把返回结果解析，得到一个字典格式的话，可以直接调用 json\(\) 方法。
+
+实例:
+
+```
+import requests
+
+params = {
+    'name':'angle',
+    'like':'dongmnae',
+}
+response = requests.get("http://httpbin.org/get", params=params)
+print(type(response.text))
+print(response.text)
+print(type(response.json()))
+```
+
+运行结果:
+
+```
+<class 'str'>
+{
+  "args": {
+    "like": "dongmnae", 
+    "name": "angle"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Connection": "close", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.18.4"
+  }, 
+  "origin": "220.197.208.229", 
+  "url": "http://httpbin.org/get?name=angle&like=dongmnae"
+}
+
+<class 'dict'>
+```
+
 
 
