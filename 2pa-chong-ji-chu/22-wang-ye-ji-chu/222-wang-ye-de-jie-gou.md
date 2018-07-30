@@ -1,4 +1,4 @@
-网页内容:header（头）、content（信息）、footer（页脚）。
+网页一般由三部分组成:HTML标签、CSS样式、JavaScript语句
 
 ```
 <!DOCTYPE html>
