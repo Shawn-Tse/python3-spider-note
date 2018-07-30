@@ -72,7 +72,7 @@
     * [2.5.2 代理的作用](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/252-dai-li-de-zuo-yong.md)
     * [2.5.3 爬虫代理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/253-pa-chong-dai-li.md)
     * [2.5.4 代理分类](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/254-dai-li-fen-lei.md)
-    * 2.5.5 常见代理设置
+    * [2.5.5 常见代理设置](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/255-chang-jian-dai-li-she-zhi.md)
 * [3.基本库使用](3ji-ben-ku-shi-yong.md)
   * [3.1 使用urllib](3ji-ben-ku-shi-yong/31-shi-yong-urllib.md)
     * 3.1.1 发送请求
