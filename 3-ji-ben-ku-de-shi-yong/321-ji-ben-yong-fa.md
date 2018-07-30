@@ -270,5 +270,22 @@ print(r.text)
 }
 ```
 
+成功获得了返回结果，返回结果中的 form 部分就是提交的数据，那么这就证明 POST 请求成功发送了。
+
+### 5. Response {#5-response}
+
+实例:
+
+```
+import requests
+
+r = requests.get('http://www.jianshu.com')
+print(type(r.status_code), r.status_code)
+print(type(r.headers), r.headers)
+print(type(r.cookies), r.cookies)
+print(type(r.url), r.url)
+print(type(r.history), r.history)
+```
+
 
 
