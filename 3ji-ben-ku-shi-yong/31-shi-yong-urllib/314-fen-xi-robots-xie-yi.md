@@ -56,7 +56,6 @@ robotparser 模块提供了一个类，叫做 RobotFileParser。它可以根据�
 
 ```
 urllib.robotparser.RobotFileParser(url='')
-
 ```
 
 使用这个类的时候非常简单，只需要在构造方法里传入 robots.txt的链接即可。当然也可以声明时不传入，默认为空，再使用 set\_url\(\) 方法设置一下也可以。
@@ -69,6 +68,53 @@ urllib.robotparser.RobotFileParser(url='')
 * can\_fetch\(\)，方法传入两个参数，第一个是 User-agent，第二个是要抓取的 URL，返回的内容是该搜索引擎是否可以抓取这个 URL，返回结果是 True 或 False。
 * mtime\(\)，返回的是上次抓取和分析 robots.txt 的时间，这个对于长时间分析和抓取的搜索爬虫是很有必要的，你可能需要定期检查来抓取最新的 robots.txt。
 * modified\(\)，同样的对于长时间分析和抓取的搜索爬虫很有帮助，将当前时间设置为上次抓取和分析 robots.txt 的时间。
+
+实例:
+
+```
+from urllib.robotparser import  RobotFileParser
+
+rp = RobotFileParser()
+rp.set_url('http://www.jianshu.com/robots.txt')
+rp.read()
+print(rp.can_fetch('*', 'http://www.jianshu.com/p/b67554025d7d'))
+print(rp.can_fetch('*', "http://www.jianshu.com/search?q=python&page=1&type=collections"))
+```
+
+以简书为例，我们首先创建 RobotFileParser 对象，然后通过 set\_url\(\) 方法来设置了 robots.txt 的链接。当然不用这个方法的话，可以在声明时直接用如下方法设置：
+
+```
+rp = RobotFileParser('http://www.jianshu.com/robots.txt')
+```
+
+利用 can\_fetch\(\) 方法来判断了网页是否可以被抓取
+
+运行结果:
+
+```
+False
+False
+```
+
+可以使用 parser\(\) 方法执行读取和分析
+
+实例:
+
+```
+from urllib.robotparser import RobotFileParser
+from urllib.request import urlopen
+
+rp = RobotFileParser()
+rp.parse(urlopen('https://blog.csdn.net/robots.txt').read().decode('utf-8').split('\n'))
+print(rp.can_fetch('*', 's://blog.csdn.net/Linear_Luo/article/details/52231550'))
+
+```
+
+运行结果:
+
+```
+True
+```
 
 
 
