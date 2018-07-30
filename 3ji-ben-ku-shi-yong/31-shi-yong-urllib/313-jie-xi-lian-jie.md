@@ -161,7 +161,22 @@ print(result)
 
 ```
 SplitResult(scheme='https', netloc='www.google.com.hk', path='/webhp', query='', fragment='content')
+```
 
+返回结果是 SplitResult，其实也是一个元组类型，可以用属性获取值也可以用索引来获取
+
+实例:
+
+```
+from urllib.parse import  urlsplit
+result = urlsplit("https://www.google.com.hk/webhp#content")
+print(result.scheme,result[0])
+```
+
+运行结果:
+
+```
+https https
 ```
 
 
