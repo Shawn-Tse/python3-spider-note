@@ -69,7 +69,7 @@
     * [2.4.3 常见误区](2pa-chong-ji-chu/24-hui-hua-he-cookies/243-chang-jian-wu-qu.md)
   * [2.5 代理的基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li.md)
     * [2.5.1 基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/251-ji-ben-yuan-li.md)
-    * 2.5.2 代理的作用
+    * [2.5.2 代理的作用](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/252-dai-li-de-zuo-yong.md)
     * 2.5.3 爬虫代理
     * 2.5.4 代理分类
     * 2.5.5 常见代理设置
