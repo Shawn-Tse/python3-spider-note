@@ -107,7 +107,6 @@ from urllib.request import urlopen
 rp = RobotFileParser()
 rp.parse(urlopen('https://blog.csdn.net/robots.txt').read().decode('utf-8').split('\n'))
 print(rp.can_fetch('*', 's://blog.csdn.net/Linear_Luo/article/details/52231550'))
-
 ```
 
 运行结果:
@@ -116,5 +115,5 @@ print(rp.can_fetch('*', 's://blog.csdn.net/Linear_Luo/article/details/52231550')
 True
 ```
 
-
+tips:一般都不会用这个
 
