@@ -298,5 +298,17 @@ r = requests.get('https://www.taobao.com', timeout=1)
 print(r.status_code)
 ```
 
+通过这样的方式，我们可以将超时时间设置为 1 秒，如果 1 秒内没有响应，那就抛出异常。
+
+实际上请求分为两个阶段，即 connect（连接）和 read（读取）。
+
+上面的设置 timeout 值将会用作 connect 和 read 二者的 timeout 总和。
+
+如果要分别指定，就可以传入一个元组：
+
+```
+r = requests.get('https://www.taobao.com', timeout=(5, 11))
+```
+
 
 
