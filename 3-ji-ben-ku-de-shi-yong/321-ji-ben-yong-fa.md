@@ -157,5 +157,15 @@ print(type(response.json()))
 <class 'dict'>
 ```
 
+### 抓取网页
+
+以知了为例子
+
+实例:
+
+```
+
+```
+
 
 
