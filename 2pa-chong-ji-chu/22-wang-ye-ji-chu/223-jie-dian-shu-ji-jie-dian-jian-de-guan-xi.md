@@ -1,4 +1,4 @@
-**在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTML。**
+在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTML。
 
 ## DOM 节点
 
