@@ -46,5 +46,35 @@ r = requests.head('http://httpbin.org/get')
 r = requests.options('http://httpbin.org/get')
 ```
 
+### 3. GET请求 {#3-get请求}
+
+测试连接:[http://httpbin.org/get](https://germey.gitbooks.io/python3webspider/content/[http:/httpbin.org/get)，会判断如果如果是 GET 请求的话，会返回响应的 Request 信息
+
+实例:
+
+```
+import requests
+
+response = requests.get('http://httpbin.org/get')
+print(response.text)
+```
+
+运行结果:
+
+```
+{
+  "args": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Connection": "close", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.18.4"
+  }, 
+  "origin": "220.197.208.229", 
+  "url": "http://httpbin.org/get"
+}
+```
+
 
 
