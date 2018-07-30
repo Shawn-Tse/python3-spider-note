@@ -231,5 +231,35 @@ response = requests.get('https://www.12306.cn',verify="E:/SRCA.crt")
 print(response.status_code)
 ```
 
+### 5. 代理设置 {#5-代理设置}
+
+设置代理，在 Requests 中需要用到 proxies 这个参数
+
+```
+import requests
+
+# 代理池
+proxies = {
+    'http': 'http://10.10.1.10:3128',
+    'https': 'http://10.10.1.10:1080',
+}
+
+r = requests.get('https://www.taobao.com',proxies=proxies)
+print(r.status_code)
+```
+
+若代理需要使用 HTTP Basic Auth，可以使用类似[http://user:password@host:port](http://user:password@host:port/)这样的语法来设置代理
+
+实例:
+
+```
+import requests
+
+proxies = {
+    'https': 'http://user:password@10.10.1.10:3128/',
+}
+requests.get('https://www.taobao.com', proxies=proxies)
+```
+
 
 
