@@ -20,8 +20,7 @@ print(type(result),result,sep='\n')
 ```
 <class 'urllib.parse.ParseResult'>
 ParseResult(scheme='https', netloc='www.google.com.hk', path='/search', params='', query='q=python', fragment='')
-
 ```
 
-
+返回结果是一个 ParseResult 类型的对象，它包含了六个部分，分别是 scheme、netloc、path、params、query、fragment
 
