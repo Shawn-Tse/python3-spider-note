@@ -2,7 +2,7 @@
 
 ![](/assets/2.1.4-1.png)![](/assets/2.1.4-2.png)按下F12，然后点击network面板，便可看到一次发送请求和接收响应之间的过程
 
-每列属性名称及含义：
+一个条目的名称及含义：
 
 * Name，即 Request 的名称。
 * Status，即 Response 的状态码。通过状态码我们可以判断发送了 Request 之后是否得到了正常的 Response。
@@ -11,6 +11,22 @@
 * Size，即从服务器下载的文件和请求的资源大小。
 * Time，即发起 Request 到获取到 Response 所用的总时间。
 * Timeline，即网络请求的可视化瀑布流。
+
+点击某条目可以看到更详细的信息
+
+![](/assets/2.1.4-3.png)
+
+General部分中属性的含义:
+
+* Request URL 为 Request 的 URL
+
+* Request Method 为请求的方法
+
+* Status Code 为响应状态码
+
+* Remote Address 为远程服务器的地址和端口
+
+* Referrer Policy 为 Referrer 判别策略
 
 
 
