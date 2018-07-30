@@ -423,10 +423,7 @@ Set-Cookie3: PSTM=1532934390; path="/"; domain=".baidu.com"; path_spec; domain_d
 Set-Cookie3: BDSVRTM=0; path="/"; domain="www.baidu.com"; path_spec; discard; version=0
 Set-Cookie3: BD_HOME=0; path="/"; domain="www.baidu.com"; path_spec; discard; version=0
 Set-Cookie3: delPer=0; path="/"; domain="www.baidu.com"; expires="2048-07-22 07:05:45Z"; version=0
-
 ```
-
-
 
 从cookies.txt读取存储的cookies
 
@@ -444,6 +441,8 @@ response = opener.open('http://www.baidu.com')
 for cookie in cookies:
     print(cookie)
 ```
+
+利用load\(\)方法读取本地Cookies文件，获取到了cookies的内容
 
 运行结果如下:
 
