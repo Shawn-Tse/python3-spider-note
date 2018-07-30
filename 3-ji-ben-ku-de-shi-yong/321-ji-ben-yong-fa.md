@@ -288,10 +288,21 @@ print(type(r.history), r.history)
 ```
 
 * status\_code 属性--状态码
-*  headers 属性--Response Headers
+* headers 属性--Response Headers
 * cookies 属性-- Cookies
 * url 属性-- URL
 * history 属性--请求历史。
+
+运行结果:
+
+```
+<class 'int'> 403
+<class 'requests.structures.CaseInsensitiveDict'> {'Date': 'Mon, 30 Jul 2018 09:05:55 GMT', 'Server': 'Tengine', 'Content-Type': 'text/html', 'Transfer-Encoding': 'chunked', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'Content-Encoding': 'gzip', 'X-Via': '1.1 PSlndlwtvb8:10 (Cdn Cache Server V2.0), 1.1 ngxiazai22:4 (Cdn Cache Server V2.0)', 'Connection': 'keep-alive', 'X-Dscp-Value': '0'}
+<class 'requests.cookies.RequestsCookieJar'> <RequestsCookieJar[]>
+<class 'str'> https://www.jianshu.com/
+<class 'list'> [<Response [301]>]
+
+```
 
 
 
