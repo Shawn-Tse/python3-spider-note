@@ -291,7 +291,45 @@ print(parse_qsl(query))
 
 ```
 [('f', 'json'), ('uin', '777'), ('key', '777'), ('pass_ticket', 'nFLy3qzW6g8xVh%252FRdSuoEMZn%252BYrRjEh0fsybociYtgE%253D'), ('wxtoken', '777'), ('devicetype', 'android-26'), ('clientversion', '26060739'), ('appmsg_token', '966_3pMS7R2ZHEtCjbLZ3O0EDgaTpZ9B-N7GrMG3lOqeNFz9EH9p3dcgPHSiCjE~'), ('x5', '1'), ('f', 'json')]
+```
 
+### 10. quote\(\)
+
+quote\(\) 方法可以将内容转化为 URL 编码的格式，有时候 URL 中带有中文参数的时候可能导致乱码的问题，所以我们可以用这个方法将中文字符转化为 URL 编码
+
+实例:
+
+```
+from urllib.parse import  quote
+
+wd = "猫"
+url = "https://www.baidu.com/s?wd="+quote(wd)
+print(url)
+```
+
+运行结果:
+
+```
+https://www.baidu.com/s?wd=%E7%8C%AB
+```
+
+### 11.unquote\(\)
+
+unquote\(\) 方法，它可以进行 URL 解码
+
+实例:
+
+```
+from urllib.parse import  unquote
+
+url = "https://www.baidu.com/s?wd=%E7%8C%AB"
+print(unquote(url))
+```
+
+运行结果:
+
+```
+https://www.baidu.com/s?wd=猫
 ```
 
 
