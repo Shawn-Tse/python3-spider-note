@@ -94,6 +94,30 @@ print(response.read().decode('utf-8'))
 
 ### timeout参数
 
+timeout 参数可以设置超时时间，单位为秒，意思就是如果请求超出了设置的这个时间还没有得到响应，就会抛出异常，如果不指定，就会使用全局默认时间。它支持 HTTP、HTTPS、FTP 请求。
+
+实例:
+
+```
+import urllib.request
+
+response = urllib.request.urlopen("http://httpbin.org/get",timeout=0.1)
+print(response.read().decode("utf-8"))
+```
+
+运行结果如下:
+
+```
+....
+
+During handling of the above exception, another exception occurred:
+
+....
+  File "E:\Python36\lib\urllib\request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+```
+
 ### 其他参数
 
 
