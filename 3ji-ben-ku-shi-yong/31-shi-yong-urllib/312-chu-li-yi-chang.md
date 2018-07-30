@@ -78,5 +78,20 @@ Timing-Allow-Origin: *
 EagleId: 71cf1e1515329355547806295e
 ```
 
+由于URLError 是 HTTPError 的父类，所以我们可以先选择捕获子类的错误，再去捕获父类的错误，所以上述代码更好的写法如下：
 
+```
+from urllib import request, error
+
+try:
+    response = request.urlopen('http://www.runoob.com/python1.html')
+except error.HTTPError as e:
+    print(e.reason, e.code, e.headers, sep='\n')
+except error.URLError as e:
+    print(e.reason)
+else:
+    print('Request Successfully')
+```
+
+这样我们就可以做到先捕获 HTTPError，获取它的错误状态码、原因、Headers 等详细信息。如果非 HTTPError，再捕获 URLError 异常，输出错误原因。最后用 else 来处理正常的逻辑，这是一个较好的异常处理写法。
 
