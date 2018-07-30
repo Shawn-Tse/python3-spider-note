@@ -2,6 +2,8 @@
 
 官方文档:[https://docs.python.org/3/library/urllib.html](https://docs.python.org/3/library/urllib.html)
 
+测试网站:httpbin.org
+
 ### 2.内容
 
 Urllib 库，是 Python 内置的 HTTP 请求库，包含四个模块：
