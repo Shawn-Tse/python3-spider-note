@@ -233,7 +233,27 @@ www.baidu.com?category=2
 
 ### 7. urlencode\(\) {#6-urlencode}
 
+构造get请求参数
 
+实例:
+
+```
+from urllib.parse import urlencode
+
+# 构造参数字典
+params = {
+    'wd':'python',
+}
+base_url = 'https://www.baidu.com/s?'
+url = base_url + urlencode(params)
+print(url)
+```
+
+运行结果:
+
+```
+https://www.baidu.com/s?wd=python
+```
 
 
 
