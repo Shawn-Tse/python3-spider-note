@@ -255,5 +255,9 @@ print(url)
 https://www.baidu.com/s?wd=python
 ```
 
+### 8. parse\_qs\(\) {#7-parseqs}
+
+parse\_qs\(\) 方法可以将请求参数转回字典
+
 
 
