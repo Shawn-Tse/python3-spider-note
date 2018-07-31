@@ -111,7 +111,7 @@ print(type(doc('#container .list li')))
 
 ### 3. 查找节点 {#4-查找节点}
 
-常用的查询函数，pyquery的函数和 jQuery 中的函数用法也完全相同
+pyquery的常用的查询函数，这些函数和 jQuery 中的函数用法完全相同
 
 #### 子节点 {#子节点}
 
