@@ -115,5 +115,39 @@ pyquery的常用的查询函数，这些函数和 jQuery 中的函数用法完�
 
 #### 子节点 {#子节点}
 
+查找子节点需要用到 find\(\) 方法，传入的参数是 CSS 选择器
+
+```
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+items = doc('.list')
+print(type(items))
+print(items)
+list_itmes = items.find('li')
+print(type(list_itmes))
+print(list_itmes)
+```
+
+运行结果:
+
+```
+<class 'pyquery.pyquery.PyQuery'>
+<ul class="list">
+         <li class="item-0">first item</li>
+         <li class="item-1"><a href="link2.html">second item</a></li>
+         <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+         <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+         <li class="item-0"><a href="link5.html">fifth item</a></li>
+     </ul>
+ 
+<class 'pyquery.pyquery.PyQuery'>
+<li class="item-0">first item</li>
+         <li class="item-1"><a href="link2.html">second item</a></li>
+         <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+         <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+         <li class="item-0"><a href="link5.html">fifth item</a></li>
+```
+
 
 
