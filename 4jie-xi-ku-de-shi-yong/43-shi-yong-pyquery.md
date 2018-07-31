@@ -558,8 +558,35 @@ attr\(\) 方法如果只传入第一个参数属性名，则是获取这个属�
 <li class="item-0 active" name="link">chaned item</li>
 
 <li class="item-0 active" name="link"><span>changed item</span></li>
-
 ```
 
+#### remove {#remove}
 
+移除
+
+实例:
+
+```
+html = '''
+<div class="wrap">
+    Hello, World
+    <p>This is a paragraph.</p>
+ </div>
+'''
+
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+wrap = doc('.wrap')
+print(wrap.text())
+```
+
+运行结果:
+
+```
+Hello, World
+This is a paragraph.
+```
+
+例子:移除
 
