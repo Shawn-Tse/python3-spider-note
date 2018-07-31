@@ -420,7 +420,7 @@ print(list(enumerate(soup.a.parents)))
 ##### 兄弟节点 {#兄弟节点}
 
 * next\_sibling :获取节点的下一个兄弟节点
-*  previous\_sibling:获取节点上一个兄弟节点
+* previous\_sibling:获取节点上一个兄弟节点
 * next\_siblings :返回所有前面兄弟节点的生成器
 * previous\_siblings :返回所有后面的兄弟节点的生成器
 
@@ -450,7 +450,6 @@ print('next sibling:',soup.a.next_sibling)
 print('previous sibling:',soup.a.previous_sibling)
 print("next siblings:",list(soup.a.next_siblings))
 print("previouos siblings:",list(soup.a.previous_siblings))
-
 ```
 
 运行结果:
@@ -458,14 +457,56 @@ print("previouos siblings:",list(soup.a.previous_siblings))
 ```
 next sibling: 
             Hello
-            
+
 previous sibling: 
             Once upon a time there were three little sisters; and their names were
-            
+
 next siblings: ['\n            Hello\n            ', <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, ' \n            and\n            ', <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>, '\n            and they lived at the bottom of a well.\n        ']
 previouos siblings: ['\n            Once upon a time there were three little sisters; and their names were\n            ']
+```
+
+##### 提取信息 {#提取信息}
+
+获取一些信息，比如文本、属性等等
 
 ```
+html = """
+<html>
+    <body>
+        <p class="story">
+            Once upon a time there were three little sisters; and their names were
+            <a href="http://example.com/elsie" class="sister" id="link1">Bob</a><a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> 
+        </p>
+"""
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(html, 'lxml')
+print('Next Sibling:')
+print(type(soup.a.next_sibling))
+print(soup.a.next_sibling)
+print(soup.a.next_sibling.string)
+print('Parent:')
+print(type(soup.a.parents))
+print(list(soup.a.parents)[0])
+print(list(soup.a.parents)[0].attrs['class'])
+```
+
+运行结果:
+
+```
+Next Sibling:
+<class 'bs4.element.Tag'>
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+Lacie
+Parent:
+<class 'generator'>
+<p class="story">
+            Once upon a time there were three little sisters; and their names were
+            <a class="sister" href="http://example.com/elsie" id="link1">Bob</a><a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+</p>
+['story']
+```
+
+### 6. 方法选择器 {#6-方法选择器}
 
 
 
