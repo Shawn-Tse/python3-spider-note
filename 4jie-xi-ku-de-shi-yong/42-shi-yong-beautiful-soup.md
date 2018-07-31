@@ -367,5 +367,55 @@ print(soup.a.parent)
 </p>
 ```
 
+要想获取所有的祖先节点，可以调用 parents 属性
+
+```
+html = """
+<html>
+    <body>
+        <p class="story">
+            <a href="http://example.com/elsie" class="sister" id="link1">
+                <span>Elsie</span>
+            </a>
+        </p>
+"""
+
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(html,'lxml')
+print(type(soup.a.parents))
+print(list(enumerate(soup.a.parents)))
+```
+
+运行结果:
+
+```
+<class 'generator'>
+[(0, <p class="story">
+<a class="sister" href="http://example.com/elsie" id="link1">
+<span>Elsie</span>
+</a>
+</p>), (1, <body>
+<p class="story">
+<a class="sister" href="http://example.com/elsie" id="link1">
+<span>Elsie</span>
+</a>
+</p>
+</body>), (2, <html>
+<body>
+<p class="story">
+<a class="sister" href="http://example.com/elsie" id="link1">
+<span>Elsie</span>
+</a>
+</p>
+</body></html>), (3, <html>
+<body>
+<p class="story">
+<a class="sister" href="http://example.com/elsie" id="link1">
+<span>Elsie</span>
+</a>
+</p>
+</body></html>)]
+```
+
 
 
