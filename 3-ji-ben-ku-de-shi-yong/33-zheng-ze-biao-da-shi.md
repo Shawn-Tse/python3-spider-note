@@ -325,3 +325,33 @@ print("新内容:"+content)
 
 第一个参数传入 \d+ 来匹配所有的数字，然后第二个参数是替换成的字符串，要去掉的话就可以赋值为空，第三个参数就是原字符串，得到的结果就是替换修改之后的内容
 
+### 7. compile\(\) {#7-compile}
+
+正则字符串编译成正则表达式对象，以便于在后面的匹配中复用
+
+实例:
+
+```
+import re
+
+content1 = '2018-7-15 12:00'
+content2 = '2018-7-17 12:55'
+content3 = '2018-7-22 13:21'
+pattern = re.compile('\d{2}:\d{2}')
+content1 = re.sub(pattern,'',content1)
+content2= re.sub(pattern,'',content2)
+content3 = re.sub(pattern,'',content3)
+print(content1,content2,content3,sep='\n')
+
+```
+
+运行结果:
+
+```
+2018-7-15 
+2018-7-17 
+2018-7-22 
+```
+
+
+
