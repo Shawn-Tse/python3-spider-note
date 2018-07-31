@@ -31,7 +31,6 @@ print(doc('li'))
          <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
          <li class="item-1 active"><a href="link4.html">fourth item</a></li>
          <li class="item-0"><a href="link5.html">fifth item</a></li>
-     
 ```
 
 #### URL初始化 {#url初始化}
@@ -49,6 +48,18 @@ print(doc('title'))
 
 ```
 <title>CoderAngle · GitHub</title>
+```
+
+等同于下面这个:
+
+使用requests模块访问url然后返回源码
+
+```
+from pyquery import PyQuery as pq
+import requests
+
+doc = pq(requests.get('https://github.com/CoderAngle').text)
+print(doc('title'))
 ```
 
 
