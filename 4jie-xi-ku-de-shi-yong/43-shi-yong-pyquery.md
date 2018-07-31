@@ -588,5 +588,22 @@ Hello, World
 This is a paragraph.
 ```
 
-例子:移除
+例子:移除p节点
+
+```
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+wrap = doc('.wrap')
+wrap.find('p').remove()
+print(wrap.text())
+```
+
+运行结果:
+
+```
+Hello, World
+```
+
+
 
