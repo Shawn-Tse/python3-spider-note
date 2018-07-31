@@ -113,7 +113,18 @@ print(result)
 
 ```
 [<Element html at 0x185591fd548>, <Element body at 0x185591fd688>, <Element div at 0x185591fd6c8>, <Element ul at 0x185591fd708>, <Element li at 0x185591fd748>, <Element a at 0x185591fd7c8>, <Element li at 0x185591fd808>, <Element a at 0x185591fd848>, <Element li at 0x185591fdac8>, <Element a at 0x185591fd788>, <Element li at 0x185591fdb08>, <Element a at 0x185591fdb48>, <Element li at 0x185591fdb88>, <Element a at 0x185591fdbc8>]
+```
 
+只获取li节点
+
+要选取所有 li 节点可以使用 //，然后直接加上节点的名称即可，调用时直接调用 xpath\(\) 方法即可提取
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//li')
+print(result)
 ```
 
 
