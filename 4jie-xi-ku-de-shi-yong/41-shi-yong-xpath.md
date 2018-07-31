@@ -83,7 +83,6 @@ test.html内容
 解析后结果:
 
 ```
-E:\Python36\python.exe E:/JetBrains/code_project/xpath_demo/test2.py
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body><div>&#13;
     <ul>&#13;
