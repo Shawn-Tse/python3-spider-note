@@ -163,5 +163,34 @@ print(result)
 
 ### 7. 父节点 {#7-父节点}
 
+可以通过..来获取父节点
+
+实例:获取href 是 link4.html 的 a 节点的父节点的class属性
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//a[@href="link4.html"]/../@class')
+print(result)
+```
+
+运行结果:
+
+```
+['item-1']
+```
+
+也可以通过 parent:: 来获取父节点
+
+实例:
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//a[@href="link4.html"]/parent::*/@class')
+```
+
 
 
