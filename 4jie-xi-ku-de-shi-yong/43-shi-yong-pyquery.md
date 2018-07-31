@@ -660,19 +660,23 @@ print(li)
 
 ```
 <li class="item-0">first item</li>
-             
+
 <li class="item-0"><a href="link5.html">fifth item</a></li>
-         
+
 <li class="item-1"><a href="link2.html">second item</a></li>
-             
+
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
              <li class="item-0"><a href="link5.html">fifth item</a></li>
-         
+
 <li class="item-1"><a href="link2.html">second item</a></li>
              <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-             
+
 <li class="item-1"><a href="link2.html">second item</a></li>
 ```
+
+### 8.细节
+
+更多的内容，参考官方文档:[http://pyquery.readthedocs.io](http://pyquery.readthedocs.io/)
 
 
 
