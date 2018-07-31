@@ -4,7 +4,7 @@ BeautifulSoup 就是 Python 的一个 HTML 或 XML 的解析库，我们可以�
 
 ### 2. 解析器 {#3-解析器}
 
- BeautifulSoup 支持的解析器及优缺点
+BeautifulSoup 支持的解析器及优缺点
 
 | 解析器 | 使用方法 | 优势 | 劣势 |
 | :--- | :--- | :--- | :--- |
@@ -74,6 +74,9 @@ and they lived at the bottom of a well.
 </html>
 The Dormouse's story
 ```
+
+* prettify\(\):把要解析的字符串以标准的缩进格式输出
+* soup.title.string:选择HTML中的title节点，再调用string属性得到里面的文本
 
 
 
