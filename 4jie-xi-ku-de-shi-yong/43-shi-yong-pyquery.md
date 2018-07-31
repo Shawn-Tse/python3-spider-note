@@ -346,5 +346,78 @@ print(li.siblings('.active'))
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
 ```
 
+### 4. 遍历 {#5-遍历}
+
+对于多个节点的结果，需要遍历来获取了
+
+实例:把每一个 li 节点进行遍历,，需要调用 items\(\) 方法
+
+```
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+lis = doc('li').items()
+print(type(lis))
+for li in lis:
+    print(li,type(li))
+```
+
+运行结果:
+
+```
+<class 'generator'>
+<li class="item-0">first item</li>
+              <class 'pyquery.pyquery.PyQuery'>
+<li class="item-1"><a href="link2.html">second item</a></li>
+              <class 'pyquery.pyquery.PyQuery'>
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+              <class 'pyquery.pyquery.PyQuery'>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+              <class 'pyquery.pyquery.PyQuery'>
+<li class="item-0"><a href="link5.html">fifth item</a></li>
+          <class 'pyquery.pyquery.PyQuery'>
+```
+
+### 5.获取信息 {#6-获取信息}
+
+* 获取属性
+* 获取文本
+
+#### 获取属性 {#获取属性}
+
+使用attr\(\) 方法获取属性
+
+```
+html = '''
+<div class="wrap">
+    <div id="container">
+        <ul class="list">
+             <li class="item-0">first item</li>
+             <li class="item-1"><a href="link2.html">second item</a></li>
+             <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+             <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+             <li class="item-0"><a href="link5.html">fifth item</a></li>
+         </ul>
+     </div>
+ </div>
+'''
+
+
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+a = doc('.item-0.active a')
+print(a,type(a))
+print(a.attr('href'))
+```
+
+运行结果:
+
+```
+<a href="link3.html"><span class="bold">third item</span></a> <class 'pyquery.pyquery.PyQuery'>
+link3.html
+
+```
+
 
 
