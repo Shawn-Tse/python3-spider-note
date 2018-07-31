@@ -525,10 +525,40 @@ print(li)
 
 ```
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-             
+
 <li class="item-0"><a href="link3.html"><span class="bold">third item</span></a></li>
-             
+
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+```
+
+#### attr、text、html {#attr、text、html}
+
+```
+from pyquery import PyQuery as pq
+doc = pq(html)
+li = doc('.item-0.active')
+print(li)
+li.attr('name','link')
+print(li)
+li.text('chaned item')
+print(li)
+li.html('<span>changed item</span')
+print(li)
+```
+
+attr\(\) 方法如果只传入第一个参数属性名，则是获取这个属性值，如果传入第二个参数，可以用来修改属性值，text\(\) 和 html\(\) 方法如果不传参数是获取节点内纯文本和 HTML 文本，如果传入参数则是进行赋值
+
+返回结果:
+
+```
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+
+<li class="item-0 active" name="link"><a href="link3.html"><span class="bold">third item</span></a></li>
+
+<li class="item-0 active" name="link">chaned item</li>
+
+<li class="item-0 active" name="link"><span>changed item</span></li>
+
 ```
 
 
