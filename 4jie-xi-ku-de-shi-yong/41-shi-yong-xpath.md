@@ -127,5 +127,36 @@ result = html.xpath('//li')
 print(result)
 ```
 
+### 6.子结点
 
+通过/或者//查找子结点或子孙子结点
+
+实例:查找li节点下的所有a子节点
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//li/a')
+print(result)
+```
+
+运行结果:
+
+```
+[<Element a at 0x1dc63e8d708>, <Element a at 0x1dc63e8d748>, <Element a at 0x1dc63e8d788>, <Element a at 0x1dc63e8d7c8>, <Element a at 0x1dc63e8d808>]
+
+```
+
+实例:查找ul节点下的所有的子孙a节点
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//li//a')
+print(result)
+```
+
+运行结果与上个例子相同的
 
