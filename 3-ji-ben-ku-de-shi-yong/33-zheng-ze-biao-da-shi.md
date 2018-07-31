@@ -241,7 +241,7 @@ html = '''<div id="songs-list">
         <li data-view="6"><a href="/4.mp3" singer="beyond">光辉岁月</a></li>
         <li data-view="5"><a href="/5.mp3" singer="陈慧琳">记事本</a></li>
         <li data-view="5">
-            <a href="/6.mp3" singer="邓丽君"><i class="fa fa-user"></i>但愿人长久</a>
+            <a href="/6.mp3" singer="邓丽君">但愿人长久</a>
         </li>
     </ul>
 </div>'''
@@ -271,7 +271,11 @@ search\(\) 方法的用法，它可以返回匹配正则表达式的第一个内
 
 findall\(\) 方法会搜索整个字符串然后返回匹配正则表达式的所有内容
 
+实例:
 
+```
+
+```
 
 
 
