@@ -814,3 +814,52 @@ for ul in soup.select('ul'):
 
 获取属性还是可以用上面的方法获取
 
+```
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+for ul in soup.select('ul'):
+    print(ul['id'])
+    print(ul.attrs['id'])
+```
+
+运行结果:
+
+```
+list-1
+list-1
+list-2
+list-2
+```
+
+#### 获取文本 {#获取文本}
+
+获取文本可以用string 属性，还有一种方法那就是 get\_text\(\)，同样可以获取文本值。
+
+```
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+for li in soup.select('li'):
+    print('GET TEXT:',li.get_text())
+    print('STRING:',li.string)
+
+```
+
+运行结果:
+
+```
+GET TEXT: Foo
+STRING: Foo
+GET TEXT: Bar
+STRING: Bar
+GET TEXT: Jay
+STRING: Jay
+GET TEXT: Foo
+STRING: Foo
+GET TEXT: Bar
+STRING: Bar
+```
+
+
+
