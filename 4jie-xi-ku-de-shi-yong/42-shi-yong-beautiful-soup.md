@@ -843,7 +843,6 @@ soup = BeautifulSoup(html,'lxml')
 for li in soup.select('li'):
     print('GET TEXT:',li.get_text())
     print('STRING:',li.string)
-
 ```
 
 运行结果:
@@ -860,6 +859,13 @@ STRING: Foo
 GET TEXT: Bar
 STRING: Bar
 ```
+
+### 7.细节
+
+* 推荐使用 LXML 解析库，必要时使用 html.parser
+* 节点选择筛选功能弱但是速度快
+* 建议使用 find\(\)、find\_all\(\) 查询匹配单个结果或者多个结果
+* 如果对 CSS 选择器熟悉的话可以使用 select\(\) 选择法
 
 
 
