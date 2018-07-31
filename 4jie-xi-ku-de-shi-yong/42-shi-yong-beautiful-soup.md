@@ -638,5 +638,58 @@ print(soup.find_all(attrs={"name":"elements"}))
 </ul>]
 ```
 
+对于常用的属性比如id，class，可以不用attrs传递
+
+```
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(html, 'lxml')
+print(soup.find_all(id='list-1'))
+print(soup.find_all(class_='element'))
+```
+
+运行结果:
+
+```
+[<ul class="list" id="list-1">
+<li class="element">Foo</li>
+<li class="element">Bar</li>
+<li class="element">Jay</li>
+</ul>]
+[<li class="element">Foo</li>, <li class="element">Bar</li>, <li class="element">Jay</li>, <li class="element">Foo</li>, <li class="element">Bar</li>]
+```
+
+##### text {#text}
+
+text 参数可以用来匹配节点的文本，传入的形式可以是字符串，可以是正则表达式对象
+
+```
+html='''
+<div class="panel">
+    <div class="panel-body">
+        <a>Hello, this is a link</a>
+        <a>Hello, this is a link, too</a>
+    </div>
+</div>
+'''
+import re
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+# 查询文本包含有link的文本
+print(soup.find_all(text=re.compile('link')))
+```
+
+运行结果:
+
+```
+['Hello, this is a link', 'Hello, this is a link, too']
+```
+
+#### find\(\) {#find}
+
+find\(\) 方法返回的是单个元素，即第一个匹配的元素，而 find\_all\(\) 返回的是所有匹配的元素组成的列表
+
+
+
 
 
