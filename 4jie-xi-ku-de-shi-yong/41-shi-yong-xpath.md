@@ -337,5 +337,25 @@ print(result)
 ['first item']
 ```
 
+XPath 中的运算符，另外还有很多运算符，如 or、mod 等等，在此总结如下：
 
+| 运算符 | 描述 | 实例 | 返回值 |
+| :--- | :--- | :--- | :--- |
+| or | 或 | price=9.80 or price=9.70 | 如果 price 是 9.80，则返回 true。如果 price 是 9.50，则返回 false。 |
+| and | 与 | price&gt;9.00 and price&lt;9.90 | 如果 price 是 9.80，则返回 true。如果 price 是 8.50，则返回 false。 |
+| mod | 计算除法的余数 | 5 mod 2 | 1 |
+| + | 加法 | 6 + 4 | 10 |
+| - | 减法 | 6 - 4 | 2 |
+| \* | 乘法 | 6 \* 4 | 24 |
+| div | 除法 | 8 div 4 | 2 |
+| = | 等于 | price=9.80 | 如果 price 是 9.80，则返回 true。如果 price 是 9.90，则返回 false。 |
+| != | 不等于 | price!=9.80 | 如果 price 是 9.90，则返回 true。如果 price 是 9.80，则返回 false。 |
+| &lt; | 小于 | price&lt;9.80 | 如果 price 是 9.00，则返回 true。如果 price 是 9.90，则返回 false。 |
+| &lt;= | 小于或等于 | price&lt;=9.80 | 如果 price 是 9.00，则返回 true。如果 price 是 9.90，则返回 false。 |
+| &gt; | 大于 | price&gt;9.80 | 如果 price 是 9.90，则返回 true。如果 price 是 9.80，则返回 false。 |
+| &gt;= | 大于或等于 | price&gt;=9.80 | 如果 price 是 9.90，则返回 true。如果 price 是 9.70，则返回 false。 |
+
+参考来源：
+
+[http://www.w3school.com.cn/xpath/xpath\_operators.asp](http://www.w3school.com.cn/xpath/xpath_operators.asp)
 
