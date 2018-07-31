@@ -210,7 +210,46 @@ print(result)
 
 ```
 [<Element li at 0x1e85c0bd748>, <Element li at 0x1e85c0bd788>]
+```
 
+### 9. 文本获取 {#9-文本获取}
+
+利用xpath中的text\(\)方法可以获取节点中的文本
+
+实例:获取li节点下的文本
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//li[@class="item-0"]/text()')
+print(result)
+```
+
+运行结果:
+
+```
+['\r\n     ']
+```
+
+可是没有到获取想要文本，是因为文本内容时在a节点下的，不能直接获取
+
+而想获取其中的内容有两种方式，一种是选取到a节点再获取文本，另一种就是使用//
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//li[@class="item-0"]/a/text()')
+print(result)
+
+
+
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//li[@class="item-0"]//text()')
+print(result)
 ```
 
 
