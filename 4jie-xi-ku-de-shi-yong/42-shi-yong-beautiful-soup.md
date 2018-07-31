@@ -238,5 +238,39 @@ print(soup.body.contents)
         </p>, '\n', <p class="story">...</p>, '\n']
 ```
 
+可以调用 children 属性，得到相应的结果:
+
+```
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+print(soup.body.children)
+for i,child in enumerate(soup.body.children):
+    print(i,child)
+```
+
+运行结果:
+
+```
+<list_iterator object at 0x00000217D33CD048>
+0 
+
+1 <p class="story">
+            Once upon a time there were three little sisters; and their names were
+            <a class="sister" href="http://example.com/elsie" id="link1">
+<span>Elsie</span>
+</a>
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> 
+            and
+            <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+            and they lived at the bottom of a well.
+        </p>
+2 
+
+3 <p class="story">...</p>
+4 
+
+```
+
 
 
