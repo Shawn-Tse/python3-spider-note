@@ -445,5 +445,5 @@ result = html.xpath('//li[1]/following-sibling::*')
 print(result)
 ```
 
-轴的使用参考：[http://www.w3school.com.cn/xpath/xpath\_axes.asp](http://www.w3school.com.cn/xpath/xpath_axes.asp)
+轴的使用，用法参考：[http://www.w3school.com.cn/xpath/xpath\_axes.asp](http://www.w3school.com.cn/xpath/xpath_axes.asp)
 
