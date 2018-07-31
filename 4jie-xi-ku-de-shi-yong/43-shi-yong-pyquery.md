@@ -417,6 +417,27 @@ print(a.attr.href)
 ```
 <a href="link3.html"><span class="bold">third item</span></a> <class 'pyquery.pyquery.PyQuery'>
 link3.html
+link3.html
+```
+
+当返回结果包含多个节点时，调用 attr\(\) 方法只会得到第一个节点的属性
+
+```
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+a = doc('a')
+for item in a.items():
+    print(item.attr('href'))
+```
+
+运行结果:
+
+```
+link2.html
+link3.html
+link4.html
+link5.html
 ```
 
 
