@@ -300,7 +300,7 @@ for i,child in enumerate(soup.body.descendants):
         </p>
 2 
             Once upon a time there were three little sisters; and their names were
-            
+
 3 <a class="sister" href="http://example.com/elsie" id="link1">
 <span>Elsie</span>
 </a>
@@ -316,17 +316,55 @@ for i,child in enumerate(soup.body.descendants):
 10 Lacie
 11  
             and
-            
+
 12 <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
 13 Tillie
 14 
             and they lived at the bottom of a well.
-        
+
 15 
 
 16 <p class="story">...</p>
 17 ...
-18 
+18
+```
+
+##### 父节点和祖先节点 {#父节点和祖先节点}
+
+要获取某个节点元素的父节点，可以调用 parent 属性：
+
+实例:获取节点a的父节点p下的内容
+
+```
+html = """
+<html>
+    <head>
+        <title>The Dormouse's story</title>
+    </head>
+    <body>
+        <p class="story">
+            Once upon a time there were three little sisters; and their names were
+            <a href="http://example.com/elsie" class="sister" id="link1">
+                <span>Elsie</span>
+            </a>
+        </p>
+        <p class="story">...</p>
+"""
+
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(html,'lxml')
+print(soup.a.parent)
+```
+
+运行结果:
+
+```
+<p class="story">
+            Once upon a time there were three little sisters; and their names were
+            <a class="sister" href="http://example.com/elsie" id="link1">
+<span>Elsie</span>
+</a>
+</p>
 ```
 
 
