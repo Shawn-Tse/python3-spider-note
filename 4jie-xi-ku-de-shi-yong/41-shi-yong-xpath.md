@@ -357,3 +357,51 @@ XPath 中的运算符，另外还有很多运算符，如 or、mod 等等，在�
 
 参考来源：[http://www.w3school.com.cn/xpath/xpath\_operators.asp](http://www.w3school.com.cn/xpath/xpath_operators.asp)
 
+### 13. 按序选择 {#13-按序选择}
+
+实例:
+
+```
+from lxml import etree
+
+text = '''
+<div>
+    <ul>
+         <li class="item-0"><a href="link1.html">first item</a></li>
+         <li class="item-1"><a href="link2.html">second item</a></li>
+         <li class="item-inactive"><a href="link3.html">third item</a></li>
+         <li class="item-1"><a href="link4.html">fourth item</a></li>
+         <li class="item-0"><a href="link5.html">fifth item</a>
+     </ul>
+ </div>
+'''
+html = etree.HTML(text)
+result = html.xpath('//li[1]/a/text()')
+print(result)
+result = html.xpath('//li[last()]/a/text()')
+print(result)
+result = html.xpath('//li[position()<3]/a/text()')
+print(result)
+result = html.xpath('//li[last()-2]/a/text()')
+print(result)
+```
+
+第一次选择,选取了第一个 li 节点，中括号中传入数字1即可，注意这里和代码中不同，序号是以 1 开头的，不是 0 开头的。
+
+第二次选择,选取了最后一个 li 节点，中括号中传入 last\(\) 即可，返回的便是最后一个 li 节点。
+
+第三次选择,选取了位置小于 3 的 li 节点，也就是位置序号为 1 和 2 的节点，得到的结果就是前 2 个 li 节点。
+
+第四次选择,选取了倒数第三个 li 节点，中括号中传入 last\(\)-2即可，因为 last\(\) 是最后一个，所以 last\(\)-2 就是倒数第三个。
+
+运行结果如下：
+
+```
+['first item']
+['fifth item']
+['first item', 'second item']
+['third item']
+```
+
+函数参考:[http://www.w3school.com.cn/xpath/xpath\_functions.asp](http://www.w3school.com.cn/xpath/xpath_functions.asp)
+
