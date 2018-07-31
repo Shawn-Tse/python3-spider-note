@@ -447,5 +447,57 @@ link4.html
 link5.html
 ```
 
+#### 获取文本 {#获取文本}
 
+调用了 text\(\) 方法，就可以获取其内部的文本信息了，它会忽略掉节点内部包含的所有 HTML，只返回纯文字内容
+
+```
+html = '''
+<div class="wrap">
+    <div id="container">
+        <ul class="list">
+             <li class="item-0">first item</li>
+             <li class="item-1"><a href="link2.html">second item</a></li>
+             <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+             <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+             <li class="item-0"><a href="link5.html">fifth item</a></li>
+         </ul>
+     </div>
+ </div>
+'''
+
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+a = doc('.item-0.active a')
+print(a)
+print(a.text())
+```
+
+运行结果:
+
+```
+<a href="link3.html"><span class="bold">third item</span></a>
+third item
+```
+
+获取这个节点内部的 HTML 文本，就可以用 html\(\) 方法
+
+```
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+a = doc('.item-0.active a')
+print(a)
+print(a.html())
+```
+
+运行结果:
+
+```
+<a href="link3.html"><span class="bold">third item</span></a>
+<span class="bold">third item</span>
+```
+
+在多个节点的情况下，html\(\) 方法返回第一个 li 节点的内部 HTML 文本，而 text\(\) 返回所有的 li 节点内部纯文本
 
