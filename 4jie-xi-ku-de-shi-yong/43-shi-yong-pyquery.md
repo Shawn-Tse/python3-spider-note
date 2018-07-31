@@ -105,9 +105,15 @@ print(type(doc('#container .list li')))
          <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
          <li class="item-1 active"><a href="link4.html">fourth item</a></li>
          <li class="item-0"><a href="link5.html">fifth item</a></li>
-     
+
 <class 'pyquery.pyquery.PyQuery'>
 ```
+
+### 3. 查找节点 {#4-查找节点}
+
+常用的查询函数，pyquery的函数和 jQuery 中的函数用法也完全相同
+
+#### 子节点 {#子节点}
 
 
 
