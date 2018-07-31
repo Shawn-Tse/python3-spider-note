@@ -83,7 +83,7 @@
     * [3.2.1 基本用法](3-ji-ben-ku-de-shi-yong/321-ji-ben-yong-fa.md)
     * [3.2.2 高级用法](3-ji-ben-ku-de-shi-yong/322-gao-ji-yong-fa.md)
     * [3.3 正则表达式](3-ji-ben-ku-de-shi-yong/33-zheng-ze-biao-da-shi.md)
-    * 3.4 抓取猫眼电影排行
+    * [3.4 抓取猫眼电影排行](3-ji-ben-ku-de-shi-yong/34-zhua-qu-mao-yan-dian-ying-pai-xing.md)
 * [4.解析库的使用](4jie-xi-ku-de-shi-yong.md)
   * [4.1 使用xpath](4jie-xi-ku-de-shi-yong/41-shi-yong-xpath.md)
   * 4.2 使用Beautiful Soup
