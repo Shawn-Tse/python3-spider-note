@@ -791,5 +791,26 @@ print(soup.select('ul')[0])
 </ul>
 ```
 
+#### 嵌套选择 {#嵌套选择}
 
+实例:select\(\) 方法同样支持嵌套选择，例如我们先选择所有 ul 节点，再遍历每个 ul 节点选择其 li 节点
+
+```
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+for ul in soup.select('ul'):
+    print(ul.select('li'))
+```
+
+运行结果:
+
+```
+[<li class="element">Foo</li>, <li class="element">Bar</li>, <li class="element">Jay</li>]
+[<li class="element">Foo</li>, <li class="element">Bar</li>]
+```
+
+#### 获取属性 {#获取属性}
+
+获取属性还是可以用上面的方法获取
 
