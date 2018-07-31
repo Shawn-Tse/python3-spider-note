@@ -304,6 +304,12 @@ for result in results:
 
 sub\(\)方法可以替换文本中内容，替换成想要替换的新的内容
 
+语法声明:
+
+```
+re.sub(pattern,new,old)
+```
+
 实例:
 
 ```
@@ -314,7 +320,6 @@ pattern = '\d+'
 print("原内容:"+content)
 content = re.sub(pattern,'',content)
 print("新内容:"+content)
-
 ```
 
 运行结果:
@@ -322,7 +327,6 @@ print("新内容:"+content)
 ```
 原内容:Hello123World
 新内容:HelloWorld
-
 ```
 
 
