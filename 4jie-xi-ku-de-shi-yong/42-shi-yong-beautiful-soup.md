@@ -508,7 +508,7 @@ Parent:
 
 ### 5. 方法选择器 {#6-方法选择器}
 
-常用查询方法:find\_all\(\)、find\(\) 
+常用查询方法:find\_all\(\)、find\(\)
 
 #### find\_all\(\) {#findall}
 
@@ -551,7 +551,7 @@ print(soup.find_all(name='ul'))
 print(type(soup.find_all(name='ul')[0]))
 ```
 
-运行结果:
+运行结果:返回结果类型为:bs4.element.Tag
 
 ```
 [<ul class="list" id="list-1">
