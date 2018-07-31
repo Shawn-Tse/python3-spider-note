@@ -565,5 +565,31 @@ print(type(soup.find_all(name='ul')[0]))
 <class 'bs4.element.Tag'>
 ```
 
+获取ul下的li节点以及li下的文本内容
+
+```
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+# print(soup.find_all(name='ul'))
+# print(type(soup.find_all(name='ul')[0]))
+for ul in soup.find_all(name='ul'):
+    print(ul.find_all(name='li'))
+    for li in ul.find_all(name='li'):
+        print(li.string)
+```
+
+运行结果:
+
+```
+[<li class="element">Foo</li>, <li class="element">Bar</li>, <li class="element">Jay</li>]
+Foo
+Bar
+Jay
+[<li class="element">Foo</li>, <li class="element">Bar</li>]
+Foo
+Bar
+```
+
 
 
