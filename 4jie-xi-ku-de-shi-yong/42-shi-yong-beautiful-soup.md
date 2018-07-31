@@ -644,6 +644,7 @@ print(soup.find_all(attrs={"name":"elements"}))
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(html, 'lxml')
 print(soup.find_all(id='list-1'))
+# 由于class是关键字需要添加下划线区分
 print(soup.find_all(class_='element'))
 ```
 
@@ -688,8 +689,4 @@ print(soup.find_all(text=re.compile('link')))
 #### find\(\) {#find}
 
 find\(\) 方法返回的是单个元素，即第一个匹配的元素，而 find\_all\(\) 返回的是所有匹配的元素组成的列表
-
-
-
-
 
