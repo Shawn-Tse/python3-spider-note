@@ -718,5 +718,25 @@ print(type(soup.find(name='a')))
 <class 'bs4.element.Tag'>
 ```
 
+其他查询方法
 
+#### find\_parents\(\) find\_parent\(\) {#findparents-findparent}
+
+find\_parents\(\) 返回所有祖先节点，find\_parent\(\) 返回直接父节点。
+
+#### find\_next\_siblings\(\) find\_next\_sibling\(\) {#findnextsiblings-findnextsibling}
+
+find\_next\_siblings\(\) 返回后面所有兄弟节点，find\_next\_sibling\(\) 返回后面第一个兄弟节点。
+
+#### find\_previous\_siblings\(\) find\_previous\_sibling\(\) {#findprevioussiblings-findprevioussibling}
+
+find\_previous\_siblings\(\) 返回前面所有兄弟节点，find\_previous\_sibling\(\) 返回前面第一个兄弟节点。
+
+#### find\_all\_next\(\) find\_next\(\) {#findallnext-findnext}
+
+find\_all\_next\(\) 返回节点后所有符合条件的节点, find\_next\(\) 返回第一个符合条件的节点。
+
+#### find\_all\_previous\(\) 和 find\_previous\(\) {#findallprevious-和-findprevious}
+
+find\_all\_previous\(\) 返回节点后所有符合条件的节点, find\_previous\(\) 返回第一个符合条件的节点
 
