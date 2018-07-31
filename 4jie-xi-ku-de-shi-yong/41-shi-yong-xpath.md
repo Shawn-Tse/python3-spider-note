@@ -355,7 +355,5 @@ XPath 中的运算符，另外还有很多运算符，如 or、mod 等等，在�
 | &gt; | 大于 | price&gt;9.80 | 如果 price 是 9.90，则返回 true。如果 price 是 9.80，则返回 false。 |
 | &gt;= | 大于或等于 | price&gt;=9.80 | 如果 price 是 9.90，则返回 true。如果 price 是 9.70，则返回 false。 |
 
-参考来源：
-
-[http://www.w3school.com.cn/xpath/xpath\_operators.asp](http://www.w3school.com.cn/xpath/xpath_operators.asp)
+参考来源：[http://www.w3school.com.cn/xpath/xpath\_operators.asp](http://www.w3school.com.cn/xpath/xpath_operators.asp)
 
