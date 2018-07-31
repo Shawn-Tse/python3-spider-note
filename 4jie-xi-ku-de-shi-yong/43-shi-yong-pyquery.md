@@ -184,7 +184,6 @@ items = pq(html)
 lis = items.children('.list .active')
 print(type(lis))
 print(lis)
-
 ```
 
 运行结果:
@@ -193,6 +192,51 @@ print(lis)
 <class 'pyquery.pyquery.PyQuery'>
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+```
+
+#### 父节点 {#父节点}
+
+可以用 parent\(\) 方法来获取某个节点的父节点
+
+实例:返回class属性值list当前节点的父节点下的内容
+
+```
+html = '''
+<div class="wrap">
+    <div id="container">
+        <ul class="list">
+             <li class="item-0">first item</li>
+             <li class="item-1"><a href="link2.html">second item</a></li>
+             <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+             <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+             <li class="item-0"><a href="link5.html">fifth item</a></li>
+         </ul>
+     </div>
+ </div>
+'''
+
+
+from pyquery import PyQuery as pq
+doc = pq(html)
+items = doc('.list')
+container = items.parent()
+print(type(container))
+print(container)
+```
+
+运行结果:
+
+```
+<class 'pyquery.pyquery.PyQuery'>
+<div id="container">
+        <ul class="list">
+             <li class="item-0">first item</li>
+             <li class="item-1"><a href="link2.html">second item</a></li>
+             <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+             <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+             <li class="item-0"><a href="link5.html">fifth item</a></li>
+         </ul>
+     </div>
 ```
 
 
