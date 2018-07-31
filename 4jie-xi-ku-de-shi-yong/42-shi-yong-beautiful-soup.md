@@ -223,7 +223,7 @@ soup = BeautifulSoup(html,'lxml')
 print(soup.body.contents)
 ```
 
-运行结果:
+运行结果:返回结果是列表形式
 
 ```
 ['\n', <p class="story">
