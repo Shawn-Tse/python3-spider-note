@@ -247,9 +247,9 @@ parents\(\) 方法会返回所有的祖先节点
 from pyquery import PyQuery as pq
 doc = pq(html)
 items = doc('.list')
-container = items.parents()
-print(type(container))
-print(container)
+parents= items.parents()
+print(type(parents))
+print(parents)
 ```
 
 结果会有两个节点
@@ -277,6 +277,14 @@ print(container)
              <li class="item-0"><a href="link5.html">fifth item</a></li>
          </ul>
      </div>
+```
+
+筛选出指定父节点
+
+实例:筛选出属性值为wrap的父节点
+
+```
+
 ```
 
 
