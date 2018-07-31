@@ -412,6 +412,13 @@ print(a.attr('href'))
 print(a.attr.href)
 ```
 
+有两种获取属性方法:
+
+```
+a.attr('href')
+a.attr.href
+```
+
 运行结果:
 
 ```
