@@ -409,6 +409,7 @@ doc = pq(html)
 a = doc('.item-0.active a')
 print(a,type(a))
 print(a.attr('href'))
+print(a.attr.href)
 ```
 
 运行结果:
@@ -416,7 +417,6 @@ print(a.attr('href'))
 ```
 <a href="link3.html"><span class="bold">third item</span></a> <class 'pyquery.pyquery.PyQuery'>
 link3.html
-
 ```
 
 
