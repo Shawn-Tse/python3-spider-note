@@ -506,7 +506,64 @@ Parent:
 ['story']
 ```
 
-### 6. 方法选择器 {#6-方法选择器}
+### 5. 方法选择器 {#6-方法选择器}
+
+常用查询方法:find\_all\(\)、find\(\) 
+
+#### find\_all\(\) {#findall}
+
+查询所有符合条件的元素
+
+语法:
+
+```
+find_all(name , attrs , recursive , text , **kwargs)
+```
+
+##### name {#name}
+
+根据节点名来查询元素
+
+```
+html='''
+<div class="panel">
+    <div class="panel-heading">
+        <h4>Hello</h4>
+    </div>
+    <div class="panel-body">
+        <ul class="list" id="list-1">
+            <li class="element">Foo</li>
+            <li class="element">Bar</li>
+            <li class="element">Jay</li>
+        </ul>
+        <ul class="list list-small" id="list-2">
+            <li class="element">Foo</li>
+            <li class="element">Bar</li>
+        </ul>
+    </div>
+</div>
+'''
+
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+print(soup.find_all(name='ul'))
+print(type(soup.find_all(name='ul')[0]))
+```
+
+运行结果:
+
+```
+[<ul class="list" id="list-1">
+<li class="element">Foo</li>
+<li class="element">Bar</li>
+<li class="element">Jay</li>
+</ul>, <ul class="list list-small" id="list-2">
+<li class="element">Foo</li>
+<li class="element">Bar</li>
+</ul>]
+<class 'bs4.element.Tag'>
+```
 
 
 
