@@ -285,7 +285,35 @@ print(result)
 
 ```
 ['link1.html', 'link2.html', 'link3.html', 'link4.html', 'link5.html']
+```
 
+### 11. 属性多值匹配 {#11-属性多值匹配}
+
+匹配有多个属性值的节点，需要用contains\(\)函数
+
+语法:
+
+```
+contains(@属性名称,属性值)
+```
+
+例子:
+
+```
+from lxml import etree
+
+text = '''
+<li class="li li-first"><a href="link.html">first item</a></li>
+'''
+html = etree.HTML(text)
+result = html.xpath('//li[contains(@class,"li")]/a/text()')
+print(result)
+```
+
+运行结果:
+
+```
+['first item']
 ```
 
 
