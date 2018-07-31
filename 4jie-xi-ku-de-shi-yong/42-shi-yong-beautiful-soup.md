@@ -740,3 +740,56 @@ find\_all\_next\(\) 返回节点后所有符合条件的节点, find\_next\(\) �
 
 find\_all\_previous\(\) 返回节点后所有符合条件的节点, find\_previous\(\) 返回第一个符合条件的节点
 
+### 6.CSS选择器
+
+相关链接:[http://www.w3school.com.cn/cssref/css\_selectors.asp](http://www.w3school.com.cn/cssref/css_selectors.asp)。
+
+使用 CSS 选择器，只需要调用 select\(\) 方法，传入相应的 CSS 选择器
+
+实例:
+
+```
+html='''
+<div class="panel">
+    <div class="panel-heading">
+        <h4>Hello</h4>
+    </div>
+    <div class="panel-body">
+        <ul class="list" id="list-1">
+            <li class="element">Foo</li>
+            <li class="element">Bar</li>
+            <li class="element">Jay</li>
+        </ul>
+        <ul class="list list-small" id="list-2">
+            <li class="element">Foo</li>
+            <li class="element">Bar</li>
+        </ul>
+    </div>
+</div>
+'''
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+print(soup.select('.panel .panel-heading'))
+print(soup.select('ul li'))
+print(soup.select('#list-2 .element'))
+print(soup.select('ul')[0])
+```
+
+运行结果:
+
+```
+[<div class="panel-heading">
+<h4>Hello</h4>
+</div>]
+[<li class="element">Foo</li>, <li class="element">Bar</li>, <li class="element">Jay</li>, <li class="element">Foo</li>, <li class="element">Bar</li>]
+[<li class="element">Foo</li>, <li class="element">Bar</li>]
+<ul class="list" id="list-1">
+<li class="element">Foo</li>
+<li class="element">Bar</li>
+<li class="element">Jay</li>
+</ul>
+```
+
+
+
