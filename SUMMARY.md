@@ -87,7 +87,7 @@
 * [4.解析库的使用](4jie-xi-ku-de-shi-yong.md)
   * [4.1 使用xpath](4jie-xi-ku-de-shi-yong/41-shi-yong-xpath.md)
   * [4.2 使用Beautiful Soup](4jie-xi-ku-de-shi-yong/42-shi-yong-beautiful-soup.md)
-  * 4.3 使用pyquery
+  * [4.3 使用pyquery](4jie-xi-ku-de-shi-yong/43-shi-yong-pyquery.md)
 * [5.数据存储](5shu-ju-cun-chu.md)
   * 5.1 文件存储
     * 5.1.1 TXT 文件存储
