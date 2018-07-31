@@ -140,13 +140,59 @@ print(list_itmes)
          <li class="item-1 active"><a href="link4.html">fourth item</a></li>
          <li class="item-0"><a href="link5.html">fifth item</a></li>
      </ul>
- 
+
 <class 'pyquery.pyquery.PyQuery'>
 <li class="item-0">first item</li>
          <li class="item-1"><a href="link2.html">second item</a></li>
          <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
          <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+         <li class="item-0"><a href="link5.html">fifth item</a></li>()
+```
+
+#### children\(\)
+
+find\(\) 的查找范围是节点的所有子孙节点，而如果我们只想查找子节点，那可以用 children\(\) 方法
+
+```
+from pyquery import PyQuery as pq
+
+doc = pq(html)
+lis = doc.children()
+print(type(lis))
+print(lis)
+```
+
+运行结果:
+
+```
+<class 'pyquery.pyquery.PyQuery'>
+<ul class="list">
+         <li class="item-0">first item</li>
+         <li class="item-1"><a href="link2.html">second item</a></li>
+         <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+         <li class="item-1 active"><a href="link4.html">fourth item</a></li>
          <li class="item-0"><a href="link5.html">fifth item</a></li>
+     </ul>
+```
+
+实例:筛选出子节点class属性值为active
+
+```
+from pyquery import PyQuery as pq
+
+items = pq(html)
+lis = items.children('.list .active')
+print(type(lis))
+print(lis)
+
+```
+
+运行结果:
+
+```
+<class 'pyquery.pyquery.PyQuery'>
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
 ```
 
 
