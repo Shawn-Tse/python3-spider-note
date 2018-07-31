@@ -192,5 +192,26 @@ html = etree.parse('test.html',etree.HTMLParser())
 result = html.xpath('//a[@href="link4.html"]/parent::*/@class')
 ```
 
+### 8. 属性匹配 {#8-属性匹配}
+
+@符号可以进行匹配属性
+
+实例:
+
+```
+from lxml import etree
+
+html = etree.parse('test.html',etree.HTMLParser())
+result = html.xpath('//li[@class="item-0"]')
+print(result)
+```
+
+运行结果为:
+
+```
+[<Element li at 0x1e85c0bd748>, <Element li at 0x1e85c0bd788>]
+
+```
+
 
 
