@@ -300,5 +300,30 @@ for result in results:
 /6.mp3 邓丽君 但愿人长久
 ```
 
+### 6. sub\(\) {#6-sub}
+
+sub\(\)方法可以替换文本中内容，替换成想要替换的新的内容
+
+实例:
+
+```
+import re
+
+content = 'Hello123World'
+pattern = '\d+'
+print("原内容:"+content)
+content = re.sub(pattern,'',content)
+print("新内容:"+content)
+
+```
+
+运行结果:
+
+```
+原内容:Hello123World
+新内容:HelloWorld
+
+```
+
 
 
