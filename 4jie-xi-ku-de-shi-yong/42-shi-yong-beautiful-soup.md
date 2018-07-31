@@ -690,3 +690,33 @@ print(soup.find_all(text=re.compile('link')))
 
 find\(\) 方法返回的是单个元素，即第一个匹配的元素，而 find\_all\(\) 返回的是所有匹配的元素组成的列表
 
+```
+html='''
+<div class="panel">
+    <div class="panel-body">
+        <a class='element'>Hello, this is a link</a>
+        <a class='element'>Hello, this is a link, too</a>
+    </div>
+</div>
+'''
+
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+print(soup.find(name='a'))
+print(soup.find(attrs={'class':'element'}))
+print(soup.find(class_='element'))
+print(type(soup.find(name='a')))
+```
+
+返回结果:返回类型为&lt;class 'bs4.element.Tag'&gt;
+
+```
+<a class="element">Hello, this is a link</a>
+<a class="element">Hello, this is a link</a>
+<a class="element">Hello, this is a link</a>
+<class 'bs4.element.Tag'>
+```
+
+
+
