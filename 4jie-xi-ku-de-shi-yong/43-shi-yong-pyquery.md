@@ -501,3 +501,35 @@ print(a.html())
 
 在多个节点的情况下，html\(\) 方法返回第一个 li 节点的内部 HTML 文本，而 text\(\) 返回所有的 li 节点内部纯文本
 
+### 6. 节点操作 {#7-节点操作}
+
+PyQuery 提供了一系列方法来对节点进行动态修改操作
+
+#### add\_class、remove\_class {#addclass、removeclass}
+
+添加、删除类属性
+
+```
+from pyquery import  PyQuery as pq
+
+doc = pq(html)
+li = doc('.item-0.active')
+print(li)
+li.remove_class('active')
+print(li)
+li.add_class("active")
+print(li)
+```
+
+返回结果:
+
+```
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+             
+<li class="item-0"><a href="link3.html"><span class="bold">third item</span></a></li>
+             
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+```
+
+
+
