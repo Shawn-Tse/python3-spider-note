@@ -417,5 +417,55 @@ print(list(enumerate(soup.a.parents)))
 </body></html>)]
 ```
 
+##### 兄弟节点 {#兄弟节点}
+
+* next\_sibling :获取节点的下一个兄弟节点
+*  previous\_sibling:获取节点上一个兄弟节点
+* next\_siblings :返回所有前面兄弟节点的生成器
+* previous\_siblings :返回所有后面的兄弟节点的生成器
+
+实例:
+
+```
+html = """
+<html>
+    <body>
+        <p class="story">
+            Once upon a time there were three little sisters; and their names were
+            <a href="http://example.com/elsie" class="sister" id="link1">
+                <span>Elsie</span>
+            </a>
+            Hello
+            <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> 
+            and
+            <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+            and they lived at the bottom of a well.
+        </p>
+"""
+
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(html,'lxml')
+print('next sibling:',soup.a.next_sibling)
+print('previous sibling:',soup.a.previous_sibling)
+print("next siblings:",list(soup.a.next_siblings))
+print("previouos siblings:",list(soup.a.previous_siblings))
+
+```
+
+运行结果:
+
+```
+next sibling: 
+            Hello
+            
+previous sibling: 
+            Once upon a time there were three little sisters; and their names were
+            
+next siblings: ['\n            Hello\n            ', <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, ' \n            and\n            ', <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>, '\n            and they lived at the bottom of a well.\n        ']
+previouos siblings: ['\n            Once upon a time there were three little sisters; and their names were\n            ']
+
+```
+
 
 
