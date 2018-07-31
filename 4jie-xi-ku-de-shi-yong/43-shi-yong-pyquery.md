@@ -605,5 +605,7 @@ print(wrap.text())
 Hello, World
 ```
 
+另外其实还有很多节点操作的方法，比如 append\(\)、empty\(\)、prepend\(\) 等方法，这些函数和 jQuery 的用法是完全一致的，详细的用法可以参考官方文档：
 
+[http://pyquery.readthedocs.io/en/latest/api.html](http://pyquery.readthedocs.io/en/latest/api.html)
 
