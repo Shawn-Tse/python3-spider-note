@@ -33,10 +33,13 @@ content = '''
      </ul>
  </div>
 '''
+# 调用etree模块的HTML类构造一个XPath解析对象
 html = etree.HTML(content)
 result = etree.tostring(html)
 print(result.decode('utf-8'))
 ```
+
+HTML 文本中的最后一个 li 节点是没有闭合的，但是 etree 模块可以对 HTML 文本进行自动修正
 
 运行结果:
 
