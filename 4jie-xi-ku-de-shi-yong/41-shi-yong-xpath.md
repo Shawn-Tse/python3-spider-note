@@ -316,5 +316,26 @@ print(result)
 ['first item']
 ```
 
+### 12. 多属性匹配 {#12-多属性匹配}
+
+根据多个属性才能确定一个节点，需要使用运算符and来连接
+
+```
+from lxml import etree
+
+text = '''
+<li class="li li-first" name="item"><a href="link.html">first item</a></li>
+'''
+html = etree.HTML(text)
+result = html.xpath('//li[contains(@class,"li") and @name="item"]/a/text()')
+print(result)
+```
+
+运行结果:
+
+```
+['first item']
+```
+
 
 
