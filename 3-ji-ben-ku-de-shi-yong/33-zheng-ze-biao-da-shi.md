@@ -327,7 +327,7 @@ print("新内容:"+content)
 
 ### 7. compile\(\) {#7-compile}
 
-正则字符串编译成正则表达式对象，以便于在后面的匹配中复用
+compile\(\) 给正则表达式做了一层封装，以便于在后面的匹配中复用
 
 实例:
 
@@ -342,7 +342,6 @@ content1 = re.sub(pattern,'',content1)
 content2= re.sub(pattern,'',content2)
 content3 = re.sub(pattern,'',content3)
 print(content1,content2,content3,sep='\n')
-
 ```
 
 运行结果:
@@ -350,7 +349,7 @@ print(content1,content2,content3,sep='\n')
 ```
 2018-7-15 
 2018-7-17 
-2018-7-22 
+2018-7-22
 ```
 
 
