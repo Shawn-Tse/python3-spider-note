@@ -145,7 +145,6 @@ print(result)
 
 ```
 [<Element a at 0x1dc63e8d708>, <Element a at 0x1dc63e8d748>, <Element a at 0x1dc63e8d788>, <Element a at 0x1dc63e8d7c8>, <Element a at 0x1dc63e8d808>]
-
 ```
 
 实例:查找ul节点下的所有的子孙a节点
@@ -158,5 +157,5 @@ result = html.xpath('//li//a')
 print(result)
 ```
 
-运行结果与上个例子相同的
+运行结果与上个例子是相同的
 
