@@ -1,4 +1,4 @@
-# python3 爬虫笔记
+# 介绍
 
 [![Coveralls bitbucket branch](https://img.shields.io/badge/python3爬虫笔记-心跳回忆-green.svg?longCache=true&style=plastic)](https://github.com/CoderAngle/python3-spider-note)
 
@@ -8,33 +8,31 @@ python使用版本:python3
 
 \(python3网络爬虫开发实战笔记\)
 
----
+## pip换源
 
-### pip换源
-
-```
+```text
 pip源:
 豆瓣：http://pypi.douban.com/simple/
 清华：https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-#### 第一种:暂时性换源
+### 第一种:暂时性换源
 
 有时候pip下载速度有点慢，可以换成国内源提升一下速度
 
-```
+```text
 pip install -i https://pypi.doubanio.com/simple/ 包名 
 
 pip install -i https://pypi.doubanio.com/simple/ flask
 ```
 
-#### 第二种:永久换源
+### 第二种:永久换源
 
 永久换源的方法如下:
 
 linux下，修改 ~/.pip/pip.conf \(没有就创建一个\)， 修改 index-url，内容如下：
 
-```
+```text
 [global]
 
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
@@ -42,23 +40,21 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 windows下，直接在用户目录中创建一个pip目录，如：C:\Users\miku\pip，新建文件pip.ini，内容如下
 
-```
+```text
 [global]
 
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-![](/assets/000.png)
+![](.gitbook/assets/000.png)
 
----
-
-### IDE工具
+## IDE工具
 
 为了提升编码速度，需要好的编译器，推荐使用pycharm
 
 以下是pycharm破解,使用2017版本就可以了
 
-```
+```text
 http://idea.lanyus.com/
 
 
@@ -91,24 +87,22 @@ ThisCrackLicenseId-{
 "autoProlongated":false}
 ```
 
-[下载地址](https://pan.baidu.com/s/1si1u-15AhTkWq2bRdkascQ ) 密码：v97f
+[下载地址](https://pan.baidu.com/s/1si1u-15AhTkWq2bRdkascQ%20) 密码：v97f
 
-### Linux中切换python版本
+## Linux中切换python版本
 
 首先先来看一下我们的默认Python版本
 
-```
+```text
 $ python --version
 Python 2.7.6
 ```
 
 然后我们修改一下别名
 
-```
+```text
 $ alias python='/usr/bin/python3'
 $ python --version
 Python 3.4.3  # 版本已经改变
 ```
-
-
 

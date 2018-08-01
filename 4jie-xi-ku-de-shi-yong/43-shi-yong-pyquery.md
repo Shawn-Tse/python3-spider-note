@@ -1,3 +1,5 @@
+# 4.3 使用pyquery
+
 [官网文档](http://pyquery.readthedocs.io/en/latest/api.html)
 
 ### 1. 初始化
@@ -6,7 +8,7 @@ PyQuery 初始化的时候也需要传入 HTML 数据源来初始化一个操作
 
 #### 字符串初始化 {#字符串初始化}
 
-```
+```text
 html = '''
 <div>
     <ul>
@@ -27,7 +29,7 @@ print(doc('li'))
 
 运行结果:
 
-```
+```text
 <li class="item-0">first item</li>
          <li class="item-1"><a href="link2.html">second item</a></li>
          <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
@@ -39,7 +41,7 @@ print(doc('li'))
 
 传入指定参数为 url
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(url='https://github.com/CoderAngle')
@@ -48,7 +50,7 @@ print(doc('title'))
 
 运行结果:
 
-```
+```text
 <title>CoderAngle · GitHub</title>
 ```
 
@@ -56,7 +58,7 @@ print(doc('title'))
 
 使用requests模块访问url然后返回源码
 
-```
+```text
 from pyquery import PyQuery as pq
 import requests
 
@@ -68,7 +70,7 @@ print(doc('title'))
 
 传入参数指定为 filename
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(filename='test.html')
@@ -79,7 +81,7 @@ print(doc('li'))
 
 实例:
 
-```
+```text
 html = '''
 <div id="container">
     <ul class="list">
@@ -101,7 +103,7 @@ print(type(doc('#container .list li')))
 
 运行结果:
 
-```
+```text
 <li class="item-0">first item</li>
          <li class="item-1"><a href="link2.html">second item</a></li>
          <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
@@ -119,7 +121,7 @@ pyquery的常用的查询函数，这些函数和 jQuery 中的函数用法完�
 
 查找子节点需要用到 find\(\) 方法，传入的参数是 CSS 选择器
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -133,7 +135,7 @@ print(list_itmes)
 
 运行结果:
 
-```
+```text
 <class 'pyquery.pyquery.PyQuery'>
 <ul class="list">
          <li class="item-0">first item</li>
@@ -155,7 +157,7 @@ print(list_itmes)
 
 find\(\) 的查找范围是节点的所有子孙节点，而如果我们只想查找子节点，那可以用 children\(\) 方法
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -166,7 +168,7 @@ print(lis)
 
 运行结果:
 
-```
+```text
 <class 'pyquery.pyquery.PyQuery'>
 <ul class="list">
          <li class="item-0">first item</li>
@@ -179,7 +181,7 @@ print(lis)
 
 实例:筛选出子节点class属性值为active
 
-```
+```text
 from pyquery import PyQuery as pq
 
 items = pq(html)
@@ -190,7 +192,7 @@ print(lis)
 
 运行结果:
 
-```
+```text
 <class 'pyquery.pyquery.PyQuery'>
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
@@ -202,7 +204,7 @@ print(lis)
 
 实例:返回class属性值list当前节点的父节点下的内容
 
-```
+```text
 html = '''
 <div class="wrap">
     <div id="container">
@@ -228,7 +230,7 @@ print(container)
 
 运行结果:
 
-```
+```text
 <class 'pyquery.pyquery.PyQuery'>
 <div id="container">
         <ul class="list">
@@ -245,7 +247,7 @@ print(container)
 
 parents\(\) 方法会返回所有的祖先节点
 
-```
+```text
 from pyquery import PyQuery as pq
 doc = pq(html)
 items = doc('.list')
@@ -258,7 +260,7 @@ print(parents)
 
 运行结果:
 
-```
+```text
 <class 'pyquery.pyquery.PyQuery'>
 <div class="wrap">
     <div id="container">
@@ -285,7 +287,7 @@ print(parents)
 
 实例:筛选出属性值为wrap的父节点
 
-```
+```text
 from pyquery import PyQuery as pq
 doc = pq(html)
 items = doc('.list')
@@ -296,7 +298,7 @@ print(parents)
 
 运行结果:
 
-```
+```text
 <class 'pyquery.pyquery.PyQuery'>
 <div class="wrap">
     <div id="container">
@@ -315,7 +317,7 @@ print(parents)
 
 要获取兄弟节点可以使用 siblings\(\) 方法
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -325,7 +327,7 @@ print(li.siblings())
 
 运行结果:
 
-```
+```text
 <li class="item-1"><a href="link2.html">second item</a></li>
              <li class="item-0">first item</li>
              <li class="item-1 active"><a href="link4.html">fourth item</a></li>
@@ -334,7 +336,7 @@ print(li.siblings())
 
 筛选某个指定兄弟节点
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -344,7 +346,7 @@ print(li.siblings('.active'))
 
 运行结果:
 
-```
+```text
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
 ```
 
@@ -354,7 +356,7 @@ print(li.siblings('.active'))
 
 实例:把每一个 li 节点进行遍历,，需要调用 items\(\) 方法
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -366,7 +368,7 @@ for li in lis:
 
 运行结果:
 
-```
+```text
 <class 'generator'>
 <li class="item-0">first item</li>
               <class 'pyquery.pyquery.PyQuery'>
@@ -389,7 +391,7 @@ for li in lis:
 
 使用attr\(\) 方法获取属性
 
-```
+```text
 html = '''
 <div class="wrap">
     <div id="container">
@@ -416,14 +418,14 @@ print(a.attr.href)
 
 有两种获取属性方法:
 
-```
+```text
 a.attr('href')
 a.attr.href
 ```
 
 运行结果:
 
-```
+```text
 <a href="link3.html"><span class="bold">third item</span></a> <class 'pyquery.pyquery.PyQuery'>
 link3.html
 link3.html
@@ -431,7 +433,7 @@ link3.html
 
 当返回结果包含多个节点时，调用 attr\(\) 方法只会得到第一个节点的属性
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -442,7 +444,7 @@ for item in a.items():
 
 运行结果:
 
-```
+```text
 link2.html
 link3.html
 link4.html
@@ -453,7 +455,7 @@ link5.html
 
 调用了 text\(\) 方法，就可以获取其内部的文本信息了，它会忽略掉节点内部包含的所有 HTML，只返回纯文字内容
 
-```
+```text
 html = '''
 <div class="wrap">
     <div id="container">
@@ -478,14 +480,14 @@ print(a.text())
 
 运行结果:
 
-```
+```text
 <a href="link3.html"><span class="bold">third item</span></a>
 third item
 ```
 
 获取这个节点内部的 HTML 文本，就可以用 html\(\) 方法
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -496,7 +498,7 @@ print(a.html())
 
 运行结果:
 
-```
+```text
 <a href="link3.html"><span class="bold">third item</span></a>
 <span class="bold">third item</span>
 ```
@@ -511,7 +513,7 @@ PyQuery 提供了一系列方法来对节点进行动态修改操作
 
 添加、删除类属性
 
-```
+```text
 from pyquery import  PyQuery as pq
 
 doc = pq(html)
@@ -525,7 +527,7 @@ print(li)
 
 返回结果:
 
-```
+```text
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
 
 <li class="item-0"><a href="link3.html"><span class="bold">third item</span></a></li>
@@ -535,7 +537,7 @@ print(li)
 
 #### attr、text、html {#attr、text、html}
 
-```
+```text
 from pyquery import PyQuery as pq
 doc = pq(html)
 li = doc('.item-0.active')
@@ -552,7 +554,7 @@ attr\(\) 方法如果只传入第一个参数属性名，则是获取这个属�
 
 返回结果:
 
-```
+```text
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
 
 <li class="item-0 active" name="link"><a href="link3.html"><span class="bold">third item</span></a></li>
@@ -568,7 +570,7 @@ attr\(\) 方法如果只传入第一个参数属性名，则是获取这个属�
 
 实例:
 
-```
+```text
 html = '''
 <div class="wrap">
     Hello, World
@@ -585,14 +587,14 @@ print(wrap.text())
 
 运行结果:
 
-```
+```text
 Hello, World
 This is a paragraph.
 ```
 
 例子:移除p节点
 
-```
+```text
 from pyquery import PyQuery as pq
 
 doc = pq(html)
@@ -603,7 +605,7 @@ print(wrap.text())
 
 运行结果:
 
-```
+```text
 Hello, World
 ```
 
@@ -619,7 +621,7 @@ CSS选择器用法:[http://www.w3school.com.cn/css/index.asp](http://www.w3schoo
 
 实例:
 
-```
+```text
 html = '''
 <div class="wrap">
     <div id="container">
@@ -658,7 +660,7 @@ print(li)
 
 运行结果:
 
-```
+```text
 <li class="item-0">first item</li>
 
 <li class="item-0"><a href="link5.html">fifth item</a></li>
@@ -728,6 +730,4 @@ print(li)
 | :checked | input:checked | 选择每个被选中的 &lt;input&gt; 元素。 |
 | :not\(selector\) | :not\(p\) | 选择非 &lt;p&gt; 元素的每个元素。 |
 | ::selection | ::selection | 选择被用户选取的元素部分。 |
-
-
 

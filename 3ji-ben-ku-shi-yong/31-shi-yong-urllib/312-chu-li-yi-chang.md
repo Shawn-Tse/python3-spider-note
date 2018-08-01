@@ -1,8 +1,10 @@
-### 1.说明
+# 3.1.2 处理异常
+
+## 1.说明
 
 Urllib 的 error 模块定义了由 request 模块产生的异常。如果出现了问题，request 模块便会抛出 error 模块中定义的异常
 
-### 2.URLError
+## 2.URLError
 
 URLError 类来自 Urllib 库的 error 模块，它继承自 OSError 类，是 error 异常模块的基类，由 request 模块生的异常都可以通过捕获这个类来处理。
 
@@ -10,7 +12,7 @@ URLError 类来自 Urllib 库的 error 模块，它继承自 OSError 类，是 e
 
 实例:
 
-```
+```text
 from urllib import request,error
 
 try:
@@ -23,13 +25,13 @@ except error.URLError as e:
 
 运行结果:
 
-```
+```text
 Not Found
 ```
 
 可以利用try/except抛出URLError异常从而避免程序异常终止，并同时得到有效的处理
 
-### 3.HTTPError
+## 3.HTTPError
 
 专门用来处理 HTTP 请求错误，比如认证请求失败等等
 
@@ -41,7 +43,7 @@ Not Found
 
 实例:
 
-```
+```text
 from urllib import request,error
 
 try:
@@ -53,7 +55,7 @@ except error.HTTPError as e:
 
 运行结果:
 
-```
+```text
 Not Found
 404
 Server: Tengine
@@ -80,7 +82,7 @@ EagleId: 71cf1e1515329355547806295e
 
 由于URLError 是 HTTPError 的父类，所以我们可以先选择捕获子类的错误，再去捕获父类的错误，所以上述代码更好的写法如下：
 
-```
+```text
 from urllib import request, error
 
 try:
@@ -99,7 +101,7 @@ else:
 
 实例：
 
-```
+```text
 import socket
 import urllib.request
 import urllib.error
@@ -116,10 +118,8 @@ except urllib.error.URLError as e:
 
 运行结果:
 
-```
+```text
 <class 'socket.timeout'>
 TIME OUT
 ```
-
-
 

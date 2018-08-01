@@ -1,12 +1,14 @@
-### 1.说明
+# 4.1 使用xpath
+
+## 1.说明
 
 XPath，全称 XML Path Language，即 XML 路径语言，它是一门在XML文档中查找信息的语言。XPath 最初设计是用来搜寻XML文档的，但是它同样适用于 HTML 文档的搜索
 
-### 2.相关链接
+## 2.相关链接
 
 官方文档:[https://www.w3.org/TR/xpath/](https://www.w3.org/TR/xpath/)
 
-### 3.XPath常用规则 {#2-xpath常用规则}
+## 3.XPath常用规则 {#2-xpath常用规则}
 
 | 表达式 | 描述 |
 | :--- | :--- |
@@ -17,9 +19,9 @@ XPath，全称 XML Path Language，即 XML 路径语言，它是一门在XML文�
 | .. | 选取当前节点的父节点 |
 | @ | 选取属性 |
 
-### 4. 实例引入 {#4-实例引入}
+## 4. 实例引入 {#4-实例引入}
 
-```
+```text
 from lxml import etree
 
 content = '''
@@ -43,7 +45,7 @@ HTML 文本中的最后一个 li 节点是没有闭合的，但是 etree 模块�
 
 运行结果:
 
-```
+```text
 <html><body><div>
     <ul>
          <li class="item-0"><a href="link1.html">first item</a></li>
@@ -58,7 +60,7 @@ HTML 文本中的最后一个 li 节点是没有闭合的，但是 etree 模块�
 
 可以直接读取文本进行解析
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -68,7 +70,7 @@ print(result.decode('utf-8'))
 
 test.html内容
 
-```
+```text
 <div>
     <ul>
          <li class="item-0"><a href="link1.html">first item</a></li>
@@ -82,7 +84,7 @@ test.html内容
 
 解析后结果:
 
-```
+```text
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body><div>&#13;
     <ul>&#13;
@@ -95,11 +97,11 @@ test.html内容
  </div></body></html>
 ```
 
-### 5.所有结点
+## 5.所有结点
 
 利用//开头的xpath规则选取所有符合要求的节点
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -111,7 +113,7 @@ print(result)
 
 运行结果:
 
-```
+```text
 [<Element html at 0x185591fd548>, <Element body at 0x185591fd688>, <Element div at 0x185591fd6c8>, <Element ul at 0x185591fd708>, <Element li at 0x185591fd748>, <Element a at 0x185591fd7c8>, <Element li at 0x185591fd808>, <Element a at 0x185591fd848>, <Element li at 0x185591fdac8>, <Element a at 0x185591fd788>, <Element li at 0x185591fdb08>, <Element a at 0x185591fdb48>, <Element li at 0x185591fdb88>, <Element a at 0x185591fdbc8>]
 ```
 
@@ -119,7 +121,7 @@ print(result)
 
 要选取所有 li 节点可以使用 //，然后直接加上节点的名称即可，调用时直接调用 xpath\(\) 方法即可提取
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -127,13 +129,13 @@ result = html.xpath('//li')
 print(result)
 ```
 
-### 6.子结点
+## 6.子结点
 
 通过/或者//查找子结点或子孙子结点
 
 实例:查找li节点下的所有a子节点
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -143,13 +145,13 @@ print(result)
 
 运行结果:
 
-```
+```text
 [<Element a at 0x1dc63e8d708>, <Element a at 0x1dc63e8d748>, <Element a at 0x1dc63e8d788>, <Element a at 0x1dc63e8d7c8>, <Element a at 0x1dc63e8d808>]
 ```
 
 实例:查找ul节点下的所有的子孙a节点
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -161,13 +163,13 @@ print(result)
 
 一定要注意/和//的区别，/是获取直接子节点，//是获取子孙节点
 
-### 7. 父节点 {#7-父节点}
+## 7. 父节点 {#7-父节点}
 
 可以通过..来获取父节点
 
 实例:获取href 是 link4.html 的 a 节点的父节点的class属性
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -177,7 +179,7 @@ print(result)
 
 运行结果:
 
-```
+```text
 ['item-1']
 ```
 
@@ -185,20 +187,20 @@ print(result)
 
 实例:
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
 result = html.xpath('//a[@href="link4.html"]/parent::*/@class')
 ```
 
-### 8. 属性匹配 {#8-属性匹配}
+## 8. 属性匹配 {#8-属性匹配}
 
 @符号可以进行匹配属性
 
 实例:
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -208,17 +210,17 @@ print(result)
 
 运行结果为:
 
-```
+```text
 [<Element li at 0x1e85c0bd748>, <Element li at 0x1e85c0bd788>]
 ```
 
-### 9. 文本获取 {#9-文本获取}
+## 9. 文本获取 {#9-文本获取}
 
 利用xpath中的text\(\)方法可以获取节点中的文本
 
 实例:获取li节点下的文本
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -228,7 +230,7 @@ print(result)
 
 运行结果:
 
-```
+```text
 ['\r\n     ']
 ```
 
@@ -236,7 +238,7 @@ print(result)
 
 而想获取其中的内容有两种方式，一种是选取到a节点再获取文本，另一种就是使用//
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -246,11 +248,11 @@ print(result)
 
 运行结果:
 
-```
+```text
 ['first item', 'fifth item']
 ```
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -260,20 +262,20 @@ print(result)
 
 运行结果:
 
-```
+```text
 ['first item', 'fifth item', '\r\n     ']
 ```
 
 * 如果要想获取子孙节点内部的所有文本，可以直接用 // 加 text\(\) 的方式获取，能保证获取到最全面的文本信息，但可能会夹杂一些换行符等特殊字符
 * 想获取某些特定子孙节点下的所有文本，先选取到特定的子孙节点，然后再调用 text\(\) 方法获取其内部文本，这样可以保证获取的结果是整洁的
 
-### 10. 属性获取 {#10-属性获取}
+## 10. 属性获取 {#10-属性获取}
 
 获取属性的内容
 
 实例:获取li节点下所有a节点的href属性
 
-```
+```text
 from lxml import etree
 
 html = etree.parse('test.html',etree.HTMLParser())
@@ -283,23 +285,23 @@ print(result)
 
 运行结果:
 
-```
+```text
 ['link1.html', 'link2.html', 'link3.html', 'link4.html', 'link5.html']
 ```
 
-### 11. 属性多值匹配 {#11-属性多值匹配}
+## 11. 属性多值匹配 {#11-属性多值匹配}
 
 匹配有多个属性值的节点，需要用contains\(\)函数
 
 语法:
 
-```
+```text
 contains(@属性名称,属性值)
 ```
 
 例子:
 
-```
+```text
 from lxml import etree
 
 text = '''
@@ -312,15 +314,15 @@ print(result)
 
 运行结果:
 
-```
+```text
 ['first item']
 ```
 
-### 12. 多属性匹配 {#12-多属性匹配}
+## 12. 多属性匹配 {#12-多属性匹配}
 
 根据多个属性才能确定一个节点，需要使用运算符and来连接
 
-```
+```text
 from lxml import etree
 
 text = '''
@@ -333,7 +335,7 @@ print(result)
 
 运行结果:
 
-```
+```text
 ['first item']
 ```
 
@@ -357,11 +359,11 @@ XPath 中的运算符，另外还有很多运算符，如 or、mod 等等，在�
 
 参考来源：[http://www.w3school.com.cn/xpath/xpath\_operators.asp](http://www.w3school.com.cn/xpath/xpath_operators.asp)
 
-### 13. 按序选择 {#13-按序选择}
+## 13. 按序选择 {#13-按序选择}
 
 实例:
 
-```
+```text
 from lxml import etree
 
 text = '''
@@ -396,7 +398,7 @@ print(result)
 
 运行结果如下：
 
-```
+```text
 ['first item']
 ['fifth item']
 ['first item', 'second item']
@@ -405,9 +407,9 @@ print(result)
 
 函数参考:[http://www.w3school.com.cn/xpath/xpath\_functions.asp](http://www.w3school.com.cn/xpath/xpath_functions.asp)
 
-### 13. 节点轴选择 {#13-节点轴选择}
+## 13. 节点轴选择 {#13-节点轴选择}
 
-```
+```text
 from lxml import etree
 
 text = '''

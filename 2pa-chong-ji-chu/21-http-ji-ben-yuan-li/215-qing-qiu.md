@@ -1,4 +1,6 @@
-### Request
+# 2.1.5 请求
+
+## Request
 
 Request，即请求，由客户端向服务端发出。
 
@@ -9,7 +11,7 @@ Request 有四部分内容：
 * Request Headers\(请求头\)
 * Request Body\(请求体\)
 
-### Request Method
+## Request Method
 
 请求方式中有两种常见的类型:GET和POST
 
@@ -41,11 +43,11 @@ GET 和 POST 请求方法有如下区别：
 
 本表参考：[http://www.runoob.com/http/http-methods.html](http://www.runoob.com/http/http-methods.html)
 
-#### Request URL {#request-url}
+### Request URL {#request-url}
 
 请求的网址，即统一资源定位符，用 URL 可以唯一确定我们想请求的资源。
 
-#### Request Headers {#request-headers}
+### Request Headers {#request-headers}
 
 请求头，用来说明服务器要使用的附加信息，比较重要的信息有 Cookie、Referer、User-Agent 等，下面将一些常用的头信息说明如下：
 
@@ -60,7 +62,7 @@ GET 和 POST 请求方法有如下区别：
 
 Request Headers 是 Request 等重要组成部分，在写爬虫的时候大部分情况都需要设定 Request Headers。
 
-#### Request Body {#request-body}
+### Request Body {#request-body}
 
 即请求体，一般承载的内容是 POST 请求中的 Form Data，即表单数据，而对于 GET 请求 Request Body 则为空。
 

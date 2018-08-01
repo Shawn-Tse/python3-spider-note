@@ -1,164 +1,164 @@
-# Summary
+# Table of contents
 
 * [介绍](README.md)
-* [1.开发环境配置](1.kaifahuanjing/1kai-fa-huan-jing-pei-zhi.md)
-  * [1.1 python3的安装](1.kaifahuanjing/1.1-python3.md)
-    * [1.1.1 windows下的安装](1.kaifahuanjing/1.1.1-windows.md)
-    * [1.1.2 Linux下的安装](1.kaifahuanjing/1.1.2-linux.md)
-    * [1.1.3 Mac下的安装](1.kaifahuanjing/113-macxia-de-an-zhuang.md)
-  * [1.2 请求库的安装](1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang.md)
-    * [1.2.1 requests的安装](1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang/121-requestsde-an-zhuang.md)
-    * [1.2.2 selenium的安装](1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang/122-seleniumde-an-zhuang.md)
-    * [1.2.3 ChromeDriver的安装](1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang/123-chromedriverde-an-zhuang.md)
-    * [1.2.4 GeckoDriver 的安装](1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang/124-grckodriverde-an-zhuang.md)
-    * [1.2.5 PhantomJS的安装](1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang/125-phantomjsde-an-zhuang.md)
-    * [1.2.6 aiohttp的安装](1.kaifahuanjing/12-qing-qiu-ku-de-an-zhuang/125-aiohttpde-an-zhuang.md)
-  * [1.3 解析库的安装](1.kaifahuanjing/1.3.md)
-    * [1.3.1 lxml的安装](1.kaifahuanjing/1.3/131-lxmlde-an-zhuang.md)
-    * [1.3.2 Beautiful Soup的安装](1.kaifahuanjing/1.3/132-beautiful-soupde-an-zhuang.md)
-    * [1.3.3 pyquery的安装](1.kaifahuanjing/1.3/133-pyqueryde-an-zhuang.md)
-    * [1.3.4 tesserocr的安装](1.kaifahuanjing/1.3/134-tesserocrde-an-zhuang.md)
-  * [1.4 数据库的安装](1.kaifahuanjing/14-shu-ju-ku-de-an-zhuang.md)
-    * [1.4.1 MySQL的安装](1.kaifahuanjing/14-shu-ju-ku-de-an-zhuang/141-mysqlde-an-zhuang.md)
-    * [1.4.2 MongoDB的安装](1.kaifahuanjing/14-shu-ju-ku-de-an-zhuang/142-mongodbde-an-zhuang.md)
-    * [1.4.3 Redis的安装](1.kaifahuanjing/14-shu-ju-ku-de-an-zhuang/143-redisde-an-zhuang.md)
-  * [1.5 存储库的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang.md)
-    * [1.5.1 PyMySQL的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/151-pymysqlde-an-zhuang.md)
-    * [1.5.2 PyMongo的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/152-pymongode-an-zhuang.md)
-    * [1.5.3 redis-py的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/153-redis-pyde-an-zhuang.md)
-    * [1.5.4 RedisDump的安装](1.kaifahuanjing/15-cun-chu-ku-de-an-zhuang/154-redisdumpde-an-zhuang.md)
-  * [1.6 Web库的安装](1.kaifahuanjing/16-webku-de-an-zhuang.md)
-    * [1.6.1 Flask的安装](1.kaifahuanjing/16-webku-de-an-zhuang/161-flaskde-an-zhuang.md)
-    * [1.6.2 Tornado的安装](1.kaifahuanjing/16-webku-de-an-zhuang/162-tornadode-an-zhuang.md)
-  * [1.7 App爬取相关库的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang.md)
-    * [1.7.1 Charles的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang/171-charlesde-an-zhuang.md)
-    * [1.7.2 mitmproxy的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang/172-mitmproxyde-an-zhuang.md)
-    * [1.7.3 Appium的安装](1.kaifahuanjing/17-apppa-qu-xiang-guan-ku-de-an-zhuang/173-appiumde-an-zhuang.md)
-  * [1.8 爬虫框架的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang.md)
-    * [1.8.1 pyspider的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/181-pyspiderde-an-zhuang.md)
-    * [1.8.2 Scrapy的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/182-scrapyde-an-zhuang.md)
-    * [1.8.3 Scrapy-Splash的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/183-scrapy-splashde-an-zhuang.md)
-    * [1.8.4 ScrapyRedis的安装](1.kaifahuanjing/18-pa-chong-kuang-jia-de-an-zhuang/184-scrapy-splashde-an-zhuang.md)
-  * [1.9 布署相关库的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang.md)
-    * [1.9.1 Docker的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/191-dockerde-an-zhuang.md)
-    * [1.9.2 Scrapyd的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/192-scrapydde-an-zhuang.md)
-    * [1.9.3 ScrapydClient的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/193-scrapydclientde-an-zhuang.md)
-    * [1.9.4 ScrapydAPI的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/194-scrapydapide-an-zhuang.md)
-    * [1.9.5 Scrapyrt的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/195-scrapyrtde-an-zhuang.md)
-    * [1.9.6-Gerapy的安装](1.kaifahuanjing/19-bu-shu-xiang-guan-ku-de-an-zhuang/196-gerapyde-an-zhuang.md)
-* [2.爬虫基础](2pa-chong-ji-chu.md)
-  * [2.1 HTTP 基本原理](2pa-chong-ji-chu/21-http-ji-ben-yuan-li.md)
+* [1.开发环境配置](1kai-fa-huan-jing-pei-zhi/README.md)
+  * [1.1 python3的安装](1kai-fa-huan-jing-pei-zhi/1.1-python3/README.md)
+    * [1.1.1 windows下的安装](1kai-fa-huan-jing-pei-zhi/1.1-python3/1.1.1-windows.md)
+    * [1.1.2 Linux下的安装](1kai-fa-huan-jing-pei-zhi/1.1-python3/1.1.2-linux.md)
+    * [1.1.3 Mac下的安装](1kai-fa-huan-jing-pei-zhi/1.1-python3/113-macxia-de-an-zhuang.md)
+  * [1.2 请求库的安装](1kai-fa-huan-jing-pei-zhi/12-qing-qiu-ku-de-an-zhuang/README.md)
+    * [1.2.1 requests的安装](1kai-fa-huan-jing-pei-zhi/12-qing-qiu-ku-de-an-zhuang/121-requestsde-an-zhuang.md)
+    * [1.2.2 selenium的安装](1kai-fa-huan-jing-pei-zhi/12-qing-qiu-ku-de-an-zhuang/122-seleniumde-an-zhuang.md)
+    * [1.2.3 ChromeDriver的安装](1kai-fa-huan-jing-pei-zhi/12-qing-qiu-ku-de-an-zhuang/123-chromedriverde-an-zhuang.md)
+    * [1.2.4 GeckoDriver 的安装](1kai-fa-huan-jing-pei-zhi/12-qing-qiu-ku-de-an-zhuang/124-grckodriverde-an-zhuang.md)
+    * [1.2.5 PhantomJS的安装](1kai-fa-huan-jing-pei-zhi/12-qing-qiu-ku-de-an-zhuang/125-phantomjsde-an-zhuang.md)
+    * [1.2.6 aiohttp的安装](1kai-fa-huan-jing-pei-zhi/12-qing-qiu-ku-de-an-zhuang/125-aiohttpde-an-zhuang.md)
+  * [1.3 解析库的安装](1kai-fa-huan-jing-pei-zhi/1.3/README.md)
+    * [1.3.1 lxml的安装](1kai-fa-huan-jing-pei-zhi/1.3/131-lxmlde-an-zhuang.md)
+    * [1.3.2 Beautiful Soup的安装](1kai-fa-huan-jing-pei-zhi/1.3/132-beautiful-soupde-an-zhuang.md)
+    * [1.3.3 pyquery的安装](1kai-fa-huan-jing-pei-zhi/1.3/133-pyqueryde-an-zhuang.md)
+    * [1.3.4 tesserocr的安装](1kai-fa-huan-jing-pei-zhi/1.3/134-tesserocrde-an-zhuang.md)
+  * [1.4 数据库的安装](1kai-fa-huan-jing-pei-zhi/14-shu-ju-ku-de-an-zhuang/README.md)
+    * [1.4.1 MySQL的安装](1kai-fa-huan-jing-pei-zhi/14-shu-ju-ku-de-an-zhuang/141-mysqlde-an-zhuang.md)
+    * [1.4.2 MongoDB的安装](1kai-fa-huan-jing-pei-zhi/14-shu-ju-ku-de-an-zhuang/142-mongodbde-an-zhuang.md)
+    * [1.4.3 Redis的安装](1kai-fa-huan-jing-pei-zhi/14-shu-ju-ku-de-an-zhuang/143-redisde-an-zhuang.md)
+  * [1.5 存储库的安装](1kai-fa-huan-jing-pei-zhi/15-cun-chu-ku-de-an-zhuang/README.md)
+    * [1.5.1 PyMySQL的安装](1kai-fa-huan-jing-pei-zhi/15-cun-chu-ku-de-an-zhuang/151-pymysqlde-an-zhuang.md)
+    * [1.5.2 PyMongo的安装](1kai-fa-huan-jing-pei-zhi/15-cun-chu-ku-de-an-zhuang/152-pymongode-an-zhuang.md)
+    * [1.5.3 redis-py的安装](1kai-fa-huan-jing-pei-zhi/15-cun-chu-ku-de-an-zhuang/153-redis-pyde-an-zhuang.md)
+    * [1.5.4 RedisDump的安装](1kai-fa-huan-jing-pei-zhi/15-cun-chu-ku-de-an-zhuang/154-redisdumpde-an-zhuang.md)
+  * [1.6 Web库的安装](1kai-fa-huan-jing-pei-zhi/16-webku-de-an-zhuang/README.md)
+    * [1.6.1 Flask的安装](1kai-fa-huan-jing-pei-zhi/16-webku-de-an-zhuang/161-flaskde-an-zhuang.md)
+    * [1.6.2 Tornado的安装](1kai-fa-huan-jing-pei-zhi/16-webku-de-an-zhuang/162-tornadode-an-zhuang.md)
+  * [1.7 App爬取相关库的安装](1kai-fa-huan-jing-pei-zhi/17-apppa-qu-xiang-guan-ku-de-an-zhuang/README.md)
+    * [1.7.1 Charles的安装](1kai-fa-huan-jing-pei-zhi/17-apppa-qu-xiang-guan-ku-de-an-zhuang/171-charlesde-an-zhuang.md)
+    * [1.7.2 mitmproxy的安装](1kai-fa-huan-jing-pei-zhi/17-apppa-qu-xiang-guan-ku-de-an-zhuang/172-mitmproxyde-an-zhuang.md)
+    * [1.7.3 Appium的安装](1kai-fa-huan-jing-pei-zhi/17-apppa-qu-xiang-guan-ku-de-an-zhuang/173-appiumde-an-zhuang.md)
+  * [1.8 爬虫框架的安装](1kai-fa-huan-jing-pei-zhi/18-pa-chong-kuang-jia-de-an-zhuang/README.md)
+    * [1.8.1 pyspider的安装](1kai-fa-huan-jing-pei-zhi/18-pa-chong-kuang-jia-de-an-zhuang/181-pyspiderde-an-zhuang.md)
+    * [1.8.2 Scrapy的安装](1kai-fa-huan-jing-pei-zhi/18-pa-chong-kuang-jia-de-an-zhuang/182-scrapyde-an-zhuang.md)
+    * [1.8.3 Scrapy-Splash的安装](1kai-fa-huan-jing-pei-zhi/18-pa-chong-kuang-jia-de-an-zhuang/183-scrapy-splashde-an-zhuang.md)
+    * [1.8.4 ScrapyRedis的安装](1kai-fa-huan-jing-pei-zhi/18-pa-chong-kuang-jia-de-an-zhuang/184-scrapy-splashde-an-zhuang.md)
+  * [1.9 布署相关库的安装](1kai-fa-huan-jing-pei-zhi/19-bu-shu-xiang-guan-ku-de-an-zhuang/README.md)
+    * [1.9.1 Docker的安装](1kai-fa-huan-jing-pei-zhi/19-bu-shu-xiang-guan-ku-de-an-zhuang/191-dockerde-an-zhuang.md)
+    * [1.9.2 Scrapyd的安装](1kai-fa-huan-jing-pei-zhi/19-bu-shu-xiang-guan-ku-de-an-zhuang/192-scrapydde-an-zhuang.md)
+    * [1.9.3 ScrapydClient的安装](1kai-fa-huan-jing-pei-zhi/19-bu-shu-xiang-guan-ku-de-an-zhuang/193-scrapydclientde-an-zhuang.md)
+    * [1.9.4 ScrapydAPI的安装](1kai-fa-huan-jing-pei-zhi/19-bu-shu-xiang-guan-ku-de-an-zhuang/194-scrapydapide-an-zhuang.md)
+    * [1.9.5 Scrapyrt的安装](1kai-fa-huan-jing-pei-zhi/19-bu-shu-xiang-guan-ku-de-an-zhuang/195-scrapyrtde-an-zhuang.md)
+    * [1.9.6-Gerapy的安装](1kai-fa-huan-jing-pei-zhi/19-bu-shu-xiang-guan-ku-de-an-zhuang/196-gerapyde-an-zhuang.md)
+* [2.爬虫基础](2pa-chong-ji-chu/README.md)
+  * [2.1 HTTP 基本原理](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/README.md)
     * [2.1.1 URI和URL](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/211-urihe-url.md)
     * [2.1.2 超文本](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/212-chao-wen-ben.md)
     * [2.1.3 HTTP和HTTPS](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/213-httphe-https.md)
     * [2.1.4 HTTP请求过程](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/214-httpqing-qiu-guo-cheng.md)
     * [2.1.5 请求](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/215-qing-qiu.md)
     * [2.1.6 响应](2pa-chong-ji-chu/21-http-ji-ben-yuan-li/216-xiang-ying.md)
-  * [2.2 网页基础](2pa-chong-ji-chu/22-wang-ye-ji-chu.md)
+  * [2.2 网页基础](2pa-chong-ji-chu/22-wang-ye-ji-chu/README.md)
     * [2.2.1网页的组成](2pa-chong-ji-chu/22-wang-ye-ji-chu/221wang-ye-de-zu-cheng.md)
     * [2.2.2 网页的结构](2pa-chong-ji-chu/22-wang-ye-ji-chu/222-wang-ye-de-jie-gou.md)
     * [2.2.3 节点树及节点间的关系](2pa-chong-ji-chu/22-wang-ye-ji-chu/223-jie-dian-shu-ji-jie-dian-jian-de-guan-xi.md)
     * [2.2.4 选择器](2pa-chong-ji-chu/22-wang-ye-ji-chu/224-xuan-ze-qi.md)
-  * [2.3 爬虫的基本原理](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li.md)
+  * [2.3 爬虫的基本原理](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/README.md)
     * [2.3.1 爬虫概述](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/231-pa-chong-gai-shu.md)
     * [2.3.2 能抓怎样的数据](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/232-neng-zhua-zen-yang-de-shu-ju.md)
     * [2.3.3 javascript渲染的页面](2pa-chong-ji-chu/23-pa-chong-de-ji-ben-yuan-li/233-javascriptxuan-ran-de-ye-mian.md)
-  * [2.4 会话和Cookies](2pa-chong-ji-chu/24-hui-hua-he-cookies.md)
+  * [2.4 会话和Cookies](2pa-chong-ji-chu/24-hui-hua-he-cookies/README.md)
     * [2.4.1 静态网页和动态网页](2pa-chong-ji-chu/24-hui-hua-he-cookies/241-jing-tai-wang-ye-he-dong-tai-wang-ye.md)
     * [2.4.2 无状态HTTP](2pa-chong-ji-chu/24-hui-hua-he-cookies/242-wu-zhuang-tai-http.md)
     * [2.4.3 常见误区](2pa-chong-ji-chu/24-hui-hua-he-cookies/243-chang-jian-wu-qu.md)
-  * [2.5 代理的基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li.md)
+  * [2.5 代理的基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/README.md)
     * [2.5.1 基本原理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/251-ji-ben-yuan-li.md)
     * [2.5.2 代理的作用](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/252-dai-li-de-zuo-yong.md)
     * [2.5.3 爬虫代理](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/253-pa-chong-dai-li.md)
     * [2.5.4 代理分类](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/254-dai-li-fen-lei.md)
     * [2.5.5 常见代理设置](2pa-chong-ji-chu/25-dai-li-de-ji-ben-yuan-li/255-chang-jian-dai-li-she-zhi.md)
-* [3.基本库使用](3ji-ben-ku-shi-yong.md)
-  * [3.1 使用urllib](3ji-ben-ku-shi-yong/31-shi-yong-urllib.md)
+* [3.基本库使用](3ji-ben-ku-shi-yong/README.md)
+  * [3.1 使用urllib](3ji-ben-ku-shi-yong/31-shi-yong-urllib/README.md)
     * [3.1.1 发送请求](3ji-ben-ku-shi-yong/31-shi-yong-urllib/311-fa-song-qing-qiu.md)
     * [3.1.2 处理异常](3ji-ben-ku-shi-yong/31-shi-yong-urllib/312-chu-li-yi-chang.md)
     * [3.1.3 解析链接](3ji-ben-ku-shi-yong/31-shi-yong-urllib/313-jie-xi-lian-jie.md)
     * [3.1.4 分析Robots协议](3ji-ben-ku-shi-yong/31-shi-yong-urllib/314-fen-xi-robots-xie-yi.md)
-  * [3.2 使用requests](3ji-ben-ku-shi-yong/32-shi-yong-requests.md)
-    * [3.2.1 基本用法](3-ji-ben-ku-de-shi-yong/321-ji-ben-yong-fa.md)
-    * [3.2.2 高级用法](3-ji-ben-ku-de-shi-yong/322-gao-ji-yong-fa.md)
-    * [3.3 正则表达式](3-ji-ben-ku-de-shi-yong/33-zheng-ze-biao-da-shi.md)
-    * [3.4 抓取猫眼电影排行](3-ji-ben-ku-de-shi-yong/34-zhua-qu-mao-yan-dian-ying-pai-xing.md)
-* [4.解析库的使用](4jie-xi-ku-de-shi-yong.md)
+  * [3.2 使用requests](3ji-ben-ku-shi-yong/32-shi-yong-requests/README.md)
+    * [3.2.1 基本用法](3ji-ben-ku-shi-yong/32-shi-yong-requests/321-ji-ben-yong-fa.md)
+    * [3.2.2 高级用法](3ji-ben-ku-shi-yong/32-shi-yong-requests/322-gao-ji-yong-fa.md)
+    * [3.3 正则表达式](3ji-ben-ku-shi-yong/32-shi-yong-requests/33-zheng-ze-biao-da-shi.md)
+    * [3.4 抓取猫眼电影排行](3ji-ben-ku-shi-yong/32-shi-yong-requests/34-zhua-qu-mao-yan-dian-ying-pai-xing.md)
+* [4.解析库的使用](4jie-xi-ku-de-shi-yong/README.md)
   * [4.1 使用xpath](4jie-xi-ku-de-shi-yong/41-shi-yong-xpath.md)
   * [4.2 使用Beautiful Soup](4jie-xi-ku-de-shi-yong/42-shi-yong-beautiful-soup.md)
   * [4.3 使用pyquery](4jie-xi-ku-de-shi-yong/43-shi-yong-pyquery.md)
-* [5.数据存储](5shu-ju-cun-chu.md)
-  * [5.1 文件存储](5shu-ju-cun-chu/51-wen-jian-cun-chu.md)
+* [5.数据存储](5shu-ju-cun-chu/README.md)
+  * [5.1 文件存储](5shu-ju-cun-chu/51-wen-jian-cun-chu/README.md)
     * [5.1.1 TXT 文件存储](5shu-ju-cun-chu/51-wen-jian-cun-chu/511-txt-wen-jian-cun-chu.md)
-    * 5.1.2 JSON文件存储
-    * 5.1.3 CSV文件存储
-  * [5.2 关系型数据库存储](5shu-ju-cun-chu/52-guan-xi-xing-shu-ju-ku-cun-chu.md)
-    * 5.2.1 MySQL的存储
-  * 5.3 非关系数据库存储
-    * 5.3.1 MongoDB存储
-    * 5.3.2 Redis存储
-* [6.Ajax数据爬取](6ajaxshu-ju-pa-qu.md)
-  * 6.1 什么是Ajax
-  * 6.2 Ajax分析方法
-  * 6.3 Ajax结果提取
-  * [6.4 分析Ajax爬取今日头条街拍美图](6ajaxshu-ju-pa-qu/64-fen-xi-ajax-pa-qu-jin-ri-tou-tiao-jie-pai-mei-tu.md)
-* 7.动态渲染页面爬取
-  * 7.1 Selenium的使用
-  * [7.2 Splash的使用](7dong-tai-xuan-ran-ye-mian-pa-qu/72-splashde-shi-yong.md)
-  * [7.3 Splash负载均衡配置](7dong-tai-xuan-ran-ye-mian-pa-qu/73-splashfu-zai-jun-heng-pei-zhi.md)
-  * [7.4 使用selenium爬取淘宝商品](7dong-tai-xuan-ran-ye-mian-pa-qu/74-shi-yong-selenium-pa-qu-tao-bao-shang-pin.md)
-* 8.验证码的识别
-  * [8.1 图形验证码的识别](8yan-zheng-ma-de-shi-bie/81-tu-xing-yan-zheng-ma-de-shi-bie.md)
-  * [8.2 极验滑动验证码的识别](8yan-zheng-ma-de-shi-bie/82-ji-yan-hua-dong-yan-zheng-ma-de-shi-bie.md)
-  * [8.3 点触验证码的识别](8yan-zheng-ma-de-shi-bie/83-dian-hong-yan-zheng-ma-de-shi-bie.md)
-  * [8.4微博宫格验证码的识别](8yan-zheng-ma-de-shi-bie/84wei-bo-gong-ge-yan-zheng-ma-de-shi-bie.md)
-* 9.代理的使用
-  * 9.1 代理的设置
-  * 9.2 代理池的维护
-  * 9.3 付费代理的使用
-  * 9.4 ADSL拨号代理
-  * 9.5 使用代理爬取微信公总号文章
-* 10.模拟登录
-  * 10.1 模拟登陆并爬去GitHub
-  * 10.2 Cookies池的搭建
-* 11.App的爬取
-  * 11.1 Charles的使用
-  * 11.2 mitmproxy的使用
-  * 11.3 mitmdump“得到”App电子书信息
-  * 11.4 Appium的基本使用
-  * 11.5 Appnium爬取微信朋友圈
-  * 11.6 Appium+mitmdump爬取京东商品
-* 12.pyspider框架的使用
-  * 12.1 pyspider框架介绍
-  * 12.2 pyspider的基本使用
-  * 12.3 pyspider用法详解
-* 13.Scrapy框架的使用
-  * 13.1 scrapy框架介绍
-  * 13.2 入门
-  * 13.3 selector的用法
-  * 13.4 spider的用法
-  * 13.5 Downloader Middleware的用法
-  * 13.6 Spider Middleware的用法
-  * 13.7 Item Pipeline的用法
-  * 13.8 Scrapy对接Selenium
-  * 13.9 Scrapy对接Splash
-  * 13.10 Scrapy通用爬虫
-  * 13.11 Scrapyrt的使用
-  * 13.12 Scrapy对接Docker
-  * 13.13 Scrapy爬取新浪微博
-* 14.分布式爬虫
-  * 14.1 分布式爬虫原理
-  * 14.2 Scrapy-Redis源码解析
-  * 14.3 Scrapy分布式实现
-  * 14.4 Bloom Filter的对接
-* 15.分布式爬虫的部署
-  * 15.1 Scrapyd分布式部署
-  * 15.2 Scrapyd-Client的使用
-  * 15.3 Scrapyd对接Docker
-  * 15.4 Scrapyd批量部署
-  * 15.5 Gerapy分布式管理
+    * [5.1.2 JSON文件存储](5shu-ju-cun-chu/51-wen-jian-cun-chu/5.1.2-json-wen-jian-cun-chu.md)
+    * [5.1.3 CSV文件存储](5shu-ju-cun-chu/51-wen-jian-cun-chu/5.1.3-csv-wen-jian-cun-chu.md)
+  * [5.2 关系型数据库存储](5shu-ju-cun-chu/5.2-guan-xi-xing-shu-ju-ku-cun-chu/README.md)
+    * [5.2.1 MySQL的存储](5shu-ju-cun-chu/5.2-guan-xi-xing-shu-ju-ku-cun-chu/5.2.1-mysql-de-cun-chu.md)
+  * [5.3 非关系数据库存储](5shu-ju-cun-chu/5.3-fei-guan-xi-shu-ju-ku-cun-chu/README.md)
+    * [5.3.1 MongoDB存储](5shu-ju-cun-chu/5.3-fei-guan-xi-shu-ju-ku-cun-chu/5.3.1-mongodb-cun-chu.md)
+    * [5.3.2 Redis存储](5shu-ju-cun-chu/5.3-fei-guan-xi-shu-ju-ku-cun-chu/5.3.2-redis-cun-chu.md)
+* [6.Ajax数据爬取](6ajaxshu-ju-pa-qu/README.md)
+  * [6.1 什么是Ajax](6ajaxshu-ju-pa-qu/6.1-shi-mo-shi-ajax.md)
+  * [6.2 Ajax分析方法](6ajaxshu-ju-pa-qu/6.2-ajax-fen-xi-fang-fa.md)
+  * [6.3 Ajax结果提取](6ajaxshu-ju-pa-qu/6.3-ajax-jie-guo-ti-qu.md)
+  * [6.4 分析Ajax爬取今日头条街拍美图](6ajaxshu-ju-pa-qu/6.4-fen-xi-ajax-pa-qu-jin-ri-tou-tiao-jie-pai-mei-tu.md)
+* [7.动态渲染页面爬取](7.-dong-tai-xuan-ran-ye-mian-pa-qu/README.md)
+  * [7.1 Selenium的使用](7.-dong-tai-xuan-ran-ye-mian-pa-qu/7.1-selenium-de-shi-yong.md)
+  * [7.2 Splash的使用](7.-dong-tai-xuan-ran-ye-mian-pa-qu/7.2-splash-de-shi-yong.md)
+  * [7.3 Splash负载均衡配置](7.-dong-tai-xuan-ran-ye-mian-pa-qu/7.3-splash-fu-zai-jun-heng-pei-zhi.md)
+  * [7.4 使用selenium爬取淘宝商品](7.-dong-tai-xuan-ran-ye-mian-pa-qu/7.4-shi-yong-selenium-pa-qu-tao-bao-shang-pin.md)
+* [8.验证码的识别](8.-yan-zheng-ma-de-shi-bie/README.md)
+  * [8.1 图形验证码的识别](8.-yan-zheng-ma-de-shi-bie/8.1-tu-xing-yan-zheng-ma-de-shi-bie.md)
+  * [8.2 极验滑动验证码的识别](8.-yan-zheng-ma-de-shi-bie/8.2-ji-yan-hua-dong-yan-zheng-ma-de-shi-bie.md)
+  * [8.3 点触验证码的识别](8.-yan-zheng-ma-de-shi-bie/8.3-dian-chu-yan-zheng-ma-de-shi-bie.md)
+  * [8.4微博宫格验证码的识别](8.-yan-zheng-ma-de-shi-bie/8.4-wei-bo-gong-ge-yan-zheng-ma-de-shi-bie.md)
+* [9.代理的使用](9.-dai-li-de-shi-yong/README.md)
+  * [9.1 代理的设置](9.-dai-li-de-shi-yong/9.1-dai-li-de-she-zhi.md)
+  * [9.2 代理池的维护](9.-dai-li-de-shi-yong/9.2-dai-li-chi-de-wei-hu.md)
+  * [9.3 付费代理的使用](9.-dai-li-de-shi-yong/9.3-fu-fei-dai-li-de-shi-yong.md)
+  * [9.4 ADSL拨号代理](9.-dai-li-de-shi-yong/9.4-adsl-bo-hao-dai-li.md)
+  * [9.5 使用代理爬取微信公总号文章](9.-dai-li-de-shi-yong/9.5-shi-yong-dai-li-pa-qu-wei-xin-gong-zong-hao-wen-zhang.md)
+* [10.模拟登录](10.-mo-ni-deng-lu/README.md)
+  * [10.1 模拟登陆并爬去GitHub](10.-mo-ni-deng-lu/10.1-mo-ni-deng-lu-bing-pa-qu-github.md)
+  * [10.2 Cookies池的搭建](10.-mo-ni-deng-lu/10.2-cookies-chi-de-da-jian.md)
+* [11.App的爬取](11.app-de-pa-qu/README.md)
+  * [11.1 Charles的使用](11.app-de-pa-qu/11.1-charles-de-shi-yong.md)
+  * [11.2 mitmproxy的使用](11.app-de-pa-qu/11.2-mitmproxy-de-shi-yong.md)
+  * [11.3 mitmdump“得到”App电子书信息](11.app-de-pa-qu/11.3-mitmdump-de-dao-app-dian-zi-shu-xin-xi.md)
+  * [11.4 Appium的基本使用](11.app-de-pa-qu/11.4-appium-de-ji-ben-shi-yong.md)
+  * [11.5 Appnium爬取微信朋友圈](11.app-de-pa-qu/11.5-appnium-pa-qu-wei-xin-peng-you-quan.md)
+  * [11.6 Appium+mitmdump爬取京东商品](11.app-de-pa-qu/11.6-appium+mitmdump-pa-qu-jing-dong-shang-pin.md)
+* [12.pyspider框架的使用](12.pyspider-kuang-jia-de-shi-yong/README.md)
+  * [12.1 pyspider框架介绍](12.pyspider-kuang-jia-de-shi-yong/12.1-pyspider-kuang-jia-jie-shao.md)
+  * [12.2 pyspider的基本使用](12.pyspider-kuang-jia-de-shi-yong/12.2-pyspider-de-ji-ben-shi-yong.md)
+  * [12.3 pyspider用法详解](12.pyspider-kuang-jia-de-shi-yong/12.3-pyspider-yong-fa-xiang-jie.md)
+* [13.Scrapy框架的使用](13.scrapy-kuang-jia-de-shi-yong/README.md)
+  * [13.1 scrapy框架介绍](13.scrapy-kuang-jia-de-shi-yong/13.1-scrapy-kuang-jia-jie-shao.md)
+  * [13.2 入门](13.scrapy-kuang-jia-de-shi-yong/13.2-ru-men.md)
+  * [13.3 selector的用法](13.scrapy-kuang-jia-de-shi-yong/13.3-selector-de-yong-fa.md)
+  * [13.4 spider的用法](13.scrapy-kuang-jia-de-shi-yong/13.4-spider-de-yong-fa.md)
+  * [13.5 Downloader Middleware的用法](13.scrapy-kuang-jia-de-shi-yong/13.5-downloader-middleware-de-yong-fa.md)
+  * [13.6 Spider Middleware的用法](13.scrapy-kuang-jia-de-shi-yong/13.6-spider-middleware-de-yong-fa.md)
+  * [13.7 Item Pipeline的用法](13.scrapy-kuang-jia-de-shi-yong/13.7-item-pipeline-de-yong-fa.md)
+  * [13.8 Scrapy对接Selenium](13.scrapy-kuang-jia-de-shi-yong/13.8-scrapy-dui-jie-selenium.md)
+  * [13.9 Scrapy对接Splash](13.scrapy-kuang-jia-de-shi-yong/13.9-scrapy-dui-jie-splash.md)
+  * [13.10 Scrapy通用爬虫](13.scrapy-kuang-jia-de-shi-yong/13.10-scrapy-tong-yong-pa-chong.md)
+  * [13.11 Scrapyrt的使用](13.scrapy-kuang-jia-de-shi-yong/13.11-scrapyrt-de-shi-yong.md)
+  * [13.12 Scrapy对接Docker](13.scrapy-kuang-jia-de-shi-yong/13.12-scrapy-dui-jie-docker.md)
+  * [13.13 Scrapy爬取新浪微博](13.scrapy-kuang-jia-de-shi-yong/13.13-scrapy-pa-qu-xin-lang-wei-bo.md)
+* [14.分布式爬虫](14.-fen-bu-shi-pa-chong/README.md)
+  * [14.1 分布式爬虫原理](14.-fen-bu-shi-pa-chong/14.1-fen-bu-shi-pa-chong-yuan-li.md)
+  * [14.2 Scrapy-Redis源码解析](14.-fen-bu-shi-pa-chong/14.2-scrapyredis-yuan-ma-jie-xi.md)
+  * [14.3 Scrapy分布式实现](14.-fen-bu-shi-pa-chong/14.3-scrapy-fen-bu-shi-shi-xian.md)
+  * [14.4 Bloom Filter的对接](14.-fen-bu-shi-pa-chong/14.4-bloom-filter-de-dui-jie.md)
+* [15.分布式爬虫的部署](15.-fen-bu-shi-pa-chong-de-bu-shu/README.md)
+  * [15.1 Scrapyd分布式部署](15.-fen-bu-shi-pa-chong-de-bu-shu/15.1-scrapyd-fen-bu-shi-bu-shu.md)
+  * [15.2 Scrapyd-Client的使用](15.-fen-bu-shi-pa-chong-de-bu-shu/15.2-scrapydclient-de-shi-yong.md)
+  * [15.3 Scrapyd对接Docker](15.-fen-bu-shi-pa-chong-de-bu-shu/15.3-scrapyd-dui-jie-docker.md)
+  * [15.4 Scrapyd批量部署](15.-fen-bu-shi-pa-chong-de-bu-shu/15.4-scrapyd-pi-liang-bu-shu.md)
+  * [15.5 Gerapy分布式管理](15.-fen-bu-shi-pa-chong-de-bu-shu/15.5-gerapy-fen-bu-shi-guan-li.md)
 * [other](other.md)
-* [微信公总号文章实战](wei-xin-gong-zong-hao-wen-zhang-shi-zhan.md)
+* [微信公总号文章实战](wei-xin-gong-zong-hao-wen-zhang-shi-zhan/README.md)
   * [源码](wei-xin-gong-zong-hao-wen-zhang-shi-zhan/yuan-ma.md)
 

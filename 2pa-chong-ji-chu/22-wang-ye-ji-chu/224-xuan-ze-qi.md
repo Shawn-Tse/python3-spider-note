@@ -1,3 +1,5 @@
+# 2.2.4 选择器
+
 CSS 选择器的语法规则：
 
 | 选择器 | 例子 | 例子描述 |
@@ -45,6 +47,4 @@ CSS 选择器的语法规则：
 | :checked | input:checked | 选择每个被选中的 input 节点。 |
 | :not\(selector\) | p:not | 选择非 p 节点的每个节点。 |
 | ::selection | ::selection | 选择被用户选取的节点部分。 |
-
-
 

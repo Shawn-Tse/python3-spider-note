@@ -1,8 +1,10 @@
-### 1.说明
+# 3.1.4 分析Robots协议
+
+## 1.说明
 
 利用 Urllib 的 robotparser 模块我们可以实现网站 Robots 协议的分析
 
-### 2. Robots协议 {#1-robots协议}
+## 2. Robots协议 {#1-robots协议}
 
 Robots 协议也被称作爬虫协议、机器人协议，它的全名叫做网络爬虫排除标准（Robots Exclusion Protocol），用来告诉爬虫和搜索引擎哪些页面可以抓取，哪些不可以抓取。它通常是一个叫做 robots.txt 的文本文件，放在网站的根目录下。
 
@@ -10,13 +12,13 @@ Robots 协议也被称作爬虫协议、机器人协议，它的全名叫做网�
 
 例如:
 
-```
+```text
 https://blog.csdn.net/robots.txt
 ```
 
 robots.txt内容:
 
-```
+```text
 User-agent: *
 Disallow: /css/
 Disallow: /images/
@@ -33,7 +35,7 @@ Disallow 指定了不允许抓取的目录，比如上述例子中设置为/则�
 
 Allow 一般和 Disallow 一起使用，一般不会单独使用，用来排除某些限制，现在我们设置为 /public/ ，起到的作用是所有页面不允许抓取，但是 public 目录是可以抓取的
 
-### 3. 爬虫名称 {#2-爬虫名称}
+## 3. 爬虫名称 {#2-爬虫名称}
 
 大家可能会疑惑，爬虫名是哪儿来的？为什么就叫这个名？其实它是有固定名字的了，比如百度的就叫做 BaiduSpider，下面的表格列出了一些常见的搜索爬虫的名称及对应的网站：
 
@@ -46,7 +48,7 @@ Allow 一般和 Disallow 一起使用，一般不会单独使用，用来排除�
 | ia\_archiver | Alexa | www.alexa.cn |
 | Scooter | altavista | www.altavista.com |
 
-### 4. robotparser {#3-robotparser}
+## 4. robotparser {#3-robotparser}
 
 了解了什么是 Robots 协议之后，我们就可以使用 robotparser 模块来解析 robots.txt 了。
 
@@ -54,7 +56,7 @@ robotparser 模块提供了一个类，叫做 RobotFileParser。它可以根据�
 
 语法声明:
 
-```
+```text
 urllib.robotparser.RobotFileParser(url='')
 ```
 
@@ -71,7 +73,7 @@ urllib.robotparser.RobotFileParser(url='')
 
 实例:
 
-```
+```text
 from urllib.robotparser import  RobotFileParser
 
 rp = RobotFileParser()
@@ -83,7 +85,7 @@ print(rp.can_fetch('*', "http://www.jianshu.com/search?q=python&page=1&type=coll
 
 以简书为例，我们首先创建 RobotFileParser 对象，然后通过 set\_url\(\) 方法来设置了 robots.txt 的链接。当然不用这个方法的话，可以在声明时直接用如下方法设置：
 
-```
+```text
 rp = RobotFileParser('http://www.jianshu.com/robots.txt')
 ```
 
@@ -91,7 +93,7 @@ rp = RobotFileParser('http://www.jianshu.com/robots.txt')
 
 运行结果:
 
-```
+```text
 False
 False
 ```
@@ -100,7 +102,7 @@ False
 
 实例:
 
-```
+```text
 from urllib.robotparser import RobotFileParser
 from urllib.request import urlopen
 
@@ -111,7 +113,7 @@ print(rp.can_fetch('*', 's://blog.csdn.net/Linear_Luo/article/details/52231550')
 
 运行结果:
 
-```
+```text
 True
 ```
 

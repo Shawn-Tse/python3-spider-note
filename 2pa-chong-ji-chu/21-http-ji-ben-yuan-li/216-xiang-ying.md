@@ -1,8 +1,8 @@
-### Response {#6-response}
+# 2.1.6 响应
 
 Response，即响应，由服务端返回给客户端。Response 可以划分为三部分，Response Status Code、Response Headers、Response Body。
 
-#### Response Status Code {#response-status-code}
+## Response Status Code {#response-status-code}
 
 响应状态码，此状态码表示了服务器的响应状态，如 200 则代表服务器正常响应，404 则代表页面未找到，500 则代表服务器内部发生错误。在爬虫中，我们可以根据状态码来判断服务器响应状态，如判断状态码为 200，则证明成功返回数据，再进行进一步的处理，否则直接忽略。
 
@@ -50,7 +50,7 @@ Response，即响应，由服务端返回给客户端。Response 可以划分为
 | 504 | 网关超时 | 服务器作为网关或代理，但是没有及时从上游服务器收到请求。 |
 | 505 | HTTP 版本不支持 | 服务器不支持请求中所用的 HTTP 协议版本。 |
 
-#### Response Headers {#response-headers}
+## Response Headers {#response-headers}
 
 响应头，其中包含了服务器对请求的应答信息，如 Content-Type、Server、Set-Cookie 等，下面将一些常用的头信息说明如下：
 
@@ -62,11 +62,11 @@ Response，即响应，由服务端返回给客户端。Response 可以划分为
 * Set-Cookie，设置Cookie，Response Headers 中的 Set-Cookie即告诉浏览器需要将此内容放在 Cookies 中，下次请求携带 Cookies 请求。
 * Expires，指定 Response 的过期时间，使用它可以控制代理服务器或浏览器将内容更新到缓存中，如果再次访问时，直接从缓存中加载，降低服务器负载，缩短加载时间。
 
-#### Resposne Body {#resposne-body}
+## Resposne Body {#resposne-body}
 
 即响应体，最重要的当属响应体内容了，响应的正文数据都是在响应体中，如请求一个网页，它的响应体就是网页的 HTML 代码，请求一张图片，它的响应体就是图片的二进制数据。所以最主要的数据都包含在响应体中了，我们做爬虫请求网页后要解析的内容就是解析响应体
 
-![](/assets/2.1.6-1.png)
+![](../../.gitbook/assets/2.1.6-1.png)
 
 我们在浏览器开发者工具中点击 Preview，就可以看到网页的源代码，这也就是响应体内容，是解析的目标。
 

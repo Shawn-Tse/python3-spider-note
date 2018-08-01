@@ -1,3 +1,5 @@
+# 2.2.3 节点树及节点间的关系
+
 在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTML。
 
 ## DOM 节点
@@ -16,7 +18,7 @@ HTML DOM 将 HTML 文档视作树结构。这种结构被称为_节点树_：
 
 ### HTML DOM Tree 实例
 
-![](http://www.w3school.com.cn/i/ct_htmltree.gif "HTML DOM Node Tree")
+![HTML DOM Node Tree](http://www.w3school.com.cn/i/ct_htmltree.gif)
 
 通过 HTML DOM，树中的所有节点均可通过 JavaScript 进行访问。所有 HTML 元素（节点）均可被修改，也可以创建或删除节点。
 
@@ -33,7 +35,7 @@ HTML DOM 将 HTML 文档视作树结构。这种结构被称为_节点树_：
 
 下面的图片展示了节点树的一部分，以及节点之间的关系：
 
-![](http://www.w3school.com.cn/i/dom_navigate.gif "DOM 节点关系")
+![DOM &#x8282;&#x70B9;&#x5173;&#x7CFB;](http://www.w3school.com.cn/i/dom_navigate.gif)
 
-本段参考:http://www.w3school.com.cn/htmldom/dom\_nodes.asp
+本段参考:[http://www.w3school.com.cn/htmldom/dom\_nodes.asp](http://www.w3school.com.cn/htmldom/dom_nodes.asp)
 
