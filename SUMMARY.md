@@ -159,4 +159,6 @@
   * 15.4 Scrapyd批量部署
   * 15.5 Gerapy分布式管理
 * [other](other.md)
+* [微信公总号文章实战](wei-xin-gong-zong-hao-wen-zhang-shi-zhan.md)
+  * [源码](wei-xin-gong-zong-hao-wen-zhang-shi-zhan/yuan-ma.md)
 
